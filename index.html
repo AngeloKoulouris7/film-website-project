@@ -331,7 +331,23 @@ or
 (go-to: &quot;Minecraft Movie Reviews&quot;)
 ]
 
-[[No|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="24" name="Day Two" tags="" position="875,1150" size="100,100">Phase Two</tw-passagedata><tw-passagedata pid="25" name="Code Storage Passage" tags="" position="750,250" size="100,100">(text-colour: &quot;green&quot;)[(link: &quot;Promote this Review?&quot;)[
+[[No|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="24" name="Day Two" tags="" position="875,1150" size="100,100">Phase Two
+
+Needed: Code to add all variable values to bank DONE!
+Additionally: Need to work out how many turns the reader will have per day, as well as if there are consequences for not removing certain reviews. THIS IS DOABLE
+
+Therefore: Need to work out what values to give each option that will be fair for the reader and functional for the story.
+
+(if: $option5 is &#39;true&#39;)[(set: $grift to it + 5)]
+
+(set: $bankfan to it + $fan)
+(set: $bankcritic to it + $critic)
+(set: $bankgrift to it + $grift)
+
+
+(set: $fan to 0)
+(set: $critic to 0)
+(set: $grift to 0)</tw-passagedata><tw-passagedata pid="25" name="Code Storage Passage" tags="" position="750,250" size="100,100">(text-colour: &quot;green&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $fan to it + 1)
 (set: $critic to it - 1)
 (set: $grift to it + 1)
