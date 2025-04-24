@@ -14,8 +14,18 @@
 	display: none;
 }
 
-tw-hook {
-  background-image: url(Images/Subway-Logo.png);
+page-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	right: 0;
+	height: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	z-index: 1;
+	background-image: url("Images/Subway-Logo.png");
 }
 
 tw-story[tags~="Normal"] {
@@ -51,7 +61,8 @@ tw-story[tags~="Normal"] {
 .story-image {
   grid-column: 1;  /* sets which column the image appears in */
   grid-row: 1;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Normal" color="yellow"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="625,250" size="100,100">This passage may be kept as a menu page, where the reader can be returned to upon reaching an ending within the story. Whether or not to include a &quot;tutorial&quot; or explanation of how the story branches function is up to you.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('tw-story').before('<div id="page-header"></div>');
+</script><tw-tag name="Normal" color="yellow"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="625,250" size="100,100">This passage may be kept as a menu page, where the reader can be returned to upon reaching an ending within the story. Whether or not to include a &quot;tutorial&quot; or explanation of how the story branches function is up to you.
 
 [[Introduction]]
 
