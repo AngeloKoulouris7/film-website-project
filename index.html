@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play film-website-story.</tw-noscript></noscript></tw-story>
-<tw-storydata name="film-website-story" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="7A40D8BA-703C-4055-B3FE-6B73125EA085" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.cdnfonts.com/css/georgia');
+<tw-storydata name="film-website-story" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="7A40D8BA-703C-4055-B3FE-6B73125EA085" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.cdnfonts.com/css/georgia');
 
 tw-story {
   font-family: 'Georgia', sans-serif;
@@ -31,6 +31,18 @@ img.story-image {
 
 tw-story[tags~="Normal"] {
   background-color: #000223;
+}
+
+tw-story[tags~="Critic"] {
+  background-color: purple;
+}
+
+tw-story[tags~="Fan"] {
+  background-color: #bc9511;
+}
+
+tw-story[tags~="Grift"] {
+  background-color: maroon
 }
   
   /*background-color: #00033b;
@@ -63,11 +75,9 @@ tw-story[tags~="Normal"] {
   grid-column: 1;  /* sets which column the image appears in */
   grid-row: 1;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('tw-story').before('<div id="page-header"></div>');
-</script><tw-tag name="Normal" color="yellow"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="625,250" size="100,100">This passage may be kept as a menu page, where the reader can be returned to upon reaching an ending within the story. Whether or not to include a &quot;tutorial&quot; or explanation of how the story branches function is up to you.
+</script><tw-tag name="Normal" color="yellow"></tw-tag><tw-tag name="Critic" color="purple"></tw-tag><tw-tag name="Fan" color="orange"></tw-tag><tw-tag name="Grift" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="Normal" position="625,250" size="100,100">This passage may be kept as a menu page, where the reader can be returned to upon reaching an ending within the story. Whether or not to include a &quot;tutorial&quot; or explanation of how the story branches function is up to you.
 
 [[Introduction]]
-
-[[Code Storage Passage]]
 
 (set: $score to 0)
 (set: $bankcritic to 10)
@@ -76,6 +86,8 @@ tw-story[tags~="Normal"] {
 (set: $critic to 0)
 (set: $fan to 0)
 (set: $grift to 0)
+(set: $promote to 0)
+(set: $delete to 0)
 (set: $option1 to &#39;true&#39;)
 (set: $option2 to &#39;true&#39;)
 (set: $option3 to &#39;true&#39;)
@@ -160,7 +172,8 @@ Check your [[Emails]]?
 
 (if: $score &gt;= 1)[[Undo Changes]]
 
-</tw-passagedata><tw-passagedata pid="9" name="Film C Review" tags="Normal" position="1000,625" size="100,100">Potential expansion point, will have same code structure as main line. 
+(if: $promote &gt;= 4)[You&#39;ve done a lot of work today(text-colour: yellow)[
+[[Continue to Next Day?]]]]</tw-passagedata><tw-passagedata pid="9" name="Film C Review" tags="Normal" position="1000,625" size="100,100">Potential expansion point, will have same code structure as main line. 
 
 [[Day One]]</tw-passagedata><tw-passagedata pid="10" name="Film B Reviews" tags="Normal" position="500,625" size="100,100">Potential expansion point, will have same code structure as main line. 
 
@@ -183,54 +196,60 @@ Return to [[Reviews|Minecraft Movie Reviews]]&lt;/div&gt;&lt;div class=&quot;sto
 (text-style: &#39;bold&#39;)[Box Office: ]$729.2 Million
 &lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Emails" tags="Normal" position="1000,750" size="100,100">This page will serve as a hub for email links. 
 
+[[Go Back|Minecraft Movie Reviews]]
+
 (Question, how will you resolve returning the reader to where they came from?)</tw-passagedata><tw-passagedata pid="13" name="I LOVE IT ⭐⭐⭐⭐⭐" tags="Normal" position="750,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;I LOVE IT ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Jacksonboiiii:D
 
 I went to see this film with ma frends, I always wanted a BlockBreaker movie it was so funny and good! I hope they make a BlockBreaker 2 and put Heromine in it, that would be so awesome and cool!
 
 First we break, then we build! Chicken Jockey!!!!!!
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it + 10)
-(set: $critic to it - 6)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $fan to it + 5)
+(set: $critic to it - 2)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it + 5)
-(set: $fan to it - 5)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $critic to it + 3)
+(set: $fan to it - 3)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="14" name="CHICKEN JOCKEY ⭐⭐⭐⭐⭐" tags="Normal" position="650,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;CHICKEN JOCKEY ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Zachary
 
 AS A CHILD I YEARNED FOR THE MINES 🗣️🗣️🗣️🔥🔥🔥🔥🔥🔥
 &lt;img src=&quot;Images/ComingInHot.jpg&quot; alt=&quot;Coming In Hot&quot;&gt;
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it + 15)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $fan to it + 10)
 (set: $critic to it - 10)
 (set: $grift to it + 5)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it + 5)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $critic to it + 3)
 (set: $fan to it - 3)
-(set: $grift to it - 3)
+(set: $grift to it - 1)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="15" name="Trash Fire ⭐" tags="Normal" position="850,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Trash Fire ⭐&lt;/h1&gt;]Review by TheClassicFilmGuy
 
@@ -249,23 +268,25 @@ We need to return to the films of the past, when things were better.
 
 ...and don&#39;t get me started on the ridiculous casting
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $grift to it + 8)
-(set: $fan to it - 5)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $grift to it + 5)
+(set: $fan to it - 3)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it + 5)
-(set: $grift to it - 8)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $fan to it + 3)
+(set: $grift to it - 5)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="16" name="ok. ⭐⭐⭐" tags="Normal" position="850,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;ok. ⭐⭐⭐&lt;/h1&gt;]Review by Kristen
 
@@ -275,23 +296,25 @@ Wish I spent my time elsewhere, but hey, at least the kids will like it? Right?
 
 I thought it was funny when Mack Back said Chicken Jockey and the audience started screaming hysterically, but not because it was funny, but because theres nothing else interesting about this movie. 
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it + 5)
-(set: $critic to it - 3)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $fan to it + 3)
+(set: $critic to it - 1)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it + 5)
-(set: $fan to it - 3)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $critic to it + 3)
+(set: $fan to it - 1)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="17" name="They should stop casting him ⭐⭐⭐" tags="Normal" position="750,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;They should stop casting him ⭐⭐⭐&lt;/h1&gt;]Review by XxARealCyberpunkxX
 
@@ -301,24 +324,27 @@ Movie was fine, I just wish anyone but him was playing Stevee.
 
 Fuck.
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $grift to it + 5)
-(set: $critic to it + 3)
-(set: $fan to it - 8)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $grift to it + 3)
+(set: $critic to it + 1)
+(set: $fan to it - 5)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it + 5)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $fan to it + 3)
 (set: $grift to it - 5)
+(set: $critic to it - 1)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="18" name="Of all movies, this is certainly one of them ⭐⭐" tags="Normal" position="850,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Of all movies, this is certainly one of them ⭐⭐&lt;/h1&gt;]Review by TheRunawayCritic
 
@@ -336,23 +362,26 @@ All we need to do is spend more time celebrating and appriciating true cinema, t
 
 The BlockBreaker movie is fine, it is simply one of the movies of all time. Now, can we look towards films that actually matter for a change?
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $critic to it + 6)
-(set: $fan to it - 3)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $critic to it + 3)
+(set: $fan to it - 1)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it - 3)
-(set: $fan to it + 6)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $critic to it - 1)
+(set: $fan to it + 3)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
+
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="19" name="Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐" tags="Normal" position="650,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐&lt;/h1&gt;]Review by ✨Laura✨
 
 It&#39;s awful. Terrible by every metric. 
@@ -368,25 +397,27 @@ Because think about it, who is this for? Kids? Even children deserve better than
 
 All of this talent in VFX is being wasted on these overblown CGI worlds that ended up being mocked by audiences who watched the films trailer anyway.That being said I think the hate was overblown for the visuals anyway. Sure, there are some truly horrific adaptations of the simplistic blocky designs we all know and love, but behind all of that was a lot of effort from overworked artists, who did all they can to bring this game to life under the demands from out-of-touch studios and producer expectations. Studios can treat their workers better than this.
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it - 5)
-(set: $critic to it + 8)
-(set: $grift to it - 3)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $fan to it - 3)
+(set: $critic to it + 5)
+(set: $grift to it - 1)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it - 8)
-(set: $fan to it + 5)
-(set: $grift to it + 3)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $critic to it - 5)
+(set: $fan to it + 3)
+(set: $grift to it + 1)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="20" name="My Kids Loved It ⭐⭐⭐⭐" tags="Normal" position="950,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;My Kids Loved It ⭐⭐⭐⭐&lt;/h1&gt;]Review by SuperheroDad No.1
 
@@ -406,46 +437,52 @@ George: ⭐⭐⭐⭐ &quot;Can we have chicken for dinner Dad?&quot;
 And with that, our final average score for this week is ⭐⭐⭐⭐ stars!
 Tune in next week for our next trip to the cinemas!
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it + 8)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $fan to it + 3)
 (set: $critic to it - 3)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it + 5)
-(set: $fan to it - 5)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $critic to it + 3)
+(set: $fan to it - 3)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="21" name="The State of Mainstream Cinema: Pandering Bullshit ⭐" tags="Normal" position="650,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐&lt;/h1&gt;]Review by TheAlcoholicBear
 
 Oh bollocks. Another piece of nonesense from moronic mainstream studios. 
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $grift to it + 15)
-(set: $critic to it + 5)
-(set: $fan to it - 8)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $grift to it + 10)
+(set: $critic to it + 3)
+(set: $fan to it - 5)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it + 8)
-(set: $grift to it - 5)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $fan to it + 3)
+(set: $grift to it - 3)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]</tw-passagedata><tw-passagedata pid="22" name="sigh. ⭐⭐" tags="Normal" position="550,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;sigh. ⭐⭐&lt;/h1&gt;]Review by MrSykesBooTube
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
+
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="22" name="sigh. ⭐⭐" tags="Normal" position="550,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;sigh. ⭐⭐&lt;/h1&gt;]Review by MrSykesBooTube
 
 Terrible visual effects, horrible writing. The only redeeming thing was seeing the oddly homo-erotic chemistry of Mack Back and Jacob Ronoa on screen.
 
@@ -453,28 +490,32 @@ Terrible visual effects, horrible writing. The only redeeming thing was seeing t
 
 (See my full thoughts at my (link: &quot;BooTube Channel&quot;)[(goto-url: &#39;https://www.youtube.com/watch?v=dQw4w9WgXcQ&#39;)])
 
-&lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it - 3)
-(set: $critic to it + 5)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $fan to it -  1)
+(set: $critic to it + 3)
 (set: $score to it + 1)
+(set: $promote to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;Day Two&quot;)]
-]]
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it - 3)
-(set: $fan to it + 5)
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $critic to it - 1)
+(set: $fan to it + 3)
 (set: $score to it + 1)
+(set: $delete to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;Day Two&quot;)]
-]]</tw-passagedata><tw-passagedata pid="23" name="Undo Changes" tags="Normal" position="750,1150" size="100,100">Are you sure you want to Undo Changes?
+(if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="23" name="Undo Changes" tags="Normal" position="750,1150" size="100,100">Are you sure you want to Undo Changes?
 
 (link: &quot;Yes&quot;)[
 (set: $critic to 0)
 (set: $fan to 0)
 (set: $grift to 0)
+(set: $promote to 0)
+(set: $delete to 0)
 (set: $score to 0)
 (set: $option1 to &#39;true&#39;)
 (set: $option2 to &#39;true&#39;)
@@ -489,7 +530,42 @@ or
 (go-to: &quot;Minecraft Movie Reviews&quot;)
 ]
 
-[[No|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="24" name="Day Two" tags="Normal" position="875,1150" size="100,100">Phase Two
+[[No|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="24" name="Day Two" tags="Normal" position="875,1150" size="100,100">(This is a fodder passage to help with working out score changes.)
+
+It&#39;s getting late, best to stop working and prepare for the next day.
+
+[[Proceed to Day Two|Day Two Real]]
+(if: $option1 is &#39;true&#39;)[(set: $fan to it + 1)](if: $option2 is &#39;true&#39;)[(set: $fan to it + 2)(set: $grift to it + 2)](if: $option3 is &#39;true&#39;)[(set: $grift to it + 1)](if: $option4 is &#39;true&#39;)[(set: $fan to it + 1)](if: $option5 is &#39;true&#39;)[(set: $grift to it + 3)](if: $option6 is &#39;true&#39;)[(set: $grift to it + 1)(set: $critic to it + 1)](if: $option7 is &#39;true&#39;)[(set: $critic to it + 1)](if: $option8 is &#39;true&#39;)[(set: $critic to it + 2)(set: $grift to it - 1)](if: $option9 is &#39;true&#39;)[(set: $critic to it + 1)](if: $option10 is &#39;true&#39;)[(set: $fan to it + 2)]</tw-passagedata><tw-passagedata pid="25" name="Code Storage Passage" tags="" position="750,250" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(set: $fan to it +)
+(set: $critic to it +)
+(set: $grift to it +)
+(set: $score to it + 1)
+(set: $promote to it + 1)
+(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $score &lt; 8)[(go-to: &quot;&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;&quot;)]
+]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
+or
+(if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
+(set: $fan to it +)
+(set: $critic to it +)
+(set: $grift to it +)
+(set: $score to it + 1)
+(set: $delete to it + 1)
+(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $score &lt; 8)[(go-to: &quot;&quot;)]
+(else-if: $score &gt;= 8)[(go-to: &quot;&quot;)]
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
+
+(if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]</tw-passagedata><tw-passagedata pid="26" name="C2" tags="Critic" position="1450,250" size="100,100">You are in C2
+
+[[Critic Path]]</tw-passagedata><tw-passagedata pid="27" name="F2" tags="Fan" position="1850,250" size="100,100">You are in F2
+
+[[Fan Path]]</tw-passagedata><tw-passagedata pid="28" name="G2" tags="Grift" position="2250,250" size="100,100">You are in G2
+
+[[Grift Path]]</tw-passagedata><tw-passagedata pid="29" name="N2" tags="" position="2650,250" size="100,100">You are in N2
+
+(This page might be deleted later)</tw-passagedata><tw-passagedata pid="30" name="Critic Path" tags="Critic" position="1450,375" size="100,100">The Way of the Critic</tw-passagedata><tw-passagedata pid="31" name="Fan Path" tags="Fan" position="1850,375" size="100,100">Tumblr. </tw-passagedata><tw-passagedata pid="32" name="Grift Path" tags="Grift" position="2250,375" size="100,100">Pain and Suffering</tw-passagedata><tw-passagedata pid="33" name="TimeHeader" tags="header" position="925,250" size="100,100">&lt;h1 style=&quot;font-size:48px;&quot;&gt;(text-style: &quot;bold&quot;)[(text-colour: aqua)[R](text-colour: white)[e](text-colour: aqua)[v](text-colour: white)[i](text-colour: aqua)[e](text-colour: white)[w](text-colour: aqua)[S](text-colour: white)[h](text-colour: aqua)[a](text-colour: white)[r](text-colour: aqua)[k](text-colour: white)[.](text-colour: aqua)[c](text-colour: white)[o](text-colour: aqua)[m]]&lt;/h1&gt;{(set: $headerValue to (current-time:))}$headerValue&lt;hr&gt;</tw-passagedata><tw-passagedata pid="34" name="ShowFooter" tags="footer" position="925,400" size="100,100">&lt;hr&gt;$footerValue</tw-passagedata><tw-passagedata pid="35" name="ConfigurationStartup" tags="startup" position="1050,325" size="100,100">{(set: $footerValue to &quot;@ReviewShark Limited. Made by fans in Melbourne Australia&quot;)}</tw-passagedata><tw-passagedata pid="36" name="Day Two Real" tags="Normal" position="1000,1150" size="100,100">Phase Two
 
 This passage will likely be transitionary from the readers perspective so the code can set up future events. 
 
@@ -499,8 +575,6 @@ Additionally: Need to work out how many turns the reader will have per day, as w
 Therefore: Need to work out what values to give each option that will be fair for the reader and functional for the story. Update: Still a work in progress
 
 Next: Think about how the story can be altered further depending on banked values. 
-
-
 
 (link: &quot;Continue&quot;)[
 (if: $bankcritic &gt;= 20)[(go-to: &quot;C2&quot;)]
@@ -514,53 +588,16 @@ Next: Think about how the story can be altered further depending on banked value
 (if: $bankfan &gt; $bankcritic and $bankgrift)[(go-to: &quot;F2&quot;)]
 (if: $bankgrift &gt; $bankcritic and $bankfan)[(go-to: &quot;G2&quot;)]
 ]
-
-(if: $option1 is &#39;true&#39;)[(set: $fan to it + 3)]
-(if: $option2 is &#39;true&#39;)[(set: $fan to it + 10)(set: $grift to it + 5)]
-(if: $option3 is &#39;true&#39;)[(set: $grift to it + 3)]
-(if: $option4 is &#39;true&#39;)[(set: $fan to it + 3)]
-(if: $option5 is &#39;true&#39;)[(set: $grift to it + 10)]
-(if: $option6 is &#39;true&#39;)[(set: $grift to it + 3)(set: $critic to it + 3)]
-(if: $option7 is &#39;true&#39;)[(set: $critic to it + 3)]
-(if: $option8 is &#39;true&#39;)[(set: $critic to it + 5)(set: $grift to it - 3)]
-(if: $option9 is &#39;true&#39;)[(set: $critic to it + 3)]
-(if: $option10 is &#39;true&#39;)[(set: $fan to it + 5)]
-
 (set: $bankfan to it + $fan)
 (set: $bankcritic to it + $critic)
 (set: $bankgrift to it + $grift)
-
-
 (set: $fan to 0)
 (set: $critic to 0)
-(set: $grift to 0)</tw-passagedata><tw-passagedata pid="25" name="Code Storage Passage" tags="" position="750,250" size="100,100">(text-colour: &quot;green&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it + 1)
-(set: $critic to it - 1)
-(set: $grift to it + 1)
-(set: $score to it + 1)
-(if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;&quot;)]
-(else-if: $score &gt;= 4)[(go-to: &quot;&quot;)]
-]]
-or
-(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $critic to it + 1)
-(set: $fan to it - 1)
-(set: $grift to it + 1)
-(set: $score to it + 1)
-(if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
-(if: $score &lt; 4)[(go-to: &quot;&quot;)]
-(else-if: $score &gt;=4)[(go-to: &quot;&quot;)]
-]]
+(set: $grift to 0)</tw-passagedata><tw-passagedata pid="37" name="Continue to Next Day?" tags="Normal" position="625,1150" size="100,100">Do you wish to stop working and proceed to the next day?
 
-(if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]</tw-passagedata><tw-passagedata pid="26" name="C2" tags="" position="1450,250" size="100,100">You are in C2
+(text-colour: &quot;#00cb1c&quot;)[[[Yes|Day Two]]]
 
-[[Critic Path]]</tw-passagedata><tw-passagedata pid="27" name="F2" tags="" position="1850,250" size="100,100">You are in F2
-
-[[Fan Path]]</tw-passagedata><tw-passagedata pid="28" name="G2" tags="" position="2250,250" size="100,100">You are in G2
-
-[[Grift Path]]</tw-passagedata><tw-passagedata pid="29" name="N2" tags="" position="2650,250" size="100,100">You are in N2</tw-passagedata><tw-passagedata pid="30" name="Critic Path" tags="" position="1450,375" size="100,100"></tw-passagedata><tw-passagedata pid="31" name="Fan Path" tags="" position="1850,375" size="100,100"></tw-passagedata><tw-passagedata pid="32" name="Grift Path" tags="" position="2250,375" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="TimeHeader" tags="header" position="925,250" size="100,100">&lt;img class=&quot;story-image&quot; src=&quot;Images/Letterboxd.png&quot;&gt;
-{(set: $headerValue to (current-time:))}$headerValue&lt;hr&gt;</tw-passagedata><tw-passagedata pid="34" name="ShowFooter" tags="footer" position="925,400" size="100,100">&lt;hr&gt;$footerValue</tw-passagedata><tw-passagedata pid="35" name="ConfigurationStartup" tags="startup" position="1050,325" size="100,100">{(set: $footerValue to &quot;@ReviewShark Limited. Made by fans in Melbourne Australia&quot;)}</tw-passagedata></tw-storydata>
+(text-colour: red)[[[No|Minecraft Movie Reviews]]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
