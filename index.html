@@ -121,13 +121,21 @@ How would you like to be refered to in the story?
 (set: $option7 to &#39;true&#39;)
 (set: $option8 to &#39;true&#39;)
 (set: $option9 to &#39;true&#39;)
-(set: $option10 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="Normal" position="625,375" size="100,100">In this passage, the reader will recieve an email from the original website owner who explains the job they have taken on. The reader is the new moderator of this website, and is thus in charge of managing its content and what reviews are Starred or Removed from the website. 
+(set: $option10 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="Normal" position="625,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fadeup&quot;)[Hey, you must be the new moderator!]
 
-It is also important here to start introducing the main themes of Critic vs Fans, censorship and the role of film criticism in the digital world. The owner should have a bias towards art criticism. 
+(t8n-delay: 5s) + (t8n: &quot;fadeup&quot;)[My name is Lorraine, the owner of this wonderful website, ReviewShark.com. For the past ten years she has been my pride and joy, creating a place for film enthusiasts to come together and analyse movies from around the world. It&#39;s been a lot of hard work, keeping things up and running, organising events and best-lists, preventing hateful content from taking over, and trying to maintain a level of critical quality in reviews and not have random people review bomb films, and deal with hate mail from unhappy users or companies trying to influence our website&#39;s content...]
 
-This could also be an opportunity to include the [[tutorial]] as a short loop introducing the mechanics of the story.
+(t8n-delay: 20s) + (t8n: &quot;fadeup&quot;)[Yeah, I think I&#39;ve earned myself a break - a long one actually - I&#39;m preparing to go on vacation to a resort in the Bahama&#39;s, then a tour around Europe with my family. I thought it be nice to just get away from it all, but that means I won&#39;t be able to run the website.]
 
-Otherwise the reader can continue into [[Day One]]</tw-passagedata><tw-passagedata pid="3" name="tutorial" tags="Normal" position="450,500" size="100,100">The tutorial should serve as a small introduction to what the reader will be doing, reading film reviews and Promoting or Removing them. 
+(t8n-delay: 30s) + (t8n: &quot;fadeup&quot;)[Which is where you come in :D]
+
+(t8n-delay: 35s) + (t8n: &quot;fadeup&quot;)[You, lucky user, have won the random lottery on this website to become the next moderator, and seeing your past history on the website; participating in film discussions, reviewing latest and classic flicks. I think you&#39;d be a perfect fit for this job!]
+
+(t8n-delay: 43s) + (t8n: &quot;fadeup&quot;)[So what do you say, will you accept this role?
+
+[[Yes!|Introduction 2]]
+
+[[No!|Ending 0]]]</tw-passagedata><tw-passagedata pid="3" name="tutorial" tags="Normal" position="500,500" size="100,100">The tutorial should serve as a small introduction to what the reader will be doing, reading film reviews and Promoting or Removing them. 
 
 At the end of the tutorial it should loop back to the [[Introduction]] or a similar page that will lead into [[Day One]]
 
@@ -581,7 +589,11 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-(if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]</tw-passagedata><tw-passagedata pid="26" name="C2" tags="Critic" position="1450,250" size="100,100">You are in C2
+(if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]
+
+In this passage, the reader will recieve an email from the original website owner who explains the job they have taken on. The reader is the new moderator of this website, and is thus in charge of managing its content and what reviews are Starred or Removed from the website. 
+
+It is also important here to start introducing the main themes of Critic vs Fans, censorship and the role of film criticism in the digital world. The owner should have a bias towards art criticism. </tw-passagedata><tw-passagedata pid="26" name="C2" tags="Critic" position="1450,250" size="100,100">You are in C2
 
 [[Critic Path (D2)]]</tw-passagedata><tw-passagedata pid="27" name="F2" tags="Fan" position="1850,250" size="100,100">You are in F2
 
@@ -647,7 +659,21 @@ Give film option
 
 [[Film A|GD2 Film A]]</tw-passagedata><tw-passagedata pid="45" name="GD2 Film A" tags="Grift" position="2250,625" size="100,100">Film A Summary
 
-[[Accept|GD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="46" name="GD2 Film A Reviews" tags="Grift" position="2250,900" size="100,100"></tw-passagedata></tw-storydata>
+[[Accept|GD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="46" name="GD2 Film A Reviews" tags="Grift" position="2250,900" size="100,100"></tw-passagedata><tw-passagedata pid="47" name="Introduction 2" tags="" position="750,375" size="100,100">This could also be an opportunity to include the [[tutorial]] as a short loop introducing the mechanics of the story.
+
+Otherwise the reader can continue into [[Day One]]</tw-passagedata><tw-passagedata pid="48" name="Ending 0" tags="Normal" position="500,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Oh... well thats a shame.
+
+Have a good day, I suppose...
+-Lorraine]
+(t8n-delay: 5s) + (t8n: &quot;fade-up&quot;)[&lt;hr&gt;And so you return to your ordinary life, posting on online message boards. Doing nothing much interesting but watch films all day and work at a boring office job. Maybe sometimes life is about ordinary simple things, and theres no need to go exploring beyond your bubble, or push yourself into the unknown.
+
+Yep. Perfectly content to just do nothing. Ever.]
+(t8n-delay: 15s) + (t8n: &quot;fade-up&quot;)[&lt;hr&gt;&lt;b&gt;(text-color: yellow)[Ending F- &quot;A Typical Boring Life Where Nothing Interesting Ever Happens&quot;]&lt;/b&gt;
+
+You can do better next time
+
+[[Restart?|Start]]
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
