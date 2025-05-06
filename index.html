@@ -77,7 +77,31 @@ tw-story[tags~="Grift"] {
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('tw-story').before('<div id="page-header"></div>');
 </script><tw-tag name="Normal" color="yellow"></tw-tag><tw-tag name="Critic" color="purple"></tw-tag><tw-tag name="Fan" color="orange"></tw-tag><tw-tag name="Grift" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="Normal" position="625,250" size="100,100">This passage may be kept as a menu page, where the reader can be returned to upon reaching an ending within the story. Whether or not to include a &quot;tutorial&quot; or explanation of how the story branches function is up to you.
 
-[[Introduction]]
+How would you like to be refered to in the story?
+(Link: &quot;Male&quot;)[
+(set: $gender to &quot;male&quot;)
+(set: $heshe to &quot;he&quot;)
+(set: $himher to &quot;him&quot;)
+(set: $hisher to &quot;his&quot;)
+(set: $himself to &quot;himself&quot;)
+(go-to: &quot;Introduction&quot;)
+]
+(Link: &quot;Female&quot;)[
+(set: $gender to &quot;female&quot;)
+(set: $heshe to &quot;she&quot;)
+(set: $himher to &quot;her&quot;)
+(set: $hisher to &quot;her&quot;)
+(set: $himself to &quot;herself&quot;)
+(go-to: &quot;Introduction&quot;)
+]
+(Link: &quot;Other&quot;)[
+(set: $gender to &quot;other&quot;)
+(set: $heshe to &quot;they&quot;)
+(set: $himher to &quot;them&quot;)
+(set: $hisher to &quot;their&quot;)
+(set: $himself to &quot;themself&quot;)
+(go-to: &quot;Introduction&quot;)
+]
 
 (set: $score to 0)
 (set: $bankcritic to 10)
@@ -103,9 +127,7 @@ It is also important here to start introducing the main themes of Critic vs Fans
 
 This could also be an opportunity to include the [[tutorial]] as a short loop introducing the mechanics of the story.
 
-Otherwise the reader can continue into [[Day One]]
-
-</tw-passagedata><tw-passagedata pid="3" name="tutorial" tags="Normal" position="450,500" size="100,100">The tutorial should serve as a small introduction to what the reader will be doing, reading film reviews and Promoting or Removing them. 
+Otherwise the reader can continue into [[Day One]]</tw-passagedata><tw-passagedata pid="3" name="tutorial" tags="Normal" position="450,500" size="100,100">The tutorial should serve as a small introduction to what the reader will be doing, reading film reviews and Promoting or Removing them. 
 
 At the end of the tutorial it should loop back to the [[Introduction]] or a similar page that will lead into [[Day One]]
 
