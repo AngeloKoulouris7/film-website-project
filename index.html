@@ -141,12 +141,16 @@ At the end of the tutorial it should loop back to the [[Introduction]] or a simi
 
 (set: $bankfan to it + $fan)</tw-passagedata><tw-passagedata pid="4" name="Day One" tags="Normal" position="750,500" size="100,100">(Optional) Give the reader the ability to pick what film they want to look at, allowing for potential skewing of target audiences if the reader has a goal in mind. Problem with this is it will take more time for you to write it all...
 
-
+(t8n-delay: 10s) + (t8n: &quot;fade-up&quot;)[text 1]
+(replace:
 The film links will give a brief summary of what the film is about, who stars in it, and what (if any) news/controversy there is surrounding it. The reader should have the opportunity to return to this page to change what film they want to select. 
 
 The films will also be parodies of existing projects, similar enough to draw inspiration from, but not direct to avoid issues. 
 
 Also, include a metric indicating what kind of audiences the website is attracting
+Website Audience Demographics
+&lt;b&gt;(text-colour: purple)[Critics:]&lt;/b&gt; 50%
+&lt;b&gt;(text-colour: orange)[Fans:]&lt;/b&gt; 50%
 
 [[Minecraft Movie]]
 
@@ -348,7 +352,9 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="17" name="They should stop casting him ⭐⭐⭐" tags="Normal" position="750,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;They should stop casting him ⭐⭐⭐&lt;/h1&gt;]Review by XxARealCyberpunkxX
+[[Go Back|Minecraft Movie Reviews]]
+
+</tw-passagedata><tw-passagedata pid="17" name="They should stop casting him ⭐⭐⭐" tags="Normal" position="750,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;They should stop casting him ⭐⭐⭐&lt;/h1&gt;]Review by XxARealCyberpunkxX
 
 I fucking hate Mack Back man. They just keep putting him in shit. He just will say a line in a completely stupid way and the internet loses their goddamn minds. 
 
