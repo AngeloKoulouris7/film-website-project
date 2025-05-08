@@ -34,15 +34,15 @@ tw-story[tags~="Normal"] {
 }
 
 tw-story[tags~="Critic"] {
-  background-color: purple;
+  background-color: #080110;
 }
 
 tw-story[tags~="Fan"] {
-  background-color: #bc9511;
+  background-color: #e66b00;
 }
 
 tw-story[tags~="Grift"] {
-  background-color: maroon
+  background-color: #6F1615;
 }
   
   /*background-color: #00033b;
@@ -141,8 +141,6 @@ At the end of the tutorial it should loop back to the [[Introduction]] or a simi
 
 (set: $bankfan to it + $fan)</tw-passagedata><tw-passagedata pid="4" name="Day One" tags="Normal" position="750,500" size="100,100">(Optional) Give the reader the ability to pick what film they want to look at, allowing for potential skewing of target audiences if the reader has a goal in mind. Problem with this is it will take more time for you to write it all...
 
-(t8n-delay: 10s) + (t8n: &quot;fade-up&quot;)[text 1]
-(replace:
 The film links will give a brief summary of what the film is about, who stars in it, and what (if any) news/controversy there is surrounding it. The reader should have the opportunity to return to this page to change what film they want to select. 
 
 The films will also be parodies of existing projects, similar enough to draw inspiration from, but not direct to avoid issues. 
@@ -152,11 +150,7 @@ Website Audience Demographics
 &lt;b&gt;(text-colour: purple)[Critics:]&lt;/b&gt; 50%
 &lt;b&gt;(text-colour: orange)[Fans:]&lt;/b&gt; 50%
 
-[[Minecraft Movie]]
-
-[[Film B]]
-
-[[Film C]]</tw-passagedata><tw-passagedata pid="5" name="Minecraft Movie" tags="Normal" position="750,625" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A BlockBreaker Movie&lt;/h1&gt;]&quot;Be there and be square.&quot;
+[[Minecraft Movie]]</tw-passagedata><tw-passagedata pid="5" name="Minecraft Movie" tags="Normal" position="750,625" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A BlockBreaker Movie&lt;/h1&gt;]&quot;Be there and be square.&quot;
 
 (text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;] Four misfit outcasts struggling with real world problems are suddenly pulled through a portal into a myserious cubic world called &quot;BlockBreaker&quot;, where their imagination seems to be the only limit to what they can create! To return home, they will have to undergo a magical quest with the help of their expert Breaker, Stevee. 
 
@@ -176,15 +170,7 @@ Danica Hooks as Dusk
 (text-style: &#39;bold&#39;)[Production Company: ]WB. Entertainment
 (text-style: &#39;bold&#39;)[Box Office: ]$729.2 Million
 &lt;/div&gt;&lt;/div&gt;
-(set: $option1 to &#39;true&#39;)(set: $option2 to &#39;true&#39;)(set: $option3 to &#39;true&#39;)(set: $option4 to &#39;true&#39;)(set: $option5 to &#39;true&#39;)(set: $option6 to &#39;true&#39;)(set: $option7 to &#39;true&#39;)(set: $option8 to &#39;true&#39;)(set: $option9 to &#39;true&#39;)(set: $option10 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="6" name="Film B" tags="Normal" position="625,625" size="100,100">Here should be a summary of the films premise/plot, its cast and crew, as well as projected reception/box office from audiences and critics. This will inform the reader of what is being discussed within the film and what kind of responses to expect from the reviews. 
-
-[[Accept this film|Film B Reviews]]
-
-[[Go back|Day One]]</tw-passagedata><tw-passagedata pid="7" name="Film C" tags="Normal" position="875,625" size="100,100">Here should be a summary of the films premise/plot, its cast and crew, as well as projected reception/box office from audiences and critics. This will inform the reader of what is being discussed within the film and what kind of responses to expect from the reviews. 
-
-[[Accept this film|Film C Review]]
-
-[[Go back|Day One]]</tw-passagedata><tw-passagedata pid="8" name="Minecraft Movie Reviews" tags="Normal" position="750,900" size="100,100">(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A BlockBreaker Movie&lt;/h1&gt;]&quot;Be there and be square.&quot;
+(set: $option1 to &#39;true&#39;)(set: $option2 to &#39;true&#39;)(set: $option3 to &#39;true&#39;)(set: $option4 to &#39;true&#39;)(set: $option5 to &#39;true&#39;)(set: $option6 to &#39;true&#39;)(set: $option7 to &#39;true&#39;)(set: $option8 to &#39;true&#39;)(set: $option9 to &#39;true&#39;)(set: $option10 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="6" name="Minecraft Movie Reviews" tags="Normal" position="750,900" size="100,100">(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A BlockBreaker Movie&lt;/h1&gt;]&quot;Be there and be square.&quot;
 
 Popular Reviews
 
@@ -209,11 +195,7 @@ Check your [[Emails]]?
 (if: $score &gt;= 1)[[Undo Changes]]
 
 (if: $promote &gt;= 4)[You&#39;ve done a lot of work today(text-colour: yellow)[
-[[Continue to Next Day?]]]]</tw-passagedata><tw-passagedata pid="9" name="Film C Review" tags="Normal" position="1000,625" size="100,100">Potential expansion point, will have same code structure as main line. 
-
-[[Day One]]</tw-passagedata><tw-passagedata pid="10" name="Film B Reviews" tags="Normal" position="500,625" size="100,100">Potential expansion point, will have same code structure as main line. 
-
-[[Day One]]</tw-passagedata><tw-passagedata pid="11" name="Minecraft Movie B" tags="Normal" position="500,750" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A BlockBreaker Movie&lt;/h1&gt;]&quot;Be there and be square.&quot;
+[[Continue to Next Day?]]]]</tw-passagedata><tw-passagedata pid="7" name="Minecraft Movie B" tags="Normal" position="500,750" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A BlockBreaker Movie&lt;/h1&gt;]&quot;Be there and be square.&quot;
 
 (text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;] Four misfit outcasts struggling with real world problems are suddenly pulled through a portal into a myserious cubic world called &quot;BlockBreaker&quot;, where their imagination seems to be the only limit to what they can create! To return home, they will have to undergo a magical quest with the help of their expert Breaker, Stevee. 
 
@@ -230,11 +212,11 @@ Return to [[Reviews|Minecraft Movie Reviews]]&lt;/div&gt;&lt;div class=&quot;sto
 (text-style: &#39;bold&#39;)[Based On: ]BlockBreaker video game
 (text-style: &#39;bold&#39;)[Production Company: ]WB. Entertainment
 (text-style: &#39;bold&#39;)[Box Office: ]$729.2 Million
-&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Emails" tags="Normal" position="1000,750" size="100,100">This page will serve as a hub for email links. 
+&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Emails" tags="Normal" position="1000,750" size="100,100">This page will serve as a hub for email links. 
 
 [[Go Back|Minecraft Movie Reviews]]
 
-(Question, how will you resolve returning the reader to where they came from?)</tw-passagedata><tw-passagedata pid="13" name="I LOVE IT ⭐⭐⭐⭐⭐" tags="Normal" position="750,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;I LOVE IT ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Jacksonboiiii:D
+(Question, how will you resolve returning the reader to where they came from?)</tw-passagedata><tw-passagedata pid="9" name="I LOVE IT ⭐⭐⭐⭐⭐" tags="Normal" position="750,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;I LOVE IT ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Jacksonboiiii:D
 
 I went to see this film with ma frends, I always wanted a BlockBreaker movie it was so funny and good! I hope they make a BlockBreaker 2 and put Heromine in it, that would be so awesome and cool!
 
@@ -260,7 +242,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="14" name="CHICKEN JOCKEY ⭐⭐⭐⭐⭐" tags="Normal" position="650,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;CHICKEN JOCKEY ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Zachary
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="10" name="CHICKEN JOCKEY ⭐⭐⭐⭐⭐" tags="Normal" position="650,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;CHICKEN JOCKEY ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Zachary
 
 AS A CHILD I YEARNED FOR THE MINES 🗣️🗣️🗣️🔥🔥🔥🔥🔥🔥
 &lt;img src=&quot;Images/ComingInHot.jpg&quot; alt=&quot;Coming In Hot&quot;&gt;
@@ -287,7 +269,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="15" name="Trash Fire ⭐" tags="Normal" position="850,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Trash Fire ⭐&lt;/h1&gt;]Review by TheClassicFilmGuy
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="11" name="Trash Fire ⭐" tags="Normal" position="850,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Trash Fire ⭐&lt;/h1&gt;]Review by TheClassicFilmGuy
 
 Really now, we are doing movie adaptations of children video games now? Fucking seriously? I swear, people will watch anything these days. Studios will churn out nothing but slop and people will keep watching. How do I know this? BECAUSE THIS FILM EARNED $729.2 MILLION AT THE BOX OFFICE!
 
@@ -324,7 +306,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="16" name="ok. ⭐⭐⭐" tags="Normal" position="850,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;ok. ⭐⭐⭐&lt;/h1&gt;]Review by Kristen
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="12" name="ok. ⭐⭐⭐" tags="Normal" position="850,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;ok. ⭐⭐⭐&lt;/h1&gt;]Review by Kristen
 
 It was sort of whatever tbh. Nothing terrible but nothing great either.
 
@@ -354,7 +336,7 @@ or
 
 [[Go Back|Minecraft Movie Reviews]]
 
-</tw-passagedata><tw-passagedata pid="17" name="They should stop casting him ⭐⭐⭐" tags="Normal" position="750,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;They should stop casting him ⭐⭐⭐&lt;/h1&gt;]Review by XxARealCyberpunkxX
+</tw-passagedata><tw-passagedata pid="13" name="They should stop casting him ⭐⭐⭐" tags="Normal" position="750,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;They should stop casting him ⭐⭐⭐&lt;/h1&gt;]Review by XxARealCyberpunkxX
 
 I fucking hate Mack Back man. They just keep putting him in shit. He just will say a line in a completely stupid way and the internet loses their goddamn minds. 
 
@@ -384,7 +366,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="18" name="Of all movies, this is certainly one of them ⭐⭐" tags="Normal" position="850,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Of all movies, this is certainly one of them ⭐⭐&lt;/h1&gt;]Review by TheRunawayCritic
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="14" name="Of all movies, this is certainly one of them ⭐⭐" tags="Normal" position="850,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Of all movies, this is certainly one of them ⭐⭐&lt;/h1&gt;]Review by TheRunawayCritic
 
 Welp, I bit the bullet and decided to go see the new BlockBreaker movie that was coming out. Of course, we all know about it. That awful trailer, those odd memeworthy line reads from Mack Back, the... (text-style: &quot;italic&quot;)[3D townsfolk] (shudders). Everything was lining up for this to be an absolute trainwreck and I went in seatbelt buckled and expecting the worst.
 
@@ -420,7 +402,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="19" name="Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐" tags="Normal" position="650,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐&lt;/h1&gt;]Review by ✨Laura✨
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="15" name="Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐" tags="Normal" position="650,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐&lt;/h1&gt;]Review by ✨Laura✨
 
 It&#39;s awful. Terrible by every metric. 
 
@@ -457,7 +439,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="20" name="My Kids Loved It ⭐⭐⭐⭐" tags="Normal" position="950,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;My Kids Loved It ⭐⭐⭐⭐&lt;/h1&gt;]Review by SuperheroDad No.1
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="16" name="My Kids Loved It ⭐⭐⭐⭐" tags="Normal" position="950,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;My Kids Loved It ⭐⭐⭐⭐&lt;/h1&gt;]Review by SuperheroDad No.1
 
 Hey all, this is your local Dad of three awesome kids coming to you with another review! Today we went to see a new live-action kids film called &quot;A BlockBreaker Movie&quot;, which based on what my kids told me, is an adaptation of a video game they play of the same name. Honestly, thats pretty cool and they were super hyped to go see it.
 
@@ -495,7 +477,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="21" name="The State of Mainstream Cinema: Pandering Bullshit ⭐" tags="Normal" position="650,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐&lt;/h1&gt;]Review by TheAlcoholicBear
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="17" name="The State of Mainstream Cinema: Pandering Bullshit ⭐" tags="Normal" position="650,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐&lt;/h1&gt;]Review by TheAlcoholicBear
 
 Oh bollocks. Another piece of nonesense from moronic mainstream studios. 
 
@@ -520,7 +502,7 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="22" name="sigh. ⭐⭐" tags="Normal" position="550,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;sigh. ⭐⭐&lt;/h1&gt;]Review by MrSykesBooTube
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="18" name="sigh. ⭐⭐" tags="Normal" position="550,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;sigh. ⭐⭐&lt;/h1&gt;]Review by MrSykesBooTube
 
 Terrible visual effects, horrible writing. The only redeeming thing was seeing the oddly homo-erotic chemistry of Mack Back and Jacob Ronoa on screen.
 
@@ -546,7 +528,7 @@ or
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;Minecraft Movie Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
-]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="23" name="Undo Changes" tags="Normal" position="750,1150" size="100,100">Are you sure you want to Undo Changes?
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="19" name="Undo Changes" tags="Normal" position="750,1150" size="100,100">Are you sure you want to Undo Changes?
 
 (link: &quot;Yes&quot;)[
 (set: $critic to 0)
@@ -568,12 +550,12 @@ or
 (go-to: &quot;Minecraft Movie Reviews&quot;)
 ]
 
-[[No|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="24" name="Day Two" tags="Normal" position="875,1150" size="100,100">(This is a fodder passage to help with working out score changes.)
+[[No|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="20" name="Day Two" tags="Normal" position="875,1150" size="100,100">(This is a fodder passage to help with working out score changes.)
 
 It&#39;s getting late, best to stop working and prepare for the next day.
 
 [[Proceed to Day Two|Day Two Real]]
-(if: $option1 is &#39;true&#39;)[(set: $fan to it + 1)](if: $option2 is &#39;true&#39;)[(set: $fan to it + 2)(set: $grift to it + 2)](if: $option3 is &#39;true&#39;)[(set: $grift to it + 1)](if: $option4 is &#39;true&#39;)[(set: $fan to it + 1)](if: $option5 is &#39;true&#39;)[(set: $grift to it + 3)](if: $option6 is &#39;true&#39;)[(set: $grift to it + 1)(set: $critic to it + 1)](if: $option7 is &#39;true&#39;)[(set: $critic to it + 1)](if: $option8 is &#39;true&#39;)[(set: $critic to it + 2)(set: $grift to it - 1)](if: $option9 is &#39;true&#39;)[(set: $critic to it + 1)](if: $option10 is &#39;true&#39;)[(set: $fan to it + 2)]</tw-passagedata><tw-passagedata pid="25" name="Code Storage Passage" tags="" position="750,250" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+(if: $option1 is &#39;true&#39;)[(set: $fan to it + 1)](if: $option2 is &#39;true&#39;)[(set: $fan to it + 2)(set: $grift to it + 2)](if: $option3 is &#39;true&#39;)[(set: $grift to it + 1)](if: $option4 is &#39;true&#39;)[(set: $fan to it + 1)](if: $option5 is &#39;true&#39;)[(set: $grift to it + 3)](if: $option6 is &#39;true&#39;)[(set: $grift to it + 1)(set: $critic to it + 1)](if: $option7 is &#39;true&#39;)[(set: $critic to it + 1)](if: $option8 is &#39;true&#39;)[(set: $critic to it + 2)(set: $grift to it - 1)](if: $option9 is &#39;true&#39;)[(set: $critic to it + 1)](if: $option10 is &#39;true&#39;)[(set: $fan to it + 2)]</tw-passagedata><tw-passagedata pid="21" name="Code Storage Passage" tags="" position="750,250" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $fan to it +)
 (set: $critic to it +)
 (set: $grift to it +)
@@ -599,23 +581,23 @@ or
 
 In this passage, the reader will recieve an email from the original website owner who explains the job they have taken on. The reader is the new moderator of this website, and is thus in charge of managing its content and what reviews are Starred or Removed from the website. 
 
-It is also important here to start introducing the main themes of Critic vs Fans, censorship and the role of film criticism in the digital world. The owner should have a bias towards art criticism. </tw-passagedata><tw-passagedata pid="26" name="C2" tags="Critic" position="1450,250" size="100,100">You are in C2
+It is also important here to start introducing the main themes of Critic vs Fans, censorship and the role of film criticism in the digital world. The owner should have a bias towards art criticism. </tw-passagedata><tw-passagedata pid="22" name="C2" tags="Critic" position="1450,250" size="100,100">You are in C2
 
-[[Critic Path (D2)]]</tw-passagedata><tw-passagedata pid="27" name="F2" tags="Fan" position="1850,250" size="100,100">You are in F2
+[[Critic Path (D2)]]</tw-passagedata><tw-passagedata pid="23" name="F2" tags="Fan" position="1850,250" size="100,100">You are in F2
 
-[[Fan Path (F2)]]</tw-passagedata><tw-passagedata pid="28" name="G2" tags="Grift" position="2250,250" size="100,100">You are in G2
+[[Fan Path (F2)]]</tw-passagedata><tw-passagedata pid="24" name="G2" tags="Grift" position="2250,250" size="100,100">You are in G2
 
-[[Grift Path (G2)]]</tw-passagedata><tw-passagedata pid="29" name="N2" tags="" position="2650,250" size="100,100">You are in N2
+[[Grift Path (G2)]]</tw-passagedata><tw-passagedata pid="25" name="N2" tags="" position="2650,250" size="100,100">You are in N2
 
-(This page might be deleted later)</tw-passagedata><tw-passagedata pid="30" name="Critic Path (D2)" tags="Critic" position="1450,375" size="100,100">Follow up email from previous owner about your progress
+(This page might be deleted later)</tw-passagedata><tw-passagedata pid="26" name="Critic Path (D2)" tags="Critic" position="1450,375" size="100,100">Follow up email from previous owner about your progress
 
 [[Continue|CD2 Summary]]
 
-</tw-passagedata><tw-passagedata pid="31" name="Fan Path (F2)" tags="Fan" position="1850,375" size="100,100">Follow up email from previous owner about your progress
+</tw-passagedata><tw-passagedata pid="27" name="Fan Path (F2)" tags="Fan" position="1850,375" size="100,100">Follow up email from previous owner about your progress
 
-[[Continue|FD2 Summary]]</tw-passagedata><tw-passagedata pid="32" name="Grift Path (G2)" tags="Grift" position="2250,375" size="100,100">Follow up email from previous owner about your progress
+[[Continue|FD2 Summary]]</tw-passagedata><tw-passagedata pid="28" name="Grift Path (G2)" tags="Grift" position="2250,375" size="100,100">Follow up email from previous owner about your progress
 
-[[Continue|GD2 Summary]]</tw-passagedata><tw-passagedata pid="33" name="TimeHeader" tags="header" position="925,250" size="100,100">&lt;h1 style=&quot;font-size:48px;&quot;&gt;(text-style: &quot;bold&quot;)[(text-colour: aqua)[R](text-colour: white)[e](text-colour: aqua)[v](text-colour: white)[i](text-colour: aqua)[e](text-colour: white)[w](text-colour: aqua)[S](text-colour: white)[h](text-colour: aqua)[a](text-colour: white)[r](text-colour: aqua)[k](text-colour: white)[.](text-colour: aqua)[c](text-colour: white)[o](text-colour: aqua)[m]]&lt;/h1&gt;{(set: $headerValue to (current-time:))}$headerValue&lt;hr&gt;</tw-passagedata><tw-passagedata pid="34" name="ShowFooter" tags="footer" position="925,400" size="100,100">&lt;hr&gt;$footerValue</tw-passagedata><tw-passagedata pid="35" name="ConfigurationStartup" tags="startup" position="1050,325" size="100,100">{(set: $footerValue to &quot;@ReviewShark Limited. Made by fans in Melbourne Australia&quot;)}</tw-passagedata><tw-passagedata pid="36" name="Day Two Real" tags="Normal" position="1000,1150" size="100,100">Phase Two
+[[Continue|GD2 Summary]]</tw-passagedata><tw-passagedata pid="29" name="TimeHeader" tags="header" position="925,250" size="100,100">&lt;h1 style=&quot;font-size:48px;&quot;&gt;(text-style: &quot;bold&quot;)[(text-colour: aqua)[R](text-colour: white)[e](text-colour: aqua)[v](text-colour: white)[i](text-colour: aqua)[e](text-colour: white)[w](text-colour: aqua)[S](text-colour: white)[h](text-colour: aqua)[a](text-colour: white)[r](text-colour: aqua)[k](text-colour: white)[.](text-colour: aqua)[c](text-colour: white)[o](text-colour: aqua)[m]]&lt;/h1&gt;{(set: $headerValue to (current-time:))}$headerValue&lt;hr&gt;</tw-passagedata><tw-passagedata pid="30" name="ShowFooter" tags="footer" position="925,400" size="100,100">&lt;hr&gt;$footerValue</tw-passagedata><tw-passagedata pid="31" name="ConfigurationStartup" tags="startup" position="1050,325" size="100,100">{(set: $footerValue to &quot;@ReviewShark Limited. Made by fans in Melbourne Australia&quot;)}</tw-passagedata><tw-passagedata pid="32" name="Day Two Real" tags="Normal" position="1000,1150" size="100,100">Phase Two
 
 This passage will likely be transitionary from the readers perspective so the code can set up future events. 
 
@@ -643,51 +625,105 @@ Next: Think about how the story can be altered further depending on banked value
 (set: $bankgrift to it + $grift)
 (set: $fan to 0)
 (set: $critic to 0)
-(set: $grift to 0)</tw-passagedata><tw-passagedata pid="37" name="Continue to Next Day?" tags="Normal" position="625,1150" size="100,100">Do you wish to stop working and proceed to the next day?
+(set: $grift to 0)</tw-passagedata><tw-passagedata pid="33" name="Continue to Next Day?" tags="Normal" position="625,1150" size="100,100">Do you wish to stop working and proceed to the next day?
 
 (text-colour: &quot;#00cb1c&quot;)[[[Yes|Day Two]]]
 
-(text-colour: red)[[[No|Minecraft Movie Reviews]]]</tw-passagedata><tw-passagedata pid="38" name="CD2 Summary" tags="Critic" position="1450,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. 
+(text-colour: red)[[[No|Minecraft Movie Reviews]]]</tw-passagedata><tw-passagedata pid="34" name="CD2 Summary" tags="Critic" position="1450,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. Maybe even some news for the upcoming film, or state of the film industry?
+
+Perhaps this is where Emails come in trying to sway reader opinion
+
+Grifter Opinion (Angry Reviewer/Foreign Film Protestor) [[Angry Email]]
+Fan Opinion (Upset over Critics/Fan debate) [[What about the audience?]]
+Critical Encouragement (Top Critic/Youtuber Analyst wanting your support) [[Cinema for True Fans]]
 
 Give film option
 
-[[Film A|CD2 Film A]]</tw-passagedata><tw-passagedata pid="39" name="CD2 Film A" tags="Critic" position="1450,625" size="100,100">Film A Summary
+[[Film A|CD2 Film A]]</tw-passagedata><tw-passagedata pid="35" name="CD2 Film A" tags="Critic" position="1450,625" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Former Life&lt;/h1&gt;]
 
-&lt;img style=&quot;width: 100%;&quot; src=&quot;Images/PastLives.png&quot; /&gt;
+(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;]
 
-- Past Lives (is it too early to use a foreign film?)
-- Mickey 17 (independant film that underperforms?)
+(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Cast&lt;/h1&gt;]
 
-[[Accept|CD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="40" name="CD2 Film A Reviews" tags="Critic" position="1450,900" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="FD2 Summary" tags="Fan" position="1850,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. 
+(text-style: &#39;bold&#39;)[Critic Scores:] (text-color: yellow)[]
+(text-style: &#39;bold&#39;)[Audience Scores:] (text-color: green)[]
+
+[[Accept|CD2 Film A Reviews]]
+
+&lt;/div&gt;&lt;div class=&quot;story-image&quot;&gt;&lt;img style=&quot;width: 100%;&quot; src=&quot;Images/PastLives.png&quot; /&gt;
+(text-style: &#39;bold&#39;)[Director: ] Meline Song
+(text-style: &#39;bold&#39;)[Countries: ] South Korea/United States
+(text-style: &#39;bold&#39;)[Production Company: ]CJ Productions
+(text-style: &#39;bold&#39;)[Box Office: ]$42.7 Million
+&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="CD2 Film A Reviews" tags="Critic" position="1450,900" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Former Life&lt;/h1&gt;]
+
+Popular Reviews
+
+Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Pin]] on the front page of the website.
+If you come across undesirable content, it is your responsibility to (text-color: red)[(text-style: &quot;bold&quot;)[Hide]] or (text-color: red)[(text-style: &quot;bold&quot;)[Delete]] offensive reviews. 
+
+If you wish to look at the Film&#39;s information, you can access it here: [[Summary|Former Life]]
+</tw-passagedata><tw-passagedata pid="37" name="FD2 Summary" tags="Fan" position="1850,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. Maybe even some news for the upcoming film, or state of the film industry?
+
+Grifter Opinion/Bias (Wants you to take down &quot;woke&quot; Wisney) [[Fight back against the woke agenda!]]
+Critical opinion (A cry against soulless movies, remakes and sequels) [[End the Coorporate Machine!]]
+Fan opinion (Wisney wanting you to promote their film) [[Dear ReviewShark Moderator...]]
 
 Give film option
 
-[[Film A|FD2 Film A]]</tw-passagedata><tw-passagedata pid="42" name="FD2 Film A" tags="Fan" position="1850,625" size="100,100">Film A Summary
+[[Film A|FD2 Film A]]</tw-passagedata><tw-passagedata pid="38" name="FD2 Film A" tags="Fan" position="1850,625" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Dreams&lt;/h1&gt;]
 
-&lt;img style=&quot;width: 100%;&quot; src=&quot;Images/Wish.png&quot; /&gt;
+(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;]
 
-This will be on a Disney Sequel or Remake
-- Live action remake of classic film
-- Sequel to beloved animated film
-- Fans will tend to love seeing this film come to life, whether that be through blind devotion or low engagement with content
-- Critics however, will heavily dislike the films existence as an adaptation
-- Grifters will claim Disney made the classic film &quot;woke&quot; 
+(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Cast&lt;/h1&gt;]
 
-- We do &quot;Wish&quot; instead
+(text-style: &#39;bold&#39;)[Critic Scores:] (text-color: yellow)[]
+(text-style: &#39;bold&#39;)[Audience Scores:] (text-color: green)[]
 
-[[Accept|FD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="43" name="FD2 Film A Reviews" tags="Fan" position="1850,900" size="100,100"></tw-passagedata><tw-passagedata pid="44" name="GD2 Summary" tags="Grift" position="2250,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. 
+[[Accept|FD2 Film A Reviews]]
+
+&lt;/div&gt;&lt;div class=&quot;story-image&quot;&gt;&lt;img style=&quot;width: 100%;&quot; src=&quot;Images/Wish.png&quot; /&gt;
+(text-style: &#39;bold&#39;)[Director: ]Chris Ruck and Fawn Veerasunthorn
+(text-style: &#39;bold&#39;)[Budget: ]$175–200 million
+(text-style: &#39;bold&#39;)[Production Company: ]Malt Bisney Studios
+(text-style: &#39;bold&#39;)[Box Office: ]$255 million
+&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="39" name="FD2 Film A Reviews" tags="Fan" position="1850,900" size="100,100">Popular Reviews
+
+Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Pin]] on the front page of the website.
+If you come across undesirable content, it is your responsibility to (text-color: red)[(text-style: &quot;bold&quot;)[Hide]] or (text-color: red)[(text-style: &quot;bold&quot;)[Delete]] offensive reviews. 
+
+If you wish to look at the Film&#39;s information, you can access it here: [[Summary|Dreams]]
+</tw-passagedata><tw-passagedata pid="40" name="GD2 Summary" tags="Grift" position="2250,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. Maybe even some news for the upcoming film, or state of the film industry?
+
+Fan Concern (Upset about the hurtful content on site, wants to promote positivity) [[Hey, could we chat?]]
+Critic concern (Bring real criticism back) [[Don&#39;t become a grifter]]
+Grift Promotion (Biased persuasion to &quot;take back&quot; film) [[Howdy, partner!]]
 
 Give film option
 
-[[Film A|GD2 Film A]]</tw-passagedata><tw-passagedata pid="45" name="GD2 Film A" tags="Grift" position="2250,625" size="100,100">Film A Summary
+[[Film A|GD2 Film A]]</tw-passagedata><tw-passagedata pid="41" name="GD2 Film A" tags="Grift" position="2250,625" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Barbara&lt;/h1&gt;]
 
-&lt;img style=&quot;width: 100%;&quot; src=&quot;Images/Barbie.png&quot; /&gt;
+(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;]
 
-- Probably the Barbie Movie (and the circus that happened around that)
-- This will enable good faith reviews to still exist that actually engage with what the film is about and give the reader the chance to course correct
-- But will also show the extent this viewpoint can go down. 
+(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Cast&lt;/h1&gt;]
 
-[[Accept|GD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="46" name="GD2 Film A Reviews" tags="Grift" position="2250,900" size="100,100"></tw-passagedata><tw-passagedata pid="47" name="Introduction 2" tags="Normal" position="750,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Great! :D]
+(text-style: &#39;bold&#39;)[Critic Scores:] (text-color: yellow)[]
+(text-style: &#39;bold&#39;)[Audience Scores:] (text-color: green)[]
+
+[[Accept|GD2 Film A Reviews]]
+
+&lt;/div&gt;&lt;div class=&quot;story-image&quot;&gt;&lt;img style=&quot;width: 100%;&quot; src=&quot;Images/Barbie.png&quot; /&gt;
+(text-style: &#39;bold&#39;)[Director: ]Rita Gerwig
+(text-style: &#39;bold&#39;)[Based On: ]Barbara Toys by Wattel
+(text-style: &#39;bold&#39;)[Production Company: ]UnluckyLad Entertainment
+(text-style: &#39;bold&#39;)[Box Office: ]$1.447 Billion
+&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="GD2 Film A Reviews" tags="Grift" position="2250,900" size="100,100">Popular Reviews
+
+Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Pin]] on the front page of the website.
+If you come across undesirable content, it is your responsibility to (text-color: red)[(text-style: &quot;bold&quot;)[Hide]] or (text-color: red)[(text-style: &quot;bold&quot;)[Delete]] offensive reviews. 
+
+If you wish to look at the Film&#39;s information, you can access it here: [[Summary|Barbara]]
+</tw-passagedata><tw-passagedata pid="43" name="Introduction 2" tags="Normal" position="750,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Great! :D]
 [[Day One]] 
 (t8n-delay: 5s) + (t8n: &quot;fade-up&quot;)[As the new moderator of this website, your job is to &lt;i&gt;moderate&lt;/i&gt; over all the different reviews that films get, removing any unsatisfactory content and promoting reviews that represent and uphold the values of our community. That being (in my opinion): In-depth analysis, Critical engagement with text and fostering positive discussion of film!]
 
@@ -699,7 +735,7 @@ Give film option
 
 (t8n-delay: 35s) + (t8n: &quot;fade-up&quot;)[Besides that, you&#39;re on your own, so good luck!]
 
-(t8n-delay: 38s) + (t8n: &quot;fade-up&quot;)[Without further ado, [[ready to begin your new job?|Day One]]]</tw-passagedata><tw-passagedata pid="48" name="Ending 0" tags="Normal" position="500,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Oh... well thats a shame.
+(t8n-delay: 38s) + (t8n: &quot;fade-up&quot;)[Without further ado, [[ready to begin your new job?|Day One]]]</tw-passagedata><tw-passagedata pid="44" name="Ending 0" tags="Normal" position="500,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Oh... well thats a shame.
 
 Have a good day, I suppose...
 -Lorraine]
@@ -711,7 +747,7 @@ Yep. Perfectly content to just do nothing. Ever.]
 You can do better next time
 
 [[Restart?|Start]]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="45" name="Former Life" tags="" position="1300,775" size="100,100">Copy/Paste</tw-passagedata><tw-passagedata pid="46" name="Dreams" tags="" position="1700,775" size="100,100">Copy/Paste</tw-passagedata><tw-passagedata pid="47" name="Barbara" tags="" position="2100,775" size="100,100">Copy/Paste</tw-passagedata><tw-passagedata pid="48" name="Angry Email" tags="" position="1575,625" size="100,100"></tw-passagedata><tw-passagedata pid="49" name="What about the audience?" tags="" position="1325,625" size="100,100"></tw-passagedata><tw-passagedata pid="50" name="Cinema for True Fans" tags="" position="1325,500" size="100,100"></tw-passagedata><tw-passagedata pid="51" name="Fight back against the woke agenda!" tags="" position="1975,625" size="100,100"></tw-passagedata><tw-passagedata pid="52" name="End the Coorporate Machine!" tags="" position="1725,625" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="Dear ReviewShark Moderator..." tags="" position="1725,500" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="Hey, could we chat?" tags="" position="2375,625" size="100,100"></tw-passagedata><tw-passagedata pid="55" name="Don&#39;t become a grifter" tags="" position="2125,625" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Howdy, partner!" tags="" position="2125,500" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
