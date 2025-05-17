@@ -34,13 +34,13 @@ tw-story[tags~="Normal"] {
 }
 
 tw-story[tags~="Critic"] {
-  background-color: #080110;
+  background-color: #1c052e;
 }
-
+/*#080110,#5d1793,410d6a, #30094e, #25073d*/
 tw-story[tags~="Fan"] {
-  background-color: #e66b00;
+  background-color: #12194A;
 }
-
+/*#e66b00,#007383, #01147C Disney,  */
 tw-story[tags~="Grift"] {
   background-color: #6F1615;
 }
@@ -82,32 +82,8 @@ Shortcuts
 [[C2]]
 [[G2]]
 
-How would you like to be refered to in the story?
-(Link: &quot;Male&quot;)[
-(set: $gender to &quot;male&quot;)
-(set: $heshe to &quot;he&quot;)
-(set: $himher to &quot;him&quot;)
-(set: $hisher to &quot;his&quot;)
-(set: $himself to &quot;himself&quot;)
-(go-to: &quot;Introduction&quot;)
-]
-(Link: &quot;Female&quot;)[
-(set: $gender to &quot;female&quot;)
-(set: $heshe to &quot;she&quot;)
-(set: $himher to &quot;her&quot;)
-(set: $hisher to &quot;her&quot;)
-(set: $himself to &quot;herself&quot;)
-(go-to: &quot;Introduction&quot;)
-]
-(Link: &quot;Other&quot;)[
-(set: $gender to &quot;other&quot;)
-(set: $heshe to &quot;they&quot;)
-(set: $himher to &quot;them&quot;)
-(set: $hisher to &quot;their&quot;)
-(set: $himself to &quot;themself&quot;)
-(go-to: &quot;Introduction&quot;)
-]
-
+Start?
+[[Introduction]]
 (set: $score to 0)
 (set: $bankcritic to 10)
 (set: $bankfan to 10)
@@ -682,7 +658,10 @@ or
 
 In this passage, the reader will recieve an email from the original website owner who explains the job they have taken on. The reader is the new moderator of this website, and is thus in charge of managing its content and what reviews are Starred or Removed from the website. 
 
-It is also important here to start introducing the main themes of Critic vs Fans, censorship and the role of film criticism in the digital world. The owner should have a bias towards art criticism. </tw-passagedata><tw-passagedata pid="21" name="C2" tags="Critic" position="1450,250" size="100,100">You are in C2
+It is also important here to start introducing the main themes of Critic vs Fans, censorship and the role of film criticism in the digital world. The owner should have a bias towards art criticism. 
+
+Abandoned Header Code
+(text-style: &quot;bold&quot;)[(if: $GHeader is &#39;false&#39;)[(text-colour: aqua)[R](text-colour: white)[e](text-colour: aqua)[v](text-colour: white)[i](text-colour: aqua)[e](text-colour: white)[w](text-colour: aqua)[S](text-colour: white)[h](text-colour: aqua)[a](text-colour: white)[r](text-colour: aqua)[k](text-colour: white)[.](text-colour: aqua)[c](text-colour: white)[o](text-colour: aqua)[m]]](if: $GHeader is &#39;true&#39;)[(text-colour: black)[R](text-colour: white)[e](text-colour: black)[v](text-colour: white)[i](text-colour: black)[e](text-colour: white)[w](text-colour: black)[S](text-colour: white)[h](text-colour: black)[a](text-colour: white)[r](text-colour: black)[k](text-colour: white)[.](text-colour: black)[c](text-colour: white)[o](text-colour: black)[m]]</tw-passagedata><tw-passagedata pid="21" name="C2" tags="Critic" position="1450,250" size="100,100">You are in C2
 
 [[Critic Path (D2)]]</tw-passagedata><tw-passagedata pid="22" name="F2" tags="Fan" position="2050,250" size="100,100">You are in F2
 
@@ -698,7 +677,7 @@ It is also important here to start introducing the main themes of Critic vs Fans
 
 [[Continue|FD2 Summary]]</tw-passagedata><tw-passagedata pid="27" name="Grift Path (G2)" tags="Grift" position="2650,375" size="100,100">Follow up email from previous owner about your progress
 
-[[Continue|GD2 Summary]]</tw-passagedata><tw-passagedata pid="28" name="TimeHeader" tags="header" position="925,250" size="100,100">&lt;h1 style=&quot;font-size:48px;&quot;&gt;(text-style: &quot;bold&quot;)[(text-colour: aqua)[R](text-colour: white)[e](text-colour: aqua)[v](text-colour: white)[i](text-colour: aqua)[e](text-colour: white)[w](text-colour: aqua)[S](text-colour: white)[h](text-colour: aqua)[a](text-colour: white)[r](text-colour: aqua)[k](text-colour: white)[.](text-colour: aqua)[c](text-colour: white)[o](text-colour: aqua)[m]]&lt;/h1&gt;{(set: $headerValue to (current-time:))}$headerValue&lt;hr&gt;</tw-passagedata><tw-passagedata pid="29" name="ShowFooter" tags="footer" position="925,400" size="100,100">&lt;hr&gt;$footerValue</tw-passagedata><tw-passagedata pid="30" name="ConfigurationStartup" tags="startup" position="1050,325" size="100,100">{(set: $footerValue to &quot;@ReviewShark Limited. Made by fans in Melbourne Australia&quot;)}</tw-passagedata><tw-passagedata pid="31" name="Day Two Real" tags="Normal" position="1000,1150" size="100,100">Phase Two
+[[Continue|GD2 Summary]]</tw-passagedata><tw-passagedata pid="28" name="TimeHeader" tags="header" position="925,250" size="100,100">&lt;h1 style=&quot;font-size:48px;&quot;&gt;(text-style: &quot;bold&quot;)[(text-color: white)[ReviewShark.com]]&lt;/h1&gt;{(set: $headerValue to (current-time:))}$headerValue&lt;hr&gt;</tw-passagedata><tw-passagedata pid="29" name="ShowFooter" tags="footer" position="925,400" size="100,100">&lt;hr&gt;$footerValue</tw-passagedata><tw-passagedata pid="30" name="ConfigurationStartup" tags="startup" position="1050,325" size="100,100">{(set: $footerValue to &quot;@ReviewShark Limited. Made by fans in Melbourne Australia&quot;)}</tw-passagedata><tw-passagedata pid="31" name="Day Two Real" tags="Normal" position="1000,1150" size="100,100">Phase Two
 
 This passage will likely be transitionary from the readers perspective so the code can set up future events. 
 
