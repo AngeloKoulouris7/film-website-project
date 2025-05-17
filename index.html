@@ -126,7 +126,9 @@ How would you like to be refered to in the story?
 (set: $option7 to &#39;true&#39;)
 (set: $option8 to &#39;true&#39;)
 (set: $option9 to &#39;true&#39;)
-(set: $option10 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="Normal" position="625,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fadeup&quot;)[Hey, you must be the new moderator!][[Introduction 2]] 
+(set: $option10 to &#39;true&#39;)
+(set: $option11 to &#39;true&#39;)
+(set: $option12 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="Normal" position="625,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fadeup&quot;)[Hey, you must be the new moderator!][[Introduction 2]] 
 
 (t8n-delay: 5s) + (t8n: &quot;fadeup&quot;)[My name is Lorraine, the owner of this wonderful website, ReviewShark.com. For the past ten years she has been my pride and joy, creating a place for film enthusiasts to come together and analyse movies from around the world. It&#39;s been a lot of hard work, keeping things up and running, organising events and best-lists, preventing hateful content from taking over, and trying to maintain a level of critical quality in reviews and not have random people review bomb films, and deal with hate mail from unhappy users or companies trying to influence our website&#39;s content...]
 
@@ -765,24 +767,28 @@ Tom Mataro as Robert Zaturansky
 
 Popular Reviews
 
-Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Pin]] on the front page of the website.
+Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Feature]] on the front page of the website.
 If you come across undesirable content, it is your responsibility to (text-color: red)[(text-style: &quot;bold&quot;)[Hide]] or (text-color: red)[(text-style: &quot;bold&quot;)[Delete]] offensive reviews. 
 
 If you wish to look at the Film&#39;s information, you can access it here: [[Summary|Former Life]]
 
 
-[[TheRunawayCritic (C2)]]
-[[MrSykesBooTube (C2)]]
-[[Edgar Stone (C2)]]
-[[Laura (C2)]]
-[[Kristen (C2)]]
-[[SuperheroDad1 (C2)]]
-[[Jacksonboiiii:D (C2)]]
-[[Zachary (C2)]]
-[[TheClassicFilmGuy (C2)]]
-[[AlcoholicBear (C2)]]
-[[Karen Hartwell (C2)]]
-[[Benjamin Wakefield (C2)]]</tw-passagedata><tw-passagedata pid="37" name="FD2 Summary" tags="Fan" position="1850,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. Maybe even some news for the upcoming film, or state of the film industry?
+(if: $option1 is &#39;true&#39;)[[TheRunawayCritic (C2)]](if: $option1 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option2 is &#39;true&#39;)[[MrSykesBooTube (C2)]](if: $option2 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option3 is &#39;true&#39;)[[Edgar Stone (C2)]](if: $option3 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option4 is &#39;true&#39;)[[Laura (C2)]](if: $option4 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option5 is &#39;true&#39;)[[Kristen (C2)]](if: $option5 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option6 is &#39;true&#39;)[[SuperheroDad1 (C2)]](if: $option6 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option7 is &#39;true&#39;)[[Jacksonboiiii:D (C2)]](if: $option7 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option8 is &#39;true&#39;)[[Zachary (C2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option9 is &#39;true&#39;)[[TheClassicFilmGuy (C2)]](if: $option9 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option10 is &#39;true&#39;)[[AlcoholicBear (C2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option11 is &#39;true&#39;)[[Karen Hartwell (C2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option12 is &#39;true&#39;)[[Benjamin Wakefield (C2)]](if: $option12 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $optionC1 is &#39;true&#39;)[[Extra CC1]](if: $optionC1 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $optionC2 is &#39;true&#39;)[[Extra CC2]](if: $optionC2 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $optionC3 is &#39;true&#39;)[[Extra CC3]](if: $optionC3 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $optionC4 is &#39;true&#39;)[[Extra CC4]](if: $optionC4 is &#39;false&#39;)[(text-color: grey)[]]</tw-passagedata><tw-passagedata pid="37" name="FD2 Summary" tags="Fan" position="1850,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. Maybe even some news for the upcoming film, or state of the film industry?
 
 Grifter Opinion/Bias (Wants you to take down &quot;woke&quot; Wisney) [[Fight back against the woke agenda!]]
 Critical opinion (A cry against soulless movies, remakes and sequels) [[End the Coorporate Machine!]]
@@ -813,23 +819,23 @@ Angelina Cadral as Queen Maya
 
 Popular Reviews
 
-Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Pin]] on the front page of the website.
+Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Feature]] on the front page of the website.
 If you come across undesirable content, it is your responsibility to (text-color: red)[(text-style: &quot;bold&quot;)[Hide]] or (text-color: red)[(text-style: &quot;bold&quot;)[Delete]] offensive reviews. 
 
 If you wish to look at the Film&#39;s information, you can access it here: [[Summary|Dreams]]
 
-[[TheRunawayCritic (F2)]]
-[[MrSykesBooTube (F2)]]
-[[Edgar Stone (F2)]]
-[[Laura (F2)]]
-[[Kristen (F2)]]
-[[SuperheroDad1 (F2)]]
-[[Jacksonboiiii:D (F2)]]
-[[Zachary (F2)]]
-[[TheClassicFilmGuy (F2)]]
-[[AlcoholicBear (F2)]]
-[[Karen Hartwell (F2)]]
-[[Benjamin Wakefield (F2)]]</tw-passagedata><tw-passagedata pid="40" name="GD2 Summary" tags="Grift" position="2250,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. Maybe even some news for the upcoming film, or state of the film industry?
+(if: $option1 is &#39;true&#39;)[[TheRunawayCritic (F2)]](if: $option1 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option2 is &#39;true&#39;)[[MrSykesBooTube (F2)]](if: $option2 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option3 is &#39;true&#39;)[[Edgar Stone (F2)]](if: $option3 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option4 is &#39;true&#39;)[[Laura (F2)]](if: $option4 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option5 is &#39;true&#39;)[[Kristen (F2)]](if: $option5 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option6 is &#39;true&#39;)[[SuperheroDad1 (F2)]](if: $option6 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option7 is &#39;true&#39;)[[Jacksonboiiii:D (F2)]](if: $option7 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option8 is &#39;true&#39;)[[Zachary (F2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option9 is &#39;true&#39;)[[TheClassicFilmGuy (F2)]](if: $option9 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option10 is &#39;true&#39;)[[AlcoholicBear (F2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option11 is &#39;true&#39;)[[Karen Hartwell (F2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option12 is &#39;true&#39;)[[Benjamin Wakefield (F2)]](if: $option12 is &#39;false&#39;)[(text-color: grey)[]]</tw-passagedata><tw-passagedata pid="40" name="GD2 Summary" tags="Grift" position="2250,500" size="100,100">The summary should show statistics of audience percentage for the reader to keep track of their progress. Maybe even some news for the upcoming film, or state of the film industry?
 
 Fan Concern (Upset about the hurtful content on site, wants to promote positivity) [[Hey, could we chat?]]
 Critic concern (Bring real criticism back) [[Don&#39;t become a grifter]]
@@ -861,23 +867,23 @@ Mick Cera as Allan
 
 Popular Reviews
 
-Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Pin]] on the front page of the website.
+Please select (text-style: &quot;bold&quot;)[Four] reviews to (text-color: &quot;#00cb1c&quot;)[(text-style: &quot;bold&quot;)[Feature]] on the front page of the website.
 If you come across undesirable content, it is your responsibility to (text-color: red)[(text-style: &quot;bold&quot;)[Hide]] or (text-color: red)[(text-style: &quot;bold&quot;)[Delete]] offensive reviews. 
 
 If you wish to look at the Film&#39;s information, you can access it here: [[Summary|Barbara]]
 
-[[TheRunawayCritic (G2)]]
-[[MrSykesBooTube (G2)]]
-[[Edgar Stone (G2)]]
-[[Laura (G2)]]
-[[Kristen (G2)]]
-[[SuperheroDad1 (G2)]]
-[[Jacksonboiiii:D (G2)]]
-[[Zachary (G2)]]
-[[TheClassicFilmGuy (G2)]]
-[[AlcoholicBear (G2)]]
-[[Karen Hartwell (G2)]]
-[[Benjamin Wakefield (G2)]]</tw-passagedata><tw-passagedata pid="43" name="Introduction 2" tags="Normal" position="750,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Great! :D][[Day One]] 
+(if: $option1 is &#39;true&#39;)[[TheRunawayCritic (G2)]](if: $option1 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option2 is &#39;true&#39;)[[MrSykesBooTube (G2)]](if: $option2 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option3 is &#39;true&#39;)[[Edgar Stone (G2)]](if: $option3 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option4 is &#39;true&#39;)[[Laura (G2)]](if: $option4 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option5 is &#39;true&#39;)[[Kristen (G2)]](if: $option5 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option6 is &#39;true&#39;)[[SuperheroDad1 (G2)]](if: $option6 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option7 is &#39;true&#39;)[[Jacksonboiiii:D (G2)]](if: $option7 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option8 is &#39;true&#39;)[[Zachary (G2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option9 is &#39;true&#39;)[[TheClassicFilmGuy (G2)]](if: $option9 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option10 is &#39;true&#39;)[[AlcoholicBear (G2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option11 is &#39;true&#39;)[[Karen Hartwell (G2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option12 is &#39;true&#39;)[[Benjamin Wakefield (G2)]](if: $option12 is &#39;false&#39;)[(text-color: grey)[]]</tw-passagedata><tw-passagedata pid="43" name="Introduction 2" tags="Normal" position="750,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Great! :D][[Day One]] 
 
 (t8n-delay: 5s) + (t8n: &quot;fade-up&quot;)[As the new moderator of this website, your job is to &lt;i&gt;moderate&lt;/i&gt; over all the different reviews that films get, removing any unsatisfactory content and promoting reviews that represent and uphold the values of our community. That being (in my opinion): In-depth analysis, Critical engagement with text and fostering positive discussion of film!]
 
@@ -958,7 +964,43 @@ Return to [[Reviews|GD2 Film A Reviews]]
 (text-style: &#39;bold&#39;)[Production Company: ]UnluckyLad Entertainment
 (text-style: &#39;bold&#39;)[Budget: ]$128-145 Million
 (text-style: &#39;bold&#39;)[Box Office: ]$1.447 Billion
-&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Angry Email" tags="Critic" position="1575,625" size="100,100"></tw-passagedata><tw-passagedata pid="49" name="What about the audience?" tags="Critic" position="1325,625" size="100,100"></tw-passagedata><tw-passagedata pid="50" name="Cinema for True Fans" tags="Critic" position="1325,500" size="100,100"></tw-passagedata><tw-passagedata pid="51" name="Fight back against the woke agenda!" tags="Fan" position="1975,625" size="100,100"></tw-passagedata><tw-passagedata pid="52" name="End the Coorporate Machine!" tags="Fan" position="1725,625" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="Dear ReviewShark Moderator..." tags="Fan" position="1725,500" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="Hey, could we chat?" tags="Grift" position="2375,625" size="100,100"></tw-passagedata><tw-passagedata pid="55" name="Don&#39;t become a grifter" tags="Grift" position="2125,625" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Howdy, partner!" tags="Grift" position="2125,500" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="TheRunawayCritic (C2)" tags="" position="1450,800" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="MrSykesBooTube (C2)" tags="" position="1550,800" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="Edgar Stone (C2)" tags="" position="1550,1000" size="100,100"></tw-passagedata><tw-passagedata pid="60" name="Laura (C2)" tags="" position="1550,900" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="Kristen (C2)" tags="" position="1450,1000" size="100,100"></tw-passagedata><tw-passagedata pid="62" name="SuperheroDad1 (C2)" tags="" position="1350,1000" size="100,100"></tw-passagedata><tw-passagedata pid="63" name="Jacksonboiiii:D (C2)" tags="" position="1350,900" size="100,100"></tw-passagedata><tw-passagedata pid="64" name="Zachary (C2)" tags="" position="1350,1100" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="TheClassicFilmGuy (C2)" tags="" position="1450,1100" size="100,100"></tw-passagedata><tw-passagedata pid="66" name="AlcoholicBear (C2)" tags="" position="1550,1100" size="100,100"></tw-passagedata><tw-passagedata pid="67" name="Benjamin Wakefield (C2)" tags="" position="1400,1200" size="100,100"></tw-passagedata><tw-passagedata pid="68" name="TheRunawayCritic (F2)" tags="" position="1850,800" size="100,100"></tw-passagedata><tw-passagedata pid="69" name="MrSykesBooTube (F2)" tags="" position="1950,800" size="100,100"></tw-passagedata><tw-passagedata pid="70" name="Edgar Stone (F2)" tags="" position="1950,1000" size="100,100"></tw-passagedata><tw-passagedata pid="71" name="Laura (F2)" tags="" position="1950,900" size="100,100"></tw-passagedata><tw-passagedata pid="72" name="Kristen (F2)" tags="" position="1850,1000" size="100,100"></tw-passagedata><tw-passagedata pid="73" name="SuperheroDad1 (F2)" tags="" position="1750,1000" size="100,100"></tw-passagedata><tw-passagedata pid="74" name="Jacksonboiiii:D (F2)" tags="" position="1750,900" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="Zachary (F2)" tags="" position="1750,1100" size="100,100"></tw-passagedata><tw-passagedata pid="76" name="TheClassicFilmGuy (F2)" tags="" position="1850,1100" size="100,100"></tw-passagedata><tw-passagedata pid="77" name="AlcoholicBear (F2)" tags="" position="1950,1100" size="100,100"></tw-passagedata><tw-passagedata pid="78" name="Benjamin Wakefield (F2)" tags="" position="1800,1200" size="100,100"></tw-passagedata><tw-passagedata pid="79" name="TheRunawayCritic (G2)" tags="" position="2250,800" size="100,100"></tw-passagedata><tw-passagedata pid="80" name="MrSykesBooTube (G2)" tags="" position="2350,800" size="100,100"></tw-passagedata><tw-passagedata pid="81" name="Edgar Stone (G2)" tags="" position="2350,1000" size="100,100"></tw-passagedata><tw-passagedata pid="82" name="Laura (G2)" tags="" position="2350,900" size="100,100"></tw-passagedata><tw-passagedata pid="83" name="Kristen (G2)" tags="" position="2250,1000" size="100,100"></tw-passagedata><tw-passagedata pid="84" name="SuperheroDad1 (G2)" tags="" position="2150,1000" size="100,100"></tw-passagedata><tw-passagedata pid="85" name="Jacksonboiiii:D (G2)" tags="" position="2150,900" size="100,100"></tw-passagedata><tw-passagedata pid="86" name="Zachary (G2)" tags="" position="2150,1100" size="100,100"></tw-passagedata><tw-passagedata pid="87" name="TheClassicFilmGuy (G2)" tags="" position="2250,1100" size="100,100"></tw-passagedata><tw-passagedata pid="88" name="AlcoholicBear (G2)" tags="" position="2350,1100" size="100,100"></tw-passagedata><tw-passagedata pid="89" name="Karen Hartwell (G2)" tags="" position="2300,1200" size="100,100"></tw-passagedata><tw-passagedata pid="90" name="Benjamin Wakefield (G2)" tags="" position="2200,1200" size="100,100"></tw-passagedata><tw-passagedata pid="91" name="Karen Hartwell (F2)" tags="" position="1900,1200" size="100,100"></tw-passagedata><tw-passagedata pid="92" name="Karen Hartwell (C2)" tags="" position="1500,1200" size="100,100"></tw-passagedata></tw-storydata>
+&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="48" name="Angry Email" tags="Critic" position="1575,625" size="100,100"></tw-passagedata><tw-passagedata pid="49" name="What about the audience?" tags="Critic" position="1325,625" size="100,100"></tw-passagedata><tw-passagedata pid="50" name="Cinema for True Fans" tags="Critic" position="1325,500" size="100,100">To: ReviewSharkMod@gmail.com
+From: ✨Laura✨
+
+Good afternoon/evening ReviewShark moderator 😃
+
+First of all, I would like to start by saying how much I deeply admire and respect your position as moderator of this website, with all the work you have to do keeping order and quality control over the... &lt;i&gt;&quot;reviews&quot;&lt;/i&gt; on this site. As a fellow lover of real cinema (not the mainstream flicks studios mass produce these days), its reassuring to see someone else who values proper film critique and good healthy film discussion!
+
+Which is why I am sending this email. No doubt. You too have seen the scourge of ridiculous, narrow-minded, superficial, asinine reviews that have been polluting not just this film review site, but the internet itself. These mindless reviewers just posting their &lt;i&gt;subjective feelings&lt;/i&gt; and &lt;i&gt;opinions&lt;/i&gt; as if they actually know anything about film, its history, its culture. Those people who think they know better than critics, who think the average viewers opinion is worth more than objective criticism or discussion on a films quality.
+
+I know you have seen it, you&#39;ve had to comb through their dribble afterall, in order to find the true diamonds in the ruff of reviews to feature on this site.
+
+But I believe you - in your position as moderator - have the ability to create great change. 
+
+If we continue to feature only the best, most in-depth and critical reviews, eventually fans - nay, FILM STUDIOS - will have to take notice and start to treat cinema with the respect it deserves! 
+
+All we have to do is shun those ignorant reviews that don&#39;t care for the art of film, and eventually they will either see the error of their ways, or go away. ReviewShark can become a haven on the internet for true fans of cinema, a place for real discussion. 
+
+I&#39;m sure you must agree with me, please email back with your thoughts, I&#39;d love to hear them!
+
+(link: &quot;Write back and Agree to ✨Laura&#39;s✨ request?&quot;)[
+(set: $optionC1 to &#39;true&#39;)
+(set: $optionC2 to &#39;true&#39;)
+(set: $optionC3 to &#39;true&#39;)
+(set: $optionC4 to &#39;true&#39;)
+(go-to: &quot;Agree with Laura&quot;)
+]
+[[Write back and Reject ✨Laura&#39;s✨ request?|CD2 Summary]]
+
+[[Go back without responding|CD2 Summary]]
+</tw-passagedata><tw-passagedata pid="51" name="Fight back against the woke agenda!" tags="Fan" position="1975,625" size="100,100"></tw-passagedata><tw-passagedata pid="52" name="End the Coorporate Machine!" tags="Fan" position="1725,625" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="Dear ReviewShark Moderator..." tags="Fan" position="1725,500" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="Hey, could we chat?" tags="Grift" position="2375,625" size="100,100"></tw-passagedata><tw-passagedata pid="55" name="Don&#39;t become a grifter" tags="Grift" position="2125,625" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Howdy, partner!" tags="Grift" position="2125,500" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="TheRunawayCritic (C2)" tags="" position="1450,800" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="MrSykesBooTube (C2)" tags="" position="1550,800" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="Edgar Stone (C2)" tags="" position="1550,1000" size="100,100"></tw-passagedata><tw-passagedata pid="60" name="Laura (C2)" tags="" position="1550,900" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="Kristen (C2)" tags="" position="1450,1000" size="100,100"></tw-passagedata><tw-passagedata pid="62" name="SuperheroDad1 (C2)" tags="" position="1350,1000" size="100,100"></tw-passagedata><tw-passagedata pid="63" name="Jacksonboiiii:D (C2)" tags="" position="1350,900" size="100,100"></tw-passagedata><tw-passagedata pid="64" name="Zachary (C2)" tags="" position="1350,1100" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="TheClassicFilmGuy (C2)" tags="" position="1450,1100" size="100,100"></tw-passagedata><tw-passagedata pid="66" name="AlcoholicBear (C2)" tags="" position="1550,1100" size="100,100"></tw-passagedata><tw-passagedata pid="67" name="Benjamin Wakefield (C2)" tags="" position="1400,1200" size="100,100"></tw-passagedata><tw-passagedata pid="68" name="TheRunawayCritic (F2)" tags="" position="1850,800" size="100,100"></tw-passagedata><tw-passagedata pid="69" name="MrSykesBooTube (F2)" tags="" position="1950,800" size="100,100"></tw-passagedata><tw-passagedata pid="70" name="Edgar Stone (F2)" tags="" position="1950,1000" size="100,100"></tw-passagedata><tw-passagedata pid="71" name="Laura (F2)" tags="" position="1950,900" size="100,100"></tw-passagedata><tw-passagedata pid="72" name="Kristen (F2)" tags="" position="1850,1000" size="100,100"></tw-passagedata><tw-passagedata pid="73" name="SuperheroDad1 (F2)" tags="" position="1750,1000" size="100,100"></tw-passagedata><tw-passagedata pid="74" name="Jacksonboiiii:D (F2)" tags="" position="1750,900" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="Zachary (F2)" tags="" position="1750,1100" size="100,100"></tw-passagedata><tw-passagedata pid="76" name="TheClassicFilmGuy (F2)" tags="" position="1850,1100" size="100,100"></tw-passagedata><tw-passagedata pid="77" name="AlcoholicBear (F2)" tags="" position="1950,1100" size="100,100"></tw-passagedata><tw-passagedata pid="78" name="Benjamin Wakefield (F2)" tags="" position="1800,1200" size="100,100"></tw-passagedata><tw-passagedata pid="79" name="TheRunawayCritic (G2)" tags="" position="2250,800" size="100,100"></tw-passagedata><tw-passagedata pid="80" name="MrSykesBooTube (G2)" tags="" position="2350,800" size="100,100"></tw-passagedata><tw-passagedata pid="81" name="Edgar Stone (G2)" tags="" position="2350,1000" size="100,100"></tw-passagedata><tw-passagedata pid="82" name="Laura (G2)" tags="" position="2350,900" size="100,100"></tw-passagedata><tw-passagedata pid="83" name="Kristen (G2)" tags="" position="2250,1000" size="100,100"></tw-passagedata><tw-passagedata pid="84" name="SuperheroDad1 (G2)" tags="" position="2150,1000" size="100,100"></tw-passagedata><tw-passagedata pid="85" name="Jacksonboiiii:D (G2)" tags="" position="2150,900" size="100,100"></tw-passagedata><tw-passagedata pid="86" name="Zachary (G2)" tags="" position="2150,1100" size="100,100"></tw-passagedata><tw-passagedata pid="87" name="TheClassicFilmGuy (G2)" tags="" position="2250,1100" size="100,100"></tw-passagedata><tw-passagedata pid="88" name="AlcoholicBear (G2)" tags="" position="2350,1100" size="100,100"></tw-passagedata><tw-passagedata pid="89" name="Karen Hartwell (G2)" tags="" position="2300,1200" size="100,100"></tw-passagedata><tw-passagedata pid="90" name="Benjamin Wakefield (G2)" tags="" position="2200,1200" size="100,100"></tw-passagedata><tw-passagedata pid="91" name="Karen Hartwell (F2)" tags="" position="1900,1200" size="100,100"></tw-passagedata><tw-passagedata pid="92" name="Karen Hartwell (C2)" tags="" position="1500,1200" size="100,100"></tw-passagedata><tw-passagedata pid="93" name="Extra CC1" tags="" position="1300,1400" size="100,100"></tw-passagedata><tw-passagedata pid="94" name="Extra CC2" tags="" position="1400,1400" size="100,100"></tw-passagedata><tw-passagedata pid="95" name="Extra CC3" tags="" position="1300,1500" size="100,100"></tw-passagedata><tw-passagedata pid="96" name="Extra CC4" tags="" position="1400,1500" size="100,100"></tw-passagedata><tw-passagedata pid="97" name="Agree with Laura" tags="Critic" position="1200,500" size="100,100">To: ReviewSharkMod@gmail.com
+From: ✨Laura✨
+
+I knew you&#39;d agree with me :D
+
+I&#39;ve invited some friends to write up reviews for this week, you should find their critical analysis better than the average reviewer.
+
+[[Continue to Film Summary|CD2 Film A]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
