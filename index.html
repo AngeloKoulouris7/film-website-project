@@ -749,13 +749,13 @@ If you come across undesirable content, it is your responsibility to (text-color
 If you wish to look at the Film&#39;s information, you can access it here: [[Summary|Last Onion]]
 
 (if: $option1 is &#39;true&#39;)[[TheRunawayCritic (C2)]](if: $option1 is &#39;false&#39;)[(text-color: grey)[]]
-(if: $option2 is &#39;true&#39;)[[MrSykesBooTube (C2)]](if: $option2 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option2 is &#39;true&#39;)[[Pretty good, buuuut...⭐⭐⭐⭐|MrSykesBooTube (C2)]](if: $option2 is &#39;false&#39;)[(text-color: grey)[Pretty good, buuuut...⭐⭐⭐⭐]]
 (if: $option3 is &#39;true&#39;)[[Edgar Stone (C2)]](if: $option3 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $option4 is &#39;true&#39;)[[Laura (C2)]](if: $option4 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $option5 is &#39;true&#39;)[[Kristen (C2)]](if: $option5 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $option6 is &#39;true&#39;)[[SuperheroDad1 (C2)]](if: $option6 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $option7 is &#39;true&#39;)[[Jacksonboiiii:D (C2)]](if: $option7 is &#39;false&#39;)[(text-color: grey)[]]
-(if: $option8 is &#39;true&#39;)[[Kino. ⭐⭐⭐⭐⭐|Zachary (C2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option8 is &#39;true&#39;)[[Kino. ⭐⭐⭐⭐⭐|Zachary (C2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[Kino. ⭐⭐⭐⭐⭐]]
 (if: $option9 is &#39;true&#39;)[[TheClassicFilmGuy (C2)]](if: $option9 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $option10 is &#39;true&#39;)[[AlcoholicBear (C2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $option11 is &#39;true&#39;)[[Karen Hartwell (C2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[]]
@@ -1246,7 +1246,7 @@ It be great if you&#39;d actually post your full review here instead of just usi
 (set: $critic to it + 1)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -1256,7 +1256,7 @@ or
 (set: $critic to it - 1)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
@@ -1417,7 +1417,7 @@ This is an online film website, of course people are going to post jokes and mem
 (set: $critic to it - 1)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -1427,7 +1427,7 @@ or
 (set: $critic to it + 1)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
