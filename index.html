@@ -759,8 +759,8 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $option10 is &#39;true&#39;)[[AlcoholicBear (C2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $option11 is &#39;true&#39;)[[Lame ⭐|Karen Hartwell (C2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[Lame ⭐]]
 (if: $option12 is &#39;true&#39;)[[A Rotten Onion ⭐|Benjamin Wakefield (C2)]](if: $option12 is &#39;false&#39;)[(text-color: grey)[A Rotten Onion ⭐]]
-(if: $optionC1 is &#39;true&#39;)[(text-color: #bc46ff)[[Extra CC1]]](if: $optionC1 is &#39;false&#39;)[(text-color: grey)[]](if: $optionF1 is &#39;true&#39;)[(text-color: #ffd546)[[Extra CF1]]](if: $optionF1 is &#39;false&#39;)[(text-color: grey)[]](if: $optionG1 is &#39;true&#39;)[(text-color: #ff5757)[[Extra CG1]]](if: $optionG1 is &#39;false&#39;)[(text-color: grey)[]]
-(if: $optionC2 is &#39;true&#39;)[(text-color: #bc46ff)[[Extra CC2]]](if: $optionC2 is &#39;false&#39;)[(text-color: grey)[]](if: $optionF2 is &#39;true&#39;)[(text-color: #ffd546)[[Extra CF2]]](if: $optionF2 is &#39;false&#39;)[(text-color: grey)[]](if: $optionG2 is &#39;true&#39;)[(text-color: #ff5757)[[Extra CG2]]](if: $optionG2 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $optionC1 is &#39;true&#39;)[(text-color: #bc46ff)[[Extra CC1]]](if: $optionC1 is &#39;false&#39;)[(text-color: grey)[]](if: $optionF1 is &#39;true&#39;)[(text-color: #ffd546)[[Those critics lied to me ⭐⭐⭐|Extra CF1]]](if: $optionF1 is &#39;false&#39;)[(text-color: grey)[Those critics lied to me ⭐⭐⭐]](if: $optionG1 is &#39;true&#39;)[(text-color: #ff5757)[[Extra CG1]]](if: $optionG1 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $optionC2 is &#39;true&#39;)[(text-color: #bc46ff)[[Extra CC2]]](if: $optionC2 is &#39;false&#39;)[(text-color: grey)[]](if: $optionF2 is &#39;true&#39;)[(text-color: #ffd546)[[Bad Ending ⭐⭐|Extra CF2]]](if: $optionF2 is &#39;false&#39;)[(text-color: grey)[Bad Ending ⭐⭐]](if: $optionG2 is &#39;true&#39;)[(text-color: #ff5757)[[Extra CG2]]](if: $optionG2 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $optionC3 is &#39;true&#39;)[(text-color: #bc46ff)[[Extra CC3]]](if: $optionC3 is &#39;false&#39;)[(text-color: grey)[]](if: $optionF3 is &#39;true&#39;)[(text-color: #ffd546)[[Extra CF3]]](if: $optionF3 is &#39;false&#39;)[(text-color: grey)[]](if: $optionG3 is &#39;true&#39;)[(text-color: #ff5757)[[Extra CG3]]](if: $optionG3 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $optionC4 is &#39;true&#39;)[(text-color: #bc46ff)[[Extra CC4]]](if: $optionC4 is &#39;false&#39;)[(text-color: grey)[]](if: $optionF4 is &#39;true&#39;)[(text-color: #ffd546)[[Extra CF4]]](if: $optionF4 is &#39;false&#39;)[(text-color: grey)[]](if: $optionG4 is &#39;true&#39;)[(text-color: #ff5757)[[Extra CG4]]](if: $optionG4 is &#39;false&#39;)[(text-color: grey)[]]
 (if: $score &gt;= 1)[[Undo Changes|Undo Changes (C2)]]
@@ -2792,7 +2792,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2803,7 +2803,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="91" name="Extra CC4" tags="Critic" position="1650,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -2814,7 +2814,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2825,7 +2825,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="92" name="Agree with Laura" tags="Critic" position="1200,500" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
@@ -2849,7 +2849,9 @@ Thank you, I really appriciate it.
 
 I&#39;ve messaged some of the folks I know to come join your site and post some reviews, some extra publicity if you will. 
 
-[[Continue to Film Summary|CD2 Film A]]</tw-passagedata><tw-passagedata pid="95" name="Extra CF1" tags="Critic" position="1250,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
+[[Continue to Film Summary|CD2 Film A]]</tw-passagedata><tw-passagedata pid="95" name="Extra CF1" tags="Critic" position="1250,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Those critics lied to me ⭐⭐⭐&lt;/h1&gt;]Review by Alex (19)
+
+It started off pretty nice but then slowly became boring and predictable. I thought based on the reviews I read from critics that this film would be some kind of masterpiece, but I guess they were wrong. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $fan to it +)
@@ -2857,7 +2859,7 @@ I&#39;ve messaged some of the folks I know to come join your site and post some 
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2868,7 +2870,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="96" name="Extra CG1" tags="Critic" position="1300,1200" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -2879,7 +2881,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2890,10 +2892,12 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
-]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="97" name="Extra CF2" tags="Critic" position="1250,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
+]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="97" name="Extra CF2" tags="Critic" position="1250,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Bad Ending ⭐⭐&lt;/h1&gt;]Review by Randall (26)
+
+I loved this movie up until the very end. Probably one of the worst endings I&#39;ve ever seen in a murder mystery. It&#39;s as if the writers had no idea how to wrap up the film, waved their hands and just said &quot;screw it, destroy the billionaires house&quot;
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $fan to it +)
@@ -2901,7 +2905,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2912,7 +2916,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="98" name="Extra CG2" tags="Critic" position="1400,1300" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -2923,7 +2927,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2934,7 +2938,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="99" name="Extra CF3" tags="Critic" position="1250,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -2945,7 +2949,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2956,7 +2960,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="100" name="Extra CG3" tags="Critic" position="1500,1300" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -2967,7 +2971,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -2978,7 +2982,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="101" name="Extra CF4" tags="Critic" position="1250,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -2989,7 +2993,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3000,7 +3004,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="102" name="Extra CG4" tags="Critic" position="1600,1200" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3011,7 +3015,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3022,7 +3026,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="103" name="Extra CC1" tags="Critic" position="1650,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3033,7 +3037,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3044,7 +3048,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="104" name="Extra CC2" tags="Critic" position="1650,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3055,7 +3059,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3066,7 +3070,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;CD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="105" name="Last Onion" tags="Critic" position="1350,800" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Last Onion: A Chives Out Mystery&lt;/h1&gt;]&quot;When the game ends, the mystery begins&quot;
@@ -3120,7 +3124,7 @@ I&#39;ll give your website a shoutout in my next video and send some of my audie
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3131,7 +3135,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="110" name="Extra FF1" tags="Fan" position="1850,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3142,7 +3146,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3153,7 +3157,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="111" name="Extra FG1" tags="Fan" position="1900,1200" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3164,7 +3168,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3175,7 +3179,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="112" name="Extra FC2" tags="Fan" position="2250,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3186,7 +3190,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3197,7 +3201,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="113" name="Extra FF2" tags="Fan" position="1850,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3208,7 +3212,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3219,7 +3223,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="114" name="Extra FG2" tags="Fan" position="2000,1300" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3230,7 +3234,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3241,7 +3245,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="115" name="Extra FC3" tags="Fan" position="2250,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3252,7 +3256,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3263,7 +3267,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="116" name="Extra FF3" tags="Fan" position="1850,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3274,7 +3278,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3285,7 +3289,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="117" name="Extra FG3" tags="Fan" position="2100,1300" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3296,7 +3300,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3307,7 +3311,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="118" name="Extra FC4" tags="Fan" position="2250,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3318,7 +3322,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3329,7 +3333,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="119" name="Extra FF4" tags="Fan" position="1850,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3340,7 +3344,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3351,7 +3355,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="120" name="Extra FG4" tags="Fan" position="2200,1200" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3362,7 +3366,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3373,7 +3377,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;FD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="121" name="Agree with Runaway" tags="Grift" position="2400,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
@@ -3407,7 +3411,7 @@ Pleasure working with you.
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3418,7 +3422,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="125" name="Extra GF1" tags="Grift" position="2450,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3429,7 +3433,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3440,7 +3444,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="126" name="Extra GG1" tags="Grift" position="2500,1200" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3451,7 +3455,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3462,7 +3466,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="127" name="Extra GC2" tags="Grift" position="2850,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3473,7 +3477,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3484,7 +3488,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="128" name="Extra GF2" tags="Grift" position="2450,900" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3495,7 +3499,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3506,7 +3510,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="129" name="Extra GG2" tags="Grift" position="2600,1300" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3517,7 +3521,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3528,7 +3532,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="130" name="Extra GC3" tags="Grift" position="2850,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3539,7 +3543,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3550,7 +3554,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="131" name="Extra GF3" tags="Grift" position="2450,1000" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3561,7 +3565,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3572,7 +3576,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="132" name="Extra GG3" tags="Grift" position="2700,1300" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3583,7 +3587,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3594,7 +3598,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="133" name="Extra GC4" tags="Grift" position="2850,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3605,7 +3609,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3616,7 +3620,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="134" name="Extra GF4" tags="Grift" position="2450,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3627,7 +3631,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3638,7 +3642,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="135" name="Extra GG4" tags="Grift" position="2800,1200" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;⭐&lt;/h1&gt;]Review by ()
@@ -3649,7 +3653,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $promote to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
@@ -3660,7 +3664,7 @@ or
 (set: $grift to it +)
 (set: $score to it + 1)
 (set: $delete to it + 1)
-(if: $option = &#39;true&#39;)[(set: $option to &#39;false&#39;)]
+(if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
 (if: $score &lt; 8)[(go-to: &quot;GD2 Film A Reviews&quot;)]
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]</tw-passagedata><tw-passagedata pid="136" name="Day Three (C2)" tags="Critic" position="1450,1450" size="100,100">Day Three Passage (C2)</tw-passagedata><tw-passagedata pid="137" name="Day Three (F2)" tags="Fan" position="2050,1450" size="100,100">Day Three Passage (F2)</tw-passagedata><tw-passagedata pid="138" name="Day Three (G2)" tags="Grift" position="2650,1450" size="100,100">Day Three Passage (G2)</tw-passagedata><tw-passagedata pid="139" name="Undo Changes (C2)" tags="Critic" position="1575,1450" size="100,100">Are you sure you want to Undo Changes?
