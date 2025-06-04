@@ -112,7 +112,7 @@ Start?
 
 (t8n-delay: 30s) + (t8n: &quot;fadeup&quot;)[Which is where you come in :D]
 
-(t8n-delay: 35s) + (t8n: &quot;fadeup&quot;)[You, lucky user, have won the random lottery on this website to become the next moderator, and seeing your past history on the website; participating in film discussions, reviewing latest and classic flicks. I think you&#39;d be a perfect fit for this job!]
+(t8n-delay: 35s) + (t8n: &quot;fadeup&quot;)[You, lucky user, have won the random lottery on this website to become the next moderator, and seeing your past history on the website; participating in film discussions, reviewing the latest and even some classic flicks. I think you&#39;d be a perfect fit for this job!]
 
 (t8n-delay: 43s) + (t8n: &quot;fadeup&quot;)[So what do you say, will you accept this role?
 
@@ -666,7 +666,17 @@ Abandoned Header Code
 
 [[Fan Path (F2)]]</tw-passagedata><tw-passagedata pid="23" name="G2" tags="Grift" position="2650,250" size="100,100">You are in G2
 
-[[Grift Path (G2)]]</tw-passagedata><tw-passagedata pid="24" name="Critic Path (D2)" tags="Critic" position="1450,375" size="100,100">Follow up email from previous owner about your progress
+[[Grift Path (G2)]]</tw-passagedata><tw-passagedata pid="24" name="Critic Path (D2)" tags="Critic" position="1450,375" size="100,100">Hey Moderator! How are you going? :D
+
+You&#39;ve been in charge of this place for a couple weeks now, has it started to get to you? Reading hundreds upon hundreds of reviews? Seeing the best of what this site has to offer, seeing the worst parts of it too...
+
+But from what I&#39;ve seen when I log back into the site, you seem to be managing quite well! There&#39;s a healthy amount of quality reviews everywhere I look, no doubt because you&#39;ve been featuring so many good ones for each Film of the Week! 
+
+I&#39;ve even read through a couple of them (even though I&#39;m supposed to be taking time off work right now), but may I say, you&#39;ve chosen well. These are exactly the kinds of reviews I want to see being promoted on this site!
+
+I know there are a lot of regular fans who like to come to this site, and I&#39;m happy that they do, but sometimes their reviews just don&#39;t meet the mark of what we are looking for in film discussion. We need objectivity, criticism and analysis of story, themes and characters, not subjective takes of how much someone liked a film or not!
+
+Anyway, thats all I wanted to say. Keep up the great work!
 
 [[Continue|CD2 Summary]]
 
@@ -833,7 +843,7 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 
 (if: $promote &gt;= 4)[You&#39;ve done a lot of work today(text-colour: yellow)[
 [[Continue to Next Day?|Continue to Next Day? (F2)]]]]</tw-passagedata><tw-passagedata pid="38" name="GD2 Summary" tags="Grift" position="2650,500" size="100,100">### &lt;b&gt;Website Status:&lt;/b&gt;
-&lt;b&gt;Popularity:&lt;/b&gt; (text-color: Yellow)[Stagnating]
+&lt;b&gt;Popularity:&lt;/b&gt; (text-color: Orange)[Stagnating]
 
 &lt;b&gt;Audience Demographics:&lt;/b&gt;
 &lt;b&gt;(text-colour: purple)[Critics:]&lt;/b&gt; 25%
@@ -841,7 +851,7 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 &lt;b&gt;(text-colour: black)[???:]&lt;/b&gt; 50%
 
 &lt;b&gt;(text-color: yellow)[Latest Cinematic News!]&lt;/b&gt;
-A social media craze has been spawned out of two polar opposite films being released on the same day, one&#39;s a gritty historical thriller, the other an adaptation of a popular toy franchise. 
+A social media craze has been spawned out of two polar opposite films being released on the same day, one&#39;s a gritty historical thriller (Bombenheimer), the other an adaptation of a popular toy franchise (Barbara). This phenomenon has been given the name &quot;Barbaraheimer&quot;. However, there seems to be a movement to boycott and review bomb Barbara, due to some unusually disgruntled fans. 
 
 &lt;hr&gt;&lt;b&gt;(text-color: yellow)[You&#39;ve got Mail!]&lt;/b&gt;
 [[About this website&#39;s trajectory...|Hey, could we chat?]]
@@ -900,7 +910,7 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 
 (t8n-delay: 5s) + (t8n: &quot;fade-up&quot;)[As the new moderator of this website, your job is to &lt;i&gt;moderate&lt;/i&gt; over all the different reviews that films get, removing any unsatisfactory content and promoting reviews that represent and uphold the values of our community. That being (in my opinion): In-depth analysis, Critical engagement with text and fostering positive discussion of film!]
 
-(t8n-delay: 15s) + (t8n: &quot;fade-up&quot;)[Now here is the important part, on this site we do (text-colour: yellow)[&quot;Films of the Week&quot;] to discuss new feature releases or revive old classic films, encouraging our users to partake in discussions surrounding these films! At the end of the week, we like to curate the best posts our users put forward, turning them into &lt;i&gt;(text-colour: &quot;#00cb1c&quot;)[Featured Reviews]&lt;/i&gt;, setting the standard for film critique on our website.]
+(t8n-delay: 15s) + (t8n: &quot;fade-up&quot;)[Now here is the important part, on this site we do (text-colour: yellow)[&quot;Films of the Week&quot;] to discuss new theatrical releases or revive old classic films, encouraging our users to partake in discussions surrounding these films! At the end of the week, we like to curate the best posts our users put forward, turning them into &lt;i&gt;(text-colour: &quot;#00cb1c&quot;)[Featured Reviews]&lt;/i&gt;, setting the standard for film critique on our website.]
 
 (t8n-delay: 25s) + (t8n: &quot;fade-up&quot;)[These are the responsibilities you will be taking over, not just in the management of this site, but in upholding proper film criticism in this increasingly chaotic digital world.]
 
@@ -976,18 +986,16 @@ But I know you see what I see, the way cinema is being warped by these stupid po
 
 I implore you to put these agenda setters down for a change, and give those with common sense a chance to let their message be heard. This site can be a catalyst for great change, I am sure of it. 
 
-(link: &quot;Write back and Agree to TheClassicFilmGuy&#39;s request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to TheClassicFilmGuy&#39;s request?&quot;)[
 (set: $optionG1 to &#39;true&#39;)
 (set: $optionG2 to &#39;true&#39;)
 (set: $optionG3 to &#39;true&#39;)
 (set: $optionG4 to &#39;true&#39;)
 (set: $CG14 to &#39;true&#39;)
 (go-to: &quot;Agree with CFG&quot;)
-]
-[[Write back and Reject TheClassicFilmGuy&#39;s request?|CD2 Summary]]
+]]
 
-[[Go back without responding|CD2 Summary]]
-</tw-passagedata><tw-passagedata pid="46" name="What about the audience?" tags="Critic" position="1325,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|CD2 Summary]]]</tw-passagedata><tw-passagedata pid="46" name="What about the audience?" tags="Critic" position="1325,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: Kristen&lt;/b&gt;
 
 Um, hi there
@@ -1006,17 +1014,16 @@ Fans opinions are just as - if not more valid - than critics.
 
 Surely, you have the ability to do something about this, right?
 
-(link: &quot;Write back and Agree to Kristen&#39;s request?&quot;)[
+(text-color: green)[(link: &quot;Write back and Agree to Kristen&#39;s request?&quot;)[
 (set: $optionF1 to &#39;true&#39;)
 (set: $optionF2 to &#39;true&#39;)
 (set: $optionF3 to &#39;true&#39;)
 (set: $optionF4 to &#39;true&#39;)
 (set: $CF14 to &#39;true&#39;)
 (go-to: &quot;Agree with Kristen&quot;)
-]
-[[Write back and Reject Kristen&#39;s request?|CD2 Summary]]
+]]
 
-[[Go back without responding|CD2 Summary]]</tw-passagedata><tw-passagedata pid="47" name="Cinema for True Fans" tags="Critic" position="1325,500" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|CD2 Summary]]]</tw-passagedata><tw-passagedata pid="47" name="Cinema for True Fans" tags="Critic" position="1325,500" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: ✨Laura✨&lt;/b&gt;
 
 Good afternoon/evening ReviewShark moderator 😃
@@ -1035,18 +1042,16 @@ All we have to do is shun those ignorant reviews that don&#39;t care for the art
 
 I&#39;m sure you must agree with me, please email back with your thoughts, I&#39;d love to hear them!
 
-(link: &quot;Write back and Agree to ✨Laura&#39;s✨ request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to ✨Laura&#39;s✨ request?&quot;)[
 (set: $optionC1 to &#39;true&#39;)
 (set: $optionC2 to &#39;true&#39;)
 (set: $optionC3 to &#39;true&#39;)
 (set: $optionC4 to &#39;true&#39;)
 (set: $CC14 to &#39;true&#39;)
 (go-to: &quot;Agree with Laura&quot;)
-]
-[[Write back and Reject ✨Laura&#39;s✨ request?|CD2 Summary]]
+]]
 
-[[Go back without responding|CD2 Summary]]
-</tw-passagedata><tw-passagedata pid="48" name="Fight back against the woke agenda!" tags="Fan" position="2175,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|CD2 Summary]]]</tw-passagedata><tw-passagedata pid="48" name="Fight back against the woke agenda!" tags="Fan" position="2175,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: AlcoholicBear&lt;/b&gt;
 
 Dear ReviewShark Moderator
@@ -1065,17 +1070,16 @@ My BooTube channel, initially just as a way for me to express my thoughts, has g
 
 And this website can become a part of that change. I know you can see it too. You don&#39;t have to play along any longer. 
 
-(link: &quot;Write back and Agree to AlcoholicBear&#39;s request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to AlcoholicBear&#39;s request?&quot;)[
 (set: $optionG1 to &#39;true&#39;)
 (set: $optionG2 to &#39;true&#39;)
 (set: $optionG3 to &#39;true&#39;)
 (set: $optionG4 to &#39;true&#39;)
 (set: $CG14 to &#39;true&#39;)
 (go-to: &quot;Agree with AlcoholicBear&quot;)
-]
-[[Write back and Reject AlcoholicBear&#39;s request?|FD2 Summary]]
+]]
 
-[[Go back without responding|FD2 Summary]]</tw-passagedata><tw-passagedata pid="49" name="End the Coorporate Machine!" tags="Fan" position="1925,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|FD2 Summary]]]</tw-passagedata><tw-passagedata pid="49" name="End the Coorporate Machine!" tags="Fan" position="1925,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: MrSykesBooTube&lt;/b&gt;
 
 Good Morning/Afternoon Moderating Team of ReviewShark
@@ -1092,17 +1096,16 @@ If there&#39;s enough voices speaking out, studio&#39;s will have to start liste
 
 Would ReviewShark be willing to join this effort?
 
-(link: &quot;Write back and Agree to MrSykes&#39; request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to MrSykes&#39; request?&quot;)[
 (set: $optionC1 to &#39;true&#39;)
 (set: $optionC2 to &#39;true&#39;)
 (set: $optionC3 to &#39;true&#39;)
 (set: $optionC4 to &#39;true&#39;)
 (set: $CC14 to &#39;true&#39;)
 (go-to: &quot;Agree with MrSykes&quot;)
-]
-[[Write back and Reject MrSykes&#39; request?|FD2 Summary]]
+]]
 
-[[Go back without responding|FD2 Summary]]</tw-passagedata><tw-passagedata pid="50" name="Dear ReviewShark Moderator..." tags="Fan" position="1925,500" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|FD2 Summary]]]</tw-passagedata><tw-passagedata pid="50" name="Dear ReviewShark Moderator..." tags="Fan" position="1925,500" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: Malt Wisney Studios Public Relations Team&lt;/b&gt;
 
 Hello esteemed moderator of ReviewShark
@@ -1117,17 +1120,16 @@ The movie-making industry has always relied upon the good word and reviews from 
 
 Of course, we will also pay you handsomely for the good word your website provides! So what do you say? There&#39;s nothing more crowd pleasing than a Malt Wisney film afterall!
 
-(link: &quot;Write back and Agree to Malt Wisney&#39;s request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to Malt Wisney&#39;s request?&quot;)[
 (set: $optionF1 to &#39;true&#39;)
 (set: $optionF2 to &#39;true&#39;)
 (set: $optionF3 to &#39;true&#39;)
 (set: $optionF4 to &#39;true&#39;)
 (set: $CF14 to &#39;true&#39;)
 (go-to: &quot;Agree with Malt Wisney&quot;)
-]
-[[Write back and Reject Malt Wisney&#39;s request?|FD2 Summary]]
+]]
 
-[[Go back without responding|FD2 Summary]]</tw-passagedata><tw-passagedata pid="51" name="Hey, could we chat?" tags="Grift" position="2775,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|FD2 Summary]]]</tw-passagedata><tw-passagedata pid="51" name="Hey, could we chat?" tags="Grift" position="2775,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: SuperheroDad No.1&lt;/b&gt;
 
 Hey, could we have a chat for a second?
@@ -1144,17 +1146,16 @@ Even if I were to delete this account, he knows how to access this site on his o
 
 Please... is there anything you can do?
 
-(link: &quot;Write back and Agree to SuperheroDad No.1&#39;s request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to SuperheroDad No.1&#39;s request?&quot;)[
 (set: $optionF1 to &#39;true&#39;)
 (set: $optionF2 to &#39;true&#39;)
 (set: $optionF3 to &#39;true&#39;)
 (set: $optionF4 to &#39;true&#39;)
 (set: $CF14 to &#39;true&#39;)
 (go-to: &quot;Agree with SuperheroDad&quot;)
-]
-[[Write back and Reject SuperheroDad No.1&#39;s request?|GD2 Summary]]
+]]
 
-[[Go back without responding|GD2 Summary]]</tw-passagedata><tw-passagedata pid="52" name="Don&#39;t become a grifter" tags="Grift" position="2525,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|GD2 Summary]]]</tw-passagedata><tw-passagedata pid="52" name="Don&#39;t become a grifter" tags="Grift" position="2525,625" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: TheRunawayCritic&lt;/b&gt;
 
 Hey, new moderator...
@@ -1173,17 +1174,16 @@ And I know they will cry foul whenever their reviews get taken down, or recieve 
 
 Please, I don&#39;t want to believe thats where this site is going... don&#39;t let Lorraine&#39;s website become a cesspool for these people to spread their hate. 
 
-(link: &quot;Write back and Agree to TheRunawayCritic&#39;s request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to TheRunawayCritic&#39;s request?&quot;)[
 (set: $optionC1 to &#39;true&#39;)
 (set: $optionC2 to &#39;true&#39;)
 (set: $optionC3 to &#39;true&#39;)
 (set: $optionC4 to &#39;true&#39;)
 (set: $CC14 to &#39;true&#39;)
 (go-to: &quot;Agree with Runaway&quot;)
-]
-[[Write back and Reject TheRunawayCritic&#39;s request?|GD2 Summary]]
+]]
 
-[[Go back without responding|GD2 Summary]]</tw-passagedata><tw-passagedata pid="53" name="Howdy, partner!" tags="Grift" position="2525,500" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
+(text-color: red)[[[Go back without responding|GD2 Summary]]]</tw-passagedata><tw-passagedata pid="53" name="Howdy, partner!" tags="Grift" position="2525,500" size="100,100">&lt;b&gt;To: ReviewSharkMod@gmail.com
 From: Benjamin Wakefield&lt;/b&gt;
 
 Howdy there partner!
@@ -1205,17 +1205,16 @@ We are eager to hear back from you and your opinion on this deal!
 Best Regards
 -Benjamin Wakefield
 
-(link: &quot;Write back and Agree to Benjamin Wakefield&#39;s request?&quot;)[
+(text-color: Green)[(link: &quot;Write back and Agree to Benjamin Wakefield&#39;s request?&quot;)[
 (set: $optionG1 to &#39;true&#39;)
 (set: $optionG2 to &#39;true&#39;)
 (set: $optionG3 to &#39;true&#39;)
 (set: $optionG4 to &#39;true&#39;)
 (set: $CG14 to &#39;true&#39;)
 (go-to: &quot;Agree with Benjamin&quot;)
-]
-[[Write back and Reject Benjamin Wakefield&#39;s request?|GD2 Summary]]
+]]
 
-[[Go back without responding|GD2 Summary]]</tw-passagedata><tw-passagedata pid="54" name="TheRunawayCritic (C2)" tags="Critic" position="1450,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A Refreshing Breath of Fresh Air ⭐⭐⭐⭐&lt;/h1&gt;]Review by TheRunawayCritic (26)
+(text-color: red)[[[Go back without responding|GD2 Summary]]]</tw-passagedata><tw-passagedata pid="54" name="TheRunawayCritic (C2)" tags="Critic" position="1450,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;A Refreshing Breath of Fresh Air ⭐⭐⭐⭐&lt;/h1&gt;]Review by TheRunawayCritic (26)
 
 After the disapointment that was &lt;i&gt;A BlockBreaker Movie&lt;/i&gt;, I decided the next film I go and see in the theatres should be worth my time, and what better choice than Ryan Johnson&#39;s sequel to his critically acclaimed &lt;i&gt;Chives Out (2019)&lt;/i&gt;, &lt;i&gt;Last Onion: A Chives Out Mystery&lt;/i&gt;. In this mystery comedy following world renowned detective Blanq Renois, we are taken to an island in Greece owned by a mysterious billionaire, Kyle Bronze. 
 
@@ -3949,7 +3948,20 @@ or
 
 [[FD3 Email]]</tw-passagedata><tw-passagedata pid="147" name="G3" tags="Grift" position="2650,1700" size="100,100">You are in G3
 
-[[GD3 Email]]</tw-passagedata><tw-passagedata pid="148" name="CD3 Email" tags="Critic" position="1450,1825" size="100,100">[[CD3 Summary]]</tw-passagedata><tw-passagedata pid="149" name="CD3 Summary" tags="Critic" position="1450,1950" size="100,100">[[CD3 Film]]</tw-passagedata><tw-passagedata pid="150" name="CD3 Film" tags="Critic" position="1450,2075" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;
+[[GD3 Email]]</tw-passagedata><tw-passagedata pid="148" name="CD3 Email" tags="Critic" position="1450,1825" size="100,100">[[CD3 Summary]]</tw-passagedata><tw-passagedata pid="149" name="CD3 Summary" tags="Critic" position="1450,1950" size="100,100">### &lt;b&gt;Website Status:&lt;/b&gt;
+&lt;b&gt;Popularity:&lt;/b&gt; (text-color: red)[Shrinking]
+
+&lt;b&gt;Website News&lt;/b&gt;
+It would seem that our users have started placing greater emphasis on writing critical, in-depth reviews, actively shunning anyone that doesn&#39;t meet their standard of quality. While the website now hosts a large number of cinephiles and film afficionados, it appears regular audiences have been driven away by the &quot;snobbish&quot; culture developed here...
+
+&lt;b&gt;Audience Demographics:&lt;/b&gt;
+&lt;b&gt;(text-colour: purple)[Critics:]&lt;/b&gt; 95%
+&lt;b&gt;(text-colour: orange)[Fans:]&lt;/b&gt; 5%
+
+&lt;b&gt;(text-color: yellow)[Latest Cinematic News!]&lt;/b&gt;
+Having premiered at the Cannes Film Festival, the avant-garde Italian director Pablo Borrentino&#39;s newest film is about to arrive at arthouse theatres. Though regular audiences have little interest (or knowledge) of foreign films, cinephiles worldwide are waiting eagerly to see what the acclaimed director has produced next!
+
+[[View this week&#39;s Featured Film?|CD3 Film]]</tw-passagedata><tw-passagedata pid="150" name="CD3 Film" tags="Critic" position="1450,2075" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;
 La bellezza speciale&lt;/h1&gt;](English Title: &lt;i&gt;The Special Beauty&lt;/i&gt;)
 
 (text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;]Former writer Pep Gambadella has seduced his way into the lavish nightlife of Rome&#39;s elite, but after his 65th birthday and shocking news from his past, Pep tries to look beyond the nightclubs and parties to find a special beauty he has lost in life. 
@@ -3983,7 +3995,20 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]
 (if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]
 
-[[Critic Ending]]</tw-passagedata><tw-passagedata pid="152" name="FD3 Email" tags="Fan" position="2050,1825" size="100,100">[[FD3 Summary]]</tw-passagedata><tw-passagedata pid="153" name="FD3 Summary" tags="Fan" position="2050,1950" size="100,100">[[FD3 Film]]</tw-passagedata><tw-passagedata pid="154" name="FD3 Film" tags="Fan" position="2050,2075" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Milo and Stitch&lt;/h1&gt;]Hold on to your Coconuts.
+[[Critic Ending]]</tw-passagedata><tw-passagedata pid="152" name="FD3 Email" tags="Fan" position="2050,1825" size="100,100">[[FD3 Summary]]</tw-passagedata><tw-passagedata pid="153" name="FD3 Summary" tags="Fan" position="2050,1950" size="100,100">### &lt;b&gt;Website Status:&lt;/b&gt;
+&lt;b&gt;Popularity:&lt;/b&gt; (text-color: green)[Growing Rapidly!]
+
+&lt;b&gt;Website News&lt;/b&gt;
+Our website has become one of the most popular film review sites on the internet, attracting fans from across the world and turning into a central hub for film discussion! Users have noticed however a rapid decline of review quality on our site, as people leave short subjective reviews on films they like or dislike. This had led some of our more core audience leaving for other review sites...
+
+&lt;b&gt;Audience Demographics:&lt;/b&gt;
+&lt;b&gt;(text-colour: purple)[Critics:]&lt;/b&gt; 5%
+&lt;b&gt;(text-colour: orange)[Fans:]&lt;/b&gt; 95%
+
+&lt;b&gt;(text-color: yellow)[Latest Cinematic News!]&lt;/b&gt;
+Malt Wisney is back with a brand new live-action adaptation of one of their classic films, Milo and Stitch. The adorable, chaotic, blue alien from outer space, Stitch, has been brought to life with state-of-the-art CGI technology. His marketable, cute fuzzy furball appearance coming soon to theatre screens (and toy stores) near you!
+
+[[View this week&#39;s Featured Film?|FD3 Film]]</tw-passagedata><tw-passagedata pid="154" name="FD3 Film" tags="Fan" position="2050,2075" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Milo and Stitch&lt;/h1&gt;]Hold on to your Coconuts.
 
 (text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;]The wildly funny story of a lonely Hawaiian girl and a fugitive chaotic space alien who help each other mend their broken families. 
 A classic animated Malt Wisney film brought to life!
@@ -4020,7 +4045,19 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]
 (if: $option1 is &#39;true&#39;)[[]](if: $option1 is &#39;false&#39;)[(color: grey)[]]
 
-[[Fan Ending]]</tw-passagedata><tw-passagedata pid="156" name="GD3 Email" tags="Grift" position="2650,1825" size="100,100">[[GD3 Summary]]</tw-passagedata><tw-passagedata pid="157" name="GD3 Summary" tags="Grift" position="2650,1950" size="100,100">[[GD3 Film]]</tw-passagedata><tw-passagedata pid="158" name="GD3 Film" tags="Grift" position="2650,2075" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Snow Light&lt;/h1&gt;]The Classic Tale Comes to Life
+[[Fan Ending]]</tw-passagedata><tw-passagedata pid="156" name="GD3 Email" tags="Grift" position="2650,1825" size="100,100">[[GD3 Summary]]</tw-passagedata><tw-passagedata pid="157" name="GD3 Summary" tags="Grift" position="2650,1950" size="100,100">### &lt;b&gt;Website Status:&lt;/b&gt;
+&lt;b&gt;Popularity:&lt;/b&gt; (text-color: red)[Declining Rapidly!!!]
+
+&lt;b&gt;Website News&lt;/b&gt;
+We are eradicating the Woke agenda from cinema, creating a united front of resistance online until film studios are forced to abandon their radical ideology! Anyone who is woke, a liberal snowflake, or weak willed can GTFO!
+
+&lt;b&gt;Audience Demographics:&lt;/b&gt;
+&lt;b&gt;(text-colour: Black)[REAL Fans:]&lt;/b&gt; 100%
+
+&lt;b&gt;(text-color: yellow)[Latest Cinematic News!]&lt;/b&gt;
+Malt Wisney is once again taking one of their older perfect films and corrupting it with their radical, DEI woke ideologies. Trying to brainwash the latest generation of kids with their propaganda and erase the history of these classic fairytail stories. At every step, audiences have protested this films existance from its announcement, its trailer, its casting. And now that it is in theatres, we will show them what we really think...
+
+[[View this week&#39;s Featured Film?|GD3 Film]]</tw-passagedata><tw-passagedata pid="158" name="GD3 Film" tags="Grift" position="2650,2075" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Snow Light&lt;/h1&gt;]The Classic Tale Comes to Life
 
 (text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;]Following the benevolent, gentle King’s disappearance, the Evil Queen has cruelty dominanted the once fair and peaceful lands. Princess Snow Light flees the castle when the Queen, jealous of Snow Light’s inate beauty, tries to have her killed. Deep into the forbidden dark woods, she stumbles upon seven magical dwarves and a rebel named Jonathan. Together, they work together to one day take back the kingdom from the Queen. 
 
