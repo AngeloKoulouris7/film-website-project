@@ -717,13 +717,6 @@ Therefore: Need to work out what values to give each option that will be fair fo
 Next: Think about how the story can be altered further depending on banked values. 
 
 (link: &quot;Continue&quot;)[
-(if: $bankcritic &gt;= 20)[(go-to: &quot;C2&quot;)]
-(if: $bankfan &gt;=20)[(go-to: &quot;F2&quot;)]
-(if: $bankgrift &gt;=20)[(go-to: &quot;G2&quot;)]
-(else:[(go-to: &quot;N2&quot;)])
-]
-
-(link: &quot;Continue-alt&quot;)[
 (if: $bankcritic &gt; $bankfan and $bankgrift)[(go-to: &quot;C2&quot;)]
 (if: $bankfan &gt; $bankcritic and $bankgrift)[(go-to: &quot;F2&quot;)]
 (if: $bankgrift &gt; $bankcritic and $bankfan)[(go-to: &quot;G2&quot;)]
@@ -733,7 +726,22 @@ Next: Think about how the story can be altered further depending on banked value
 (set: $bankgrift to it + $grift)
 (set: $fan to 0)
 (set: $critic to 0)
-(set: $grift to 0)</tw-passagedata><tw-passagedata pid="30" name="Continue to Next Day?" tags="Normal" position="625,1150" size="100,100">Do you wish to stop working and proceed to the next day?
+(set: $grift to 0)
+(set: $score to 0)
+(set: $promote to 0)
+(set: $delete to 0)
+(set: $option1 to &#39;true&#39;)
+(set: $option2 to &#39;true&#39;)
+(set: $option3 to &#39;true&#39;)
+(set: $option4 to &#39;true&#39;)
+(set: $option5 to &#39;true&#39;)
+(set: $option6 to &#39;true&#39;)
+(set: $option7 to &#39;true&#39;)
+(set: $option8 to &#39;true&#39;)
+(set: $option9 to &#39;true&#39;)
+(set: $option10 to &#39;true&#39;)
+(set: $option11 to &#39;true&#39;)
+(set: $option12 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="30" name="Continue to Next Day?" tags="Normal" position="625,1150" size="100,100">Do you wish to stop working and proceed to the next day?
 
 (text-colour: &quot;#00cb1c&quot;)[[[Yes|Day Two]]]
 
@@ -3645,7 +3653,76 @@ or
 (set: $bankgrift to it + $grift)
 (set: $fan to 0)
 (set: $critic to 0)
-(set: $grift to 0)</tw-passagedata><tw-passagedata pid="136" name="Day Three (F2)" tags="Fan" position="2050,1450" size="100,100">Day Three Passage (F2)</tw-passagedata><tw-passagedata pid="137" name="Day Three (G2)" tags="Grift" position="2650,1450" size="100,100">Day Three Passage (G2)</tw-passagedata><tw-passagedata pid="138" name="Undo Changes (C2)" tags="Critic" position="1575,1450" size="100,100">Are you sure you want to Undo Changes?
+(set: $grift to 0)
+(set: $score to 0)
+(set: $promote to 0)
+(set: $delete to 0)
+(set: $option1 to &#39;true&#39;)
+(set: $option2 to &#39;true&#39;)
+(set: $option3 to &#39;true&#39;)
+(set: $option4 to &#39;true&#39;)
+(set: $option5 to &#39;true&#39;)
+(set: $option6 to &#39;true&#39;)
+(set: $option7 to &#39;true&#39;)
+(set: $option8 to &#39;true&#39;)
+(set: $option9 to &#39;true&#39;)
+(set: $option10 to &#39;true&#39;)
+(set: $option11 to &#39;true&#39;)
+(set: $option12 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="136" name="Day Three (F2)" tags="Fan" position="2050,1450" size="100,100">Day Three Passage (F2)
+
+(link: &quot;Continue&quot;)[
+(if: $bankcritic &gt; $bankfan and $bankgrift)[(go-to: &quot;C3&quot;)]
+(if: $bankfan &gt; $bankcritic and $bankgrift)[(go-to: &quot;F3&quot;)]
+(if: $bankgrift &gt; $bankcritic and $bankfan)[(go-to: &quot;G3&quot;)]
+]
+(set: $bankfan to it + $fan)
+(set: $bankcritic to it + $critic)
+(set: $bankgrift to it + $grift)
+(set: $fan to 0)
+(set: $critic to 0)
+(set: $grift to 0)
+(set: $score to 0)
+(set: $promote to 0)
+(set: $delete to 0)
+(set: $option1 to &#39;true&#39;)
+(set: $option2 to &#39;true&#39;)
+(set: $option3 to &#39;true&#39;)
+(set: $option4 to &#39;true&#39;)
+(set: $option5 to &#39;true&#39;)
+(set: $option6 to &#39;true&#39;)
+(set: $option7 to &#39;true&#39;)
+(set: $option8 to &#39;true&#39;)
+(set: $option9 to &#39;true&#39;)
+(set: $option10 to &#39;true&#39;)
+(set: $option11 to &#39;true&#39;)
+(set: $option12 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="137" name="Day Three (G2)" tags="Grift" position="2650,1450" size="100,100">Day Three Passage (G2)
+
+(link: &quot;Continue&quot;)[
+(if: $bankcritic &gt; $bankfan and $bankgrift)[(go-to: &quot;C3&quot;)]
+(if: $bankfan &gt; $bankcritic and $bankgrift)[(go-to: &quot;F3&quot;)]
+(if: $bankgrift &gt; $bankcritic and $bankfan)[(go-to: &quot;G3&quot;)]
+]
+(set: $bankfan to it + $fan)
+(set: $bankcritic to it + $critic)
+(set: $bankgrift to it + $grift)
+(set: $fan to 0)
+(set: $critic to 0)
+(set: $grift to 0)
+(set: $score to 0)
+(set: $promote to 0)
+(set: $delete to 0)
+(set: $option1 to &#39;true&#39;)
+(set: $option2 to &#39;true&#39;)
+(set: $option3 to &#39;true&#39;)
+(set: $option4 to &#39;true&#39;)
+(set: $option5 to &#39;true&#39;)
+(set: $option6 to &#39;true&#39;)
+(set: $option7 to &#39;true&#39;)
+(set: $option8 to &#39;true&#39;)
+(set: $option9 to &#39;true&#39;)
+(set: $option10 to &#39;true&#39;)
+(set: $option11 to &#39;true&#39;)
+(set: $option12 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="138" name="Undo Changes (C2)" tags="Critic" position="1575,1450" size="100,100">Are you sure you want to Undo Changes?
 
 (link: &quot;Yes&quot;)[
 (set: $critic to 0)
