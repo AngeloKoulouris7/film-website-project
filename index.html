@@ -1258,9 +1258,8 @@ But wouldn&#39;t it be more satisfying to write a review thats truly great? That
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
@@ -1269,9 +1268,8 @@ But wouldn&#39;t it be more satisfying to write a review thats truly great? That
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
@@ -1302,8 +1300,8 @@ It be great if you&#39;d actually post your full review here instead of just usi
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it - 1)
-(set: $critic to it + 1)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
@@ -1312,8 +1310,8 @@ It be great if you&#39;d actually post your full review here instead of just usi
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it + 1)
-(set: $critic to it - 1)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
@@ -1347,9 +1345,9 @@ Preach the truth Mr Derp! Don&#39;t let these snowflakes silence you!
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it - 1)
-(set: $critic to it + 1)
-(set: $grift to it - 1)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
@@ -1358,9 +1356,9 @@ Preach the truth Mr Derp! Don&#39;t let these snowflakes silence you!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it + 1)
-(set: $critic to it - 1)
-(set: $grift to it + 1)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
@@ -1410,9 +1408,8 @@ But she is right, this site is going downhill with all of these nonsense reviews
 &lt;b&gt;(This comment section has been locked due to negativity)&lt;/b&gt;
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
@@ -1421,9 +1418,8 @@ But she is right, this site is going downhill with all of these nonsense reviews
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
@@ -1456,8 +1452,8 @@ Thats sounds really interesting and cool and all. But I just wanted to post my f
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it + 1)
-(set: $critic to it - 1)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
@@ -1466,8 +1462,8 @@ Thats sounds really interesting and cool and all. But I just wanted to post my f
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it - 1)
-(set: $critic to it + 1)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
@@ -1514,9 +1510,8 @@ Please don&#39;t go around spreading hate and arguing over art, its something we
 Finally a reasonable take on this website. I swear this website has been becoming more and more serious and exclusionary lately. Like every review has to be critical and in-depth otherwise its treated as worthless!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
@@ -1525,9 +1520,8 @@ Finally a reasonable take on this website. I swear this website has been becomin
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
@@ -1550,9 +1544,8 @@ Then his parents should take it away, this is a place for &lt;i&gt;real&lt;/i&gt
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
@@ -1561,9 +1554,8 @@ Then his parents should take it away, this is a place for &lt;i&gt;real&lt;/i&gt
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
@@ -1615,8 +1607,8 @@ Does it matter, this is &lt;b&gt;not&lt;/b&gt; a review. There&#39;s no discussi
 This is an online film website, of course people are going to post jokes and memes. That&#39;s just how the internet works.
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it + 1)
-(set: $critic to it - 1)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
@@ -1625,8 +1617,8 @@ This is an online film website, of course people are going to post jokes and mem
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it - 1)
-(set: $critic to it + 1)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
@@ -1673,9 +1665,8 @@ I get what you mean, there is a lot of junk coming out these days in film, but t
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
@@ -1684,9 +1675,8 @@ I get what you mean, there is a lot of junk coming out these days in film, but t
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
@@ -1695,9 +1685,8 @@ or
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|CD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="62" name="AlcoholicBear (C2)" tags="Critic" position="1550,1100" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
@@ -1706,9 +1695,8 @@ or
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
@@ -1737,9 +1725,8 @@ See more of my content on The Benjamin Wakefield Show, found on platforms such a
 &lt;b&gt;10 Comments&lt;/b&gt;
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option12 = &#39;true&#39;)[(set: $option12 to &#39;false&#39;)]
@@ -1748,9 +1735,8 @@ See more of my content on The Benjamin Wakefield Show, found on platforms such a
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option12 = &#39;true&#39;)[(set: $option12 to &#39;false&#39;)]
@@ -1796,9 +1782,8 @@ Well, thats like, your opinion man. Who are you to decide what films people can 
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
@@ -1807,9 +1792,8 @@ Well, thats like, your opinion man. Who are you to decide what films people can 
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
@@ -1839,9 +1823,8 @@ What is there to review? Malt Wisney won&#39;t try anymore cause people go watch
 Yeah nah, those films are boring. They&#39;re slow, pretentious and weird, which is why people don&#39;t go watch them. I don&#39;t really get what your problem is anyway, Dreams was a fun watch, I enjoyed the songs and characters. I think you&#39;re just being a buzzkill, like all &quot;film critics&quot; these days.  
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
@@ -1850,9 +1833,8 @@ Yeah nah, those films are boring. They&#39;re slow, pretentious and weird, which
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
@@ -1884,9 +1866,8 @@ I know right, all they do is glaze films that are &quot;deep&quot; and &quot;com
 Edgar Stone as a reviewer has become tired and pointless. His content used to mean something in the days before social media, when people would read his reviews in newspapers and magazines. But now, he is a relic. His opinions should just be forgotten and left behind because they sure as hell don&#39;t represent us anymore. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
@@ -1895,9 +1876,8 @@ Edgar Stone as a reviewer has become tired and pointless. His content used to me
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
@@ -1924,9 +1904,8 @@ This is perhaps the lowest Malt Wisney has ever sunk on their slow, painful decl
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
@@ -1935,9 +1914,8 @@ This is perhaps the lowest Malt Wisney has ever sunk on their slow, painful decl
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
@@ -1967,9 +1945,8 @@ Cause this is a website to post your thoughts and feelings on film, it doesn&#39
 Can you leave me alone?!?!?!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
@@ -1978,9 +1955,8 @@ Can you leave me alone?!?!?!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
@@ -2021,9 +1997,8 @@ Yeah, and thats why SuperheroDad&#39;s series is so fun to read. There&#39;s no 
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
@@ -2032,9 +2007,8 @@ Yeah, and thats why SuperheroDad&#39;s series is so fun to read. There&#39;s no 
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
@@ -2058,9 +2032,8 @@ Go touch some grass lol
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
@@ -2069,9 +2042,8 @@ Go touch some grass lol
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
@@ -2095,9 +2067,8 @@ Yeah kind of! This is a film review website, not Tweeter. We&#39;re here for ser
 Lol, lmao even
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
@@ -2106,9 +2077,8 @@ Lol, lmao even
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
@@ -2141,9 +2111,9 @@ Malt Wisney is awesome though, I&#39;ve loved their films since I was a kid and 
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
@@ -2152,9 +2122,9 @@ Malt Wisney is awesome though, I&#39;ve loved their films since I was a kid and 
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
@@ -2163,9 +2133,9 @@ or
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|FD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="73" name="AlcoholicBear (F2)" tags="Fan" position="2150,1100" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
@@ -2174,9 +2144,9 @@ or
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
@@ -2203,9 +2173,9 @@ And Malt Wisney is more than happy to cater towards these fantasies, adding poin
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option12 = &#39;true&#39;)[(set: $option12 to &#39;false&#39;)]
@@ -2214,9 +2184,9 @@ And Malt Wisney is more than happy to cater towards these fantasies, adding poin
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option12 = &#39;true&#39;)[(set: $option12 to &#39;false&#39;)]
@@ -2248,9 +2218,8 @@ Fuck you.
 ?????
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
@@ -2259,9 +2228,9 @@ Fuck you.
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option1 = &#39;true&#39;)[(set: $option1 to &#39;false&#39;)]
@@ -2288,9 +2257,8 @@ You&#39;re simply looking back with rose coloured glasses. Your whole perception
 BooTuber fight in the comments section!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
@@ -2299,9 +2267,9 @@ BooTuber fight in the comments section!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option2 = &#39;true&#39;)[(set: $option2 to &#39;false&#39;)]
@@ -2332,9 +2300,8 @@ Yeah, never valued their opinions much anyway. They are always so snobish with h
 Just goes to show how prevalent the Woke Agenda in Hollywood is these days, and how Liberals want nothing more than to shove it down your throats. But if these comments suggest anything, its that the people don&#39;t want this anymore! The silent majority of film audiences know the truth! 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
@@ -2343,9 +2310,9 @@ Just goes to show how prevalent the Woke Agenda in Hollywood is these days, and 
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option3 = &#39;true&#39;)[(set: $option3 to &#39;false&#39;)]
@@ -2364,9 +2331,8 @@ That life isn&#39;t as fun as the games we used to play with pretty pink dolls i
 I cannot express how important this film will be, not just for us, but for generations to come.
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
@@ -2375,9 +2341,8 @@ I cannot express how important this film will be, not just for us, but for gener
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option4 = &#39;true&#39;)[(set: $option4 to &#39;false&#39;)]
@@ -2406,9 +2371,8 @@ All this hate just for expressing a milquetoast review on the Barbara movie? Wha
 Yeah thats right, cry like a baby to the moderators for them to do something. Idiot 😂🫵
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
@@ -2417,9 +2381,8 @@ Yeah thats right, cry like a baby to the moderators for them to do something. Id
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option5 = &#39;true&#39;)[(set: $option5 to &#39;false&#39;)]
@@ -2461,9 +2424,8 @@ I&#39;ll have to agree with Laura. If some of the harmful stuff I&#39;m starting
 I guess I misunderstood you. You&#39;re just another brainwashed buffoon teaching their kids to become weak-willed snowflake losers. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
@@ -2472,9 +2434,8 @@ I guess I misunderstood you. You&#39;re just another brainwashed buffoon teachin
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option6 = &#39;true&#39;)[(set: $option6 to &#39;false&#39;)]
@@ -2499,9 +2460,8 @@ THERE IS A GAY KISS SCENE IN THE SONG &quot;I&#39;M JUST BEN&quot;
 I... I just... what?!?!? How is this kind of comment allowed on this site, why are the moderators ignoring (and even promoting) the hatred spread on this site? This is just some random kids review! Why is this even happening?!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
@@ -2510,9 +2470,8 @@ I... I just... what?!?!? How is this kind of comment allowed on this site, why a
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option7 = &#39;true&#39;)[(set: $option7 to &#39;false&#39;)]
@@ -2542,9 +2501,8 @@ idc lmao
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
@@ -2553,9 +2511,8 @@ idc lmao
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option8 = &#39;true&#39;)[(set: $option8 to &#39;false&#39;)]
@@ -2590,9 +2547,9 @@ More like &quot;being forcefed propaganda and woke agendas by the establishment&
 &lt;i&gt;sigh&lt;/i&gt; theres no point in arguing with idiots. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
@@ -2601,9 +2558,9 @@ More like &quot;being forcefed propaganda and woke agendas by the establishment&
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option9 = &#39;true&#39;)[(set: $option9 to &#39;false&#39;)]
@@ -2612,9 +2569,9 @@ or
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
 [[Go Back|GD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="84" name="AlcoholicBear (G2)" tags="Grift" position="2750,1100" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
@@ -2623,9 +2580,9 @@ or
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option10 = &#39;true&#39;)[(set: $option10 to &#39;false&#39;)]
@@ -2658,9 +2615,9 @@ KEEP REVIEW BOMBING THE FILM, THEY CAN&#39;T STOP ALL OF US!
 Saying the quiet part out loud are we?
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option11 = &#39;true&#39;)[(set: $option11 to &#39;false&#39;)]
@@ -2669,9 +2626,9 @@ Saying the quiet part out loud are we?
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option11 = &#39;true&#39;)[(set: $option11 to &#39;false&#39;)]
@@ -2706,9 +2663,9 @@ Meanwhile Benjamin here losing his mind over having to see the Barbara movie...
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option12 = &#39;true&#39;)[(set: $option12 to &#39;false&#39;)]
@@ -2717,9 +2674,9 @@ Meanwhile Benjamin here losing his mind over having to see the Barbara movie...
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option12 = &#39;true&#39;)[(set: $option12 to &#39;false&#39;)]
@@ -2756,9 +2713,9 @@ This being a children&#39;s film IS the problem, they are going to turn the kids
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option11 = &#39;true&#39;)[(set: $option11 to &#39;false&#39;)]
@@ -2767,9 +2724,9 @@ This being a children&#39;s film IS the problem, they are going to turn the kids
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 5)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option11 = &#39;true&#39;)[(set: $option11 to &#39;false&#39;)]
@@ -2799,9 +2756,8 @@ Do you always have to have the last word? Is that all you do on this site?
 Yes :), now go back to your trashy bin 🗑️ hahaha
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
+(set: $grift to it + 5)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $option11 = &#39;true&#39;)[(set: $option11 to &#39;false&#39;)]
@@ -2810,9 +2766,8 @@ Yes :), now go back to your trashy bin 🗑️ hahaha
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 5)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $option11 = &#39;true&#39;)[(set: $option11 to &#39;false&#39;)]
@@ -2827,9 +2782,7 @@ This film certainly throws a few surprises at us ranging from its sudden plot tw
 Still, this is a pretty good film regardless of its faults, and I&#39;m looking forward to the next installment of Blanq Renois mysteries. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
@@ -2838,9 +2791,7 @@ Still, this is a pretty good film regardless of its faults, and I&#39;m looking 
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
@@ -2851,9 +2802,7 @@ or
 Well it was never going to live up to its predecessor, but nor should it have to. Last Onion sets out to be its own thing setting itself on a billionaires private island and involving a mystery simultaneously so convoluted and yet so idiotically simple its infuriating, and yet that is the point. The film is a take down of the wealthy elite in a sense, a mockery of their arrogance, stature and influence, exposing it all through Blanq&#39;s unparalleled deduction skills. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
@@ -2862,9 +2811,7 @@ Well it was never going to live up to its predecessor, but nor should it have to
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
@@ -2896,9 +2843,7 @@ I&#39;ve messaged some of the folks I know to come join your site and post some 
 It started off pretty nice but then slowly became boring and predictable. I thought based on the reviews I read from critics that this film would be some kind of masterpiece, but I guess they were wrong. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
@@ -2907,9 +2852,7 @@ It started off pretty nice but then slowly became boring and predictable. I thou
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
@@ -2920,9 +2863,7 @@ or
 Ryan Johnson is a bum ass director, made the once great Space Wars franchise woke and is now ruining cinema as a whole. Fuck him. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
@@ -2931,9 +2872,7 @@ Ryan Johnson is a bum ass director, made the once great Space Wars franchise wok
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
@@ -2944,9 +2883,7 @@ or
 I loved this movie up until the very end. Probably one of the worst endings I&#39;ve ever seen in a murder mystery. It&#39;s as if the writers had no idea how to wrap up the film, waved their hands and just said &quot;screw it, destroy the billionaires house&quot;
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
@@ -2955,9 +2892,7 @@ I loved this movie up until the very end. Probably one of the worst endings I&#3
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
@@ -2968,9 +2903,7 @@ or
 Last Onion is what happens when a social media thread about how bad billionaires are becomes a movie, nothing but shallow &quot;eat-the-rich&quot; platitudes, lackluster caricatures and a plot that makes it feel like the movie thinks it is smarter than you. A liberal self-gratifying circlejerk masquerading as a clever social satire.  
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
@@ -2979,9 +2912,7 @@ Last Onion is what happens when a social media thread about how bad billionaires
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
@@ -2992,9 +2923,7 @@ or
 Fucking loved this movie, on god fr fr
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
@@ -3003,9 +2932,7 @@ Fucking loved this movie, on god fr fr
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
@@ -3016,9 +2943,7 @@ or
 Ryan Johnson should quit being a director.
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
@@ -3027,9 +2952,7 @@ Ryan Johnson should quit being a director.
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
@@ -3044,9 +2967,7 @@ Aliens: Take us to your leader!
 Aliens: There appears to be no sign of intelligent life anywhere...
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
@@ -3055,9 +2976,7 @@ Aliens: There appears to be no sign of intelligent life anywhere...
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
@@ -3068,9 +2987,7 @@ or
 What a stupid, STUPID movie. A by the numbers, woke, trodding, slow paced, idiotic trainwreck of a murder mystery story. Everybody associated with this film should be fucking ashamed of themselves for this waste of money and talent. Who did they make this film for? Children? Because the film feels the incessant need to hold your hand through every twist and plot point, treating its audience like absolute fools unable to remember any information longer than a goldfish. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
@@ -3079,9 +2996,7 @@ What a stupid, STUPID movie. A by the numbers, woke, trodding, slow paced, idiot
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
@@ -3093,10 +3008,8 @@ The resolution to Last Onion&#39;s core mystery unfortunately does not live up t
 
 Also, Craig Danielson&#39;s attempt at a southern accent is really starting to grate on my ears, I kinda wish he&#39;d just use his natural English accent instead. 
 
-&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
@@ -3105,9 +3018,7 @@ Also, Craig Danielson&#39;s attempt at a southern accent is really starting to g
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
@@ -3120,9 +3031,7 @@ A delicious twist on the classic murder mystery genre, Last Onion may not live u
 (Full Review at ZBC.com)
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
@@ -3131,9 +3040,7 @@ A delicious twist on the classic murder mystery genre, Last Onion may not live u
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
@@ -3189,9 +3096,7 @@ It&#39;s honestly just sad these days to see how far Wisney has fallen. This ani
 The only way things can really change is if we stop watching their films, make it really clear that what we want is quality, not quanity. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
@@ -3200,9 +3105,7 @@ The only way things can really change is if we stop watching their films, make i
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
@@ -3213,9 +3116,7 @@ or
 This film is filled with loads of Wisney magic, amazing animation and stunning songs that will lift your spirits and inspire you to do great things. Wisney&#39;s &lt;i&gt;Dreams&lt;/i&gt; is a perfect celebration of 100 years of Malt Wisney excellence that will be cherished for years to come. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
@@ -3224,9 +3125,7 @@ This film is filled with loads of Wisney magic, amazing animation and stunning s
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
@@ -3237,9 +3136,7 @@ or
 THIS WOKE MOVIE GAVE ME DEPRESSION!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
@@ -3248,9 +3145,7 @@ THIS WOKE MOVIE GAVE ME DEPRESSION!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
@@ -3266,9 +3161,7 @@ It&#39;s time that we, the movie going audience that truly appriciates the artfo
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
@@ -3277,9 +3170,7 @@ It&#39;s time that we, the movie going audience that truly appriciates the artfo
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
@@ -3290,9 +3181,7 @@ or
 I really enjoyed the music songs!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
@@ -3301,9 +3190,7 @@ I really enjoyed the music songs!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
@@ -3314,9 +3201,7 @@ or
 I would rather divorce my wife of thirty years than watch this pandering, diversity oriented trash film again. That is how much I hate this film, its agenda, and Malt Wisney 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
@@ -3325,9 +3210,7 @@ I would rather divorce my wife of thirty years than watch this pandering, divers
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
@@ -3342,9 +3225,7 @@ When you hear the music in this film and wonder to yourself why it sounds so fla
 Wisney needs to stop treating their creatives like shit and actually let them bring their talent and passion to the film, give them the right resources and time and let them create the MAGIC the studio is known for. Isn&#39;t that what Wisney (and this film) is supposed to be about????
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
@@ -3353,9 +3234,7 @@ Wisney needs to stop treating their creatives like shit and actually let them br
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
@@ -3366,9 +3245,7 @@ or
 This is a great movie 👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
@@ -3377,9 +3254,7 @@ This is a great movie 👍👍👍👍👍👍👍👍👍👍👍👍👍👍�
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
@@ -3392,9 +3267,7 @@ Wisney has sold its soul to the SJW crowd and lost all of the magic it once had.
 This film is fucking lame. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
@@ -3403,9 +3276,7 @@ This film is fucking lame.
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
@@ -3420,9 +3291,7 @@ And let me just say, its unreal how much better these films are. I&#39;d recomme
 I promise, good or bad, it&#39;ll be a more memorable experience than watching &lt;i&gt;Dreams&lt;/i&gt;.
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
@@ -3431,9 +3300,7 @@ I promise, good or bad, it&#39;ll be a more memorable experience than watching &
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
@@ -3444,9 +3311,7 @@ or
 This was a pretty good film, I had to rewatch it like 80 times a day to memorize it but its still enjoyable!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
@@ -3455,9 +3320,7 @@ This was a pretty good film, I had to rewatch it like 80 times a day to memorize
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
@@ -3472,9 +3335,7 @@ JOIN THE BOYCOTT!
 &lt;b&gt;MAKE CINEMA GREAT AGAIN!&lt;/b&gt;
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
@@ -3483,9 +3344,7 @@ JOIN THE BOYCOTT!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
@@ -3521,9 +3380,7 @@ Dropping the kids off at Bombenheimer so the adults can watch the Barbara movie
 That being said, what an amazing film this was. Everything from the writing, comedy, costumes, set designs, performances and message was perfect. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
@@ -3532,9 +3389,7 @@ That being said, what an amazing film this was. Everything from the writing, com
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC1 = &#39;true&#39;)[(set: $optionC1 to &#39;false&#39;)]
@@ -3546,9 +3401,7 @@ O h m y g o d
 Not only do I love Barbara, but this movie became insanely deep and resonated with me to my core... I was both crying and laughing while watching this movie. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
@@ -3557,9 +3410,7 @@ Not only do I love Barbara, but this movie became insanely deep and resonated wi
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF1 = &#39;true&#39;)[(set: $optionF1 to &#39;false&#39;)]
@@ -3571,9 +3422,7 @@ I cannot find a single redeeming quality about this film (except maybe the costu
 I feel sick having watched this film...
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
@@ -3582,9 +3431,7 @@ I feel sick having watched this film...
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG1 = &#39;true&#39;)[(set: $optionG1 to &#39;false&#39;)]
@@ -3599,9 +3446,7 @@ Once again, she has delivered a feminist masterpiece of a film, tackling issues 
 Absolute insanity, but so is this film, and it all just works flawlessly!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
@@ -3610,9 +3455,7 @@ Absolute insanity, but so is this film, and it all just works flawlessly!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC2 = &#39;true&#39;)[(set: $optionC2 to &#39;false&#39;)]
@@ -3623,9 +3466,7 @@ or
 The opening 15 minutes are the best part of this amazing film. Oh, imagine what it would be like to live in BarbaraLand!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
@@ -3634,9 +3475,7 @@ The opening 15 minutes are the best part of this amazing film. Oh, imagine what 
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF2 = &#39;true&#39;)[(set: $optionF2 to &#39;false&#39;)]
@@ -3649,9 +3488,7 @@ This film hates men. The entire plot is centred around how dumb men are and how 
 And even when the Bens do gain some control over their lives, they are such idiots that they lose it all anyway. The film may as well be saying that all men should die cause of how stupid we are. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
@@ -3660,9 +3497,7 @@ And even when the Bens do gain some control over their lives, they are such idio
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG2 = &#39;true&#39;)[(set: $optionG2 to &#39;false&#39;)]
@@ -3675,9 +3510,7 @@ I heard that this site was going downhill, having some problems with harmful con
 What we have to do is put our foot down and say no to hate! We have to drive them out of these film review websites that are supposed to be inclusive for everyone!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
@@ -3686,9 +3519,7 @@ What we have to do is put our foot down and say no to hate! We have to drive the
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC3 = &#39;true&#39;)[(set: $optionC3 to &#39;false&#39;)]
@@ -3701,9 +3532,7 @@ The cosmic convergence that allowed the Bombenheimer movie and Barbara to releas
 Both of these films are peak btw!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
@@ -3712,9 +3541,7 @@ Both of these films are peak btw!
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF3 = &#39;true&#39;)[(set: $optionF3 to &#39;false&#39;)]
@@ -3727,9 +3554,7 @@ This film should be BANNED because it is basically Liberal Woke Communist propag
 FOR FUCK SAKE, THIS IS A CHILDREN&#39;S FILM. THEY WANT TO BRAINWASH KIDS NOW WITH THEIR BULLSHIT AGENDAS!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
@@ -3738,9 +3563,7 @@ FOR FUCK SAKE, THIS IS A CHILDREN&#39;S FILM. THEY WANT TO BRAINWASH KIDS NOW WI
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG3 = &#39;true&#39;)[(set: $optionG3 to &#39;false&#39;)]
@@ -3751,9 +3574,7 @@ or
 The Barbara movie stands out as a major blockbuster film that isn&#39;t just some kind of soulless cash grab by studio executives, but a artistic film with a clear vision that it executes perfectly. This is the kind of film we need to see studios make more off, and the fact that it made over a BILLION dollars should be an indication that this is what audiences want to see more of, not more boring sequels and remakes of existing films. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
@@ -3762,9 +3583,7 @@ The Barbara movie stands out as a major blockbuster film that isn&#39;t just som
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $critic to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionC4 = &#39;true&#39;)[(set: $optionC4 to &#39;false&#39;)]
@@ -3779,9 +3598,7 @@ He will always be him.
 There will never be anyone else like him. 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
@@ -3790,9 +3607,7 @@ There will never be anyone else like him.
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $fan to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionF4 = &#39;true&#39;)[(set: $optionF4 to &#39;false&#39;)]
@@ -3803,9 +3618,7 @@ or
 An absolutely worthless pile of shit film. This so-called movie will try and brainwash you make fun of you, kill your dog and spit on your face.
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it + 10)
 (set: $score to it + 1)
 (set: $promote to it + 1)
 (if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
@@ -3814,9 +3627,7 @@ An absolutely worthless pile of shit film. This so-called movie will try and bra
 ]]](if: $promote &gt;= 4)[(text-colour: grey)[Promote this Review?]]
 or
 (if: $delete &lt; 4)[(text-colour: &quot;red&quot;)[(link: &quot;Delete this Review?&quot;)[
-(set: $fan to it +)
-(set: $critic to it +)
-(set: $grift to it +)
+(set: $grift to it - 5)
 (set: $score to it + 1)
 (set: $delete to it + 1)
 (if: $optionG4 = &#39;true&#39;)[(set: $optionG4 to &#39;false&#39;)]
@@ -4150,7 +3961,7 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $option2 is &#39;true&#39;)[[Trash Cinema ⭐|AlcoholicBear]](if: $option2 is &#39;false&#39;)[(color: grey)[Trash Cinema ⭐]]
 (if: $option3 is &#39;true&#39;)[[The Devil in Film Form ⭐|Karen Hartwell]](if: $option3 is &#39;false&#39;)[(color: grey)[The Devil in Film Form ⭐]]
 (if: $option4 is &#39;true&#39;)[[Not even watching this one ⭐|Benjamin Wakefield]](if: $option4 is &#39;false&#39;)[(color: grey)[Not even watching this one ⭐]]
-(if: $option5 is &#39;true&#39;)[[This movie is fine! ⭐⭐⭐|Kristen (G3)]](if: $option5 is &#39;false&#39;)[(color: grey)[This movie is fine! ⭐⭐⭐]]</tw-passagedata><tw-passagedata pid="159" name="Critic Ending" tags="Critic" position="1450,2450" size="100,100">Conclusion for this route</tw-passagedata><tw-passagedata pid="160" name="Fan Ending" tags="Fan" position="2175,2825" size="100,100">ReviewShark is more popular than ever, people from all over the world are coming here to post their reivews on movies, particularly on blockbuster or family films. They don&#39;t seem to care much for more obscure or meaningful films.
+(if: $option5 is &#39;true&#39;)[[This movie is fine! ⭐⭐⭐|Kristen (G3)]](if: $option5 is &#39;false&#39;)[(color: grey)[This movie is fine! ⭐⭐⭐]]</tw-passagedata><tw-passagedata pid="159" name="Critic Ending" tags="Critic" position="1450,2450" size="100,100">Conclusion for this route</tw-passagedata><tw-passagedata pid="160" name="Fan Ending" tags="Fan" position="2050,2825" size="100,100">ReviewShark is more popular than ever, people from all over the world are coming here to post their reivews on movies, particularly on blockbuster or family films. They don&#39;t seem to care much for more obscure or meaningful films.
 
 Film studios have taken notice of this, and have started producing more remakes, adaptation of existing films, and sequels to existing franchises. 
 
@@ -4372,42 +4183,42 @@ That said, it&#39;s not like most people care about what film critics have to sa
 This film was Great!
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(go-to: &quot;Fan 1&quot;)]]</tw-passagedata><tw-passagedata pid="171" name="Fan 1" tags="Fan" position="1925,2575" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Cute! ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Casey (18)
+(go-to: &quot;Fan 1&quot;)]]</tw-passagedata><tw-passagedata pid="171" name="Fan 1" tags="Fan" position="2050,2450" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Cute! ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Casey (18)
 
 Stitch was adorable in this!
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
-(go-to: &quot;Fan 2&quot;)]]</tw-passagedata><tw-passagedata pid="172" name="Fan 2" tags="Fan" position="2050,2575" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;fine ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Antonio (27)
+(go-to: &quot;Fan 2&quot;)]]</tw-passagedata><tw-passagedata pid="172" name="Fan 2" tags="Fan" position="2175,2450" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;fine ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Antonio (27)
 
 This movie was fun
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote another review...&quot;)[
-(go-to: &quot;Fan 3&quot;)]]</tw-passagedata><tw-passagedata pid="173" name="Fan 3" tags="Fan" position="2175,2575" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;AAAAAAAAAAAAAAAAAA ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Gumball (15)
+(go-to: &quot;Fan 3&quot;)]]</tw-passagedata><tw-passagedata pid="173" name="Fan 3" tags="Fan" position="1925,2575" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;AAAAAAAAAAAAAAAAAA ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Gumball (15)
 
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;What?&quot;)[
-(go-to: &quot;Fan 4&quot;)]]</tw-passagedata><tw-passagedata pid="174" name="Fan 4" tags="Fan" position="1925,2700" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Perfect ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Dan (34)
+(go-to: &quot;Fan 4&quot;)]]</tw-passagedata><tw-passagedata pid="174" name="Fan 4" tags="Fan" position="2050,2575" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Perfect ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Dan (34)
 
 It was cute and funny, sad in parts too
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this too&quot;)[
-(go-to: &quot;Fan 5&quot;)]]</tw-passagedata><tw-passagedata pid="175" name="Fan 5" tags="Fan" position="2050,2700" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Yes ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Xavier (21)
+(go-to: &quot;Fan 5&quot;)]]</tw-passagedata><tw-passagedata pid="175" name="Fan 5" tags="Fan" position="2175,2575" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Yes ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Xavier (21)
 
 I liked it, very good. 
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote another review&quot;)[
-(go-to: &quot;Fan 6&quot;)]]</tw-passagedata><tw-passagedata pid="176" name="Fan 6" tags="Fan" position="2175,2700" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;10/10 ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Corey (26)
+(go-to: &quot;Fan 6&quot;)]]</tw-passagedata><tw-passagedata pid="176" name="Fan 6" tags="Fan" position="1925,2700" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;10/10 ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Corey (26)
 
 Excellent Movie! Really Good Movie!
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote...&quot;)[
-(go-to: &quot;Fan 7&quot;)]]</tw-passagedata><tw-passagedata pid="177" name="Fan 7" tags="Fan" position="1925,2825" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Malt Wisney is the Best ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Miguel (18)
+(go-to: &quot;Fan 7&quot;)]]</tw-passagedata><tw-passagedata pid="177" name="Fan 7" tags="Fan" position="2050,2700" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Malt Wisney is the Best ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Miguel (18)
 
 Peak Fiction!
 
 &lt;hr&gt;(text-colour: &quot;#00cb1c&quot;)[(link: &quot;What does this even mean?&quot;)[
-(go-to: &quot;Fan 8&quot;)]]</tw-passagedata><tw-passagedata pid="178" name="Fan 8" tags="Fan" position="2050,2825" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;BEAUTIFUL ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Daniela (20)
+(go-to: &quot;Fan 8&quot;)]]</tw-passagedata><tw-passagedata pid="178" name="Fan 8" tags="Fan" position="2175,2700" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;BEAUTIFUL ⭐⭐⭐⭐⭐&lt;/h1&gt;]Review by Daniela (20)
 
 LOVED IT! SO GOOD!
 
