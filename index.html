@@ -75,50 +75,27 @@ tw-story[tags~="Grift"] {
   grid-column: 1;  /* sets which column the image appears in */
   grid-row: 1;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('tw-story').before('<div id="page-header"></div>');
-</script><tw-tag name="Normal" color="yellow"></tw-tag><tw-tag name="Critic" color="purple"></tw-tag><tw-tag name="Fan" color="orange"></tw-tag><tw-tag name="Grift" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="Normal" position="625,250" size="100,100">This passage may be kept as a menu page, where the reader can be returned to upon reaching an ending within the story. Whether or not to include a &quot;tutorial&quot; or explanation of how the story branches function is up to you.
+</script><tw-tag name="Normal" color="yellow"></tw-tag><tw-tag name="Critic" color="purple"></tw-tag><tw-tag name="Fan" color="orange"></tw-tag><tw-tag name="Grift" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="Normal" position="625,250" size="100,100">Project Title: (text-style: &quot;bold&quot;)[(text-colour: aqua)[R](text-colour: white)[e](text-colour: aqua)[v](text-colour: white)[i](text-colour: aqua)[e](text-colour: white)[w](text-colour: aqua)[S](text-colour: white)[h](text-colour: aqua)[a](text-colour: white)[r](text-colour: aqua)[k](text-colour: white)[.](text-colour: aqua)[c](text-colour: white)[o](text-colour: aqua)[m]]
+By Angelo Koulouris
 
-Shortcuts
-[[F2]]
-[[C2]]
-[[G2]]
+A interactive story set in a film review website!
 
-Start?
-[[Introduction]]
-(set: $score to 0)
-(set: $bankcritic to 10)
-(set: $bankfan to 10)
-(set: $bankgrift to 10)
-(set: $critic to 0)
-(set: $fan to 0)
-(set: $grift to 0)
-(set: $promote to 0)
-(set: $delete to 0)
-(set: $option1 to &#39;true&#39;)
-(set: $option2 to &#39;true&#39;)
-(set: $option3 to &#39;true&#39;)
-(set: $option4 to &#39;true&#39;)
-(set: $option5 to &#39;true&#39;)
-(set: $option6 to &#39;true&#39;)
-(set: $option7 to &#39;true&#39;)
-(set: $option8 to &#39;true&#39;)
-(set: $option9 to &#39;true&#39;)
-(set: $option10 to &#39;true&#39;)
-(set: $option11 to &#39;true&#39;)
-(set: $option12 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="Normal" position="625,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fadeup&quot;)[Hey, you must be the new moderator!][[Introduction 2]] 
+Ready to [[Start?|Introduction]]
+(set: $score to 0)(set: $bankcritic to 10)(set: $bankfan to 10)(set: $bankgrift to 10)(set: $critic to 0)(set: $fan to 0)(set: $grift to 0)(set: $promote to 0)(set: $delete to 0)(set: $option1 to &#39;true&#39;)(set: $option2 to &#39;true&#39;)(set: $option3 to &#39;true&#39;)(set: $option4 to &#39;true&#39;)(set: $option5 to &#39;true&#39;)(set: $option6 to &#39;true&#39;)(set: $option7 to &#39;true&#39;)(set: $option8 to &#39;true&#39;)(set: $option9 to &#39;true&#39;)(set: $option10 to &#39;true&#39;)(set: $option11 to &#39;true&#39;)(set: $option12 to &#39;true&#39;)</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="Normal" position="625,375" size="100,100">Hey, you must be the new moderator!
 
-(t8n-delay: 5s) + (t8n: &quot;fadeup&quot;)[My name is Lorelei, the owner of this wonderful website, ReviewShark.com. For the past ten years she has been my pride and joy, creating a place for film enthusiasts to come together and analyse movies from around the world. It&#39;s been a lot of hard work, keeping things up and running, organising events and best-lists, preventing hateful content from taking over, and trying to maintain a level of critical quality in reviews and not have random people review bomb films, and deal with hate mail from unhappy users or companies trying to influence our website&#39;s content...]
+My name is Lorelei, the owner of this wonderful website, ReviewShark.com. For the past ten years she has been my pride and joy, creating a place for film enthusiasts to come together and analyse movies from around the world. It&#39;s been a lot of hard work, keeping things up and running, organising events and best-lists, preventing hateful content from taking over, and trying to maintain a level of critical quality in reviews and not have random people review bomb films, and deal with hate mail from unhappy users or companies trying to influence our website&#39;s content...
 
-(t8n-delay: 20s) + (t8n: &quot;fadeup&quot;)[Yeah, I think I&#39;ve earned myself a break - a long one actually - I&#39;m preparing to go on vacation to a resort in the Bahama&#39;s, then a tour around Europe with my family. I thought it be nice to just get away from it all, but that means I won&#39;t be able to run the website.]
+Yeah, I think I&#39;ve earned myself a break - a long one actually - I&#39;m preparing to go on vacation to a resort in the Bahama&#39;s, then a tour around Europe with my family. I thought it be nice to just get away from it all, but that means I won&#39;t be able to run the website.
 
-(t8n-delay: 30s) + (t8n: &quot;fadeup&quot;)[Which is where you come in :D]
+Which is where you come in :D
 
-(t8n-delay: 35s) + (t8n: &quot;fadeup&quot;)[You, lucky user, have won the random lottery on this website to become the next moderator, and seeing your past history on the website; participating in film discussions, reviewing the latest and even some classic flicks. I think you&#39;d be a perfect fit for this job!]
+You, lucky user, have won the random lottery on this website to become the next moderator, and seeing your past history on the website; participating in film discussions, reviewing the latest and even some classic flicks. I think you&#39;d be a perfect fit for this job!
 
-(t8n-delay: 43s) + (t8n: &quot;fadeup&quot;)[So what do you say, will you accept this role?
+So what do you say, will you accept this role?
 
 [[Yes!|Introduction 2]]
 
-[[No!|Ending 0]]]</tw-passagedata><tw-passagedata pid="3" name="Day One" tags="Normal" position="750,500" size="100,100">### &lt;b&gt;Website Status:&lt;/b&gt;
+[[No!|Ending 0]]</tw-passagedata><tw-passagedata pid="3" name="Day One" tags="Normal" position="750,500" size="100,100">### &lt;b&gt;Website Status:&lt;/b&gt;
 &lt;b&gt;Popularity:&lt;/b&gt; (text-color: green)[Growing]
 
 &lt;b&gt;Audience Demographics:&lt;/b&gt;
@@ -541,9 +518,23 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Two&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="15" name="The State of Mainstream Cinema: Pandering Bullshit ⭐" tags="Normal" position="650,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Actually, this isn&#39;t &quot;too bad&quot; ⭐⭐&lt;/h1&gt;]Review by AlcoholicBear (42)
+[[Go Back|Minecraft Movie Reviews]]</tw-passagedata><tw-passagedata pid="15" name="The State of Mainstream Cinema: Pandering Bullshit ⭐" tags="Normal" position="650,800" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;The State of Mainstream Cinema: Pandering Bullshit ⭐&lt;/h1&gt;]Review by AlcoholicBear (42)
 
-Oh bollocks. Another piece of nonesense from moronic mainstream studios. 
+Oh bollocks. Another piece of nonesense from moronic mainstream studios. Instead of studios actually trying to work on original creative ideas, they would rather adapt uninspired scripts for videos games. And worse still, audiences will happily go to the theatres to watch this slop and reward these lazy hacks with millions of dollars. 
+
+I mean seriously, is this where mainstream cinema is at? Hiring woke diverse casts for no other reason than to fill a quota! Making the most mind-numbing films for the dumb masses? No wonder we are declining as a society.
+
+(See my full CRITICAL review on BooTube)
+
+
+&lt;b&gt;3 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;✨Laura✨&lt;/b&gt;
+Ah, you gave it away. You don&#39;t actually care that this film is bad because of its quality (like I do), you just hate diversity you bigot.
+&lt;hr&gt;&lt;b&gt;AlcoholicBear&lt;/b&gt; (text-colour: #cdcdcd)[@✨Laura✨]
+I&#39;m not a bigot, I simply hate when films will hire untalented actors to meet quotas for diversity, just to appease woke morons online
+&lt;hr&gt;&lt;b&gt;✨Laura✨&lt;/b&gt; (text-colour: #cdcdcd)[@AlcoholicBear]
+Sure bud, just keep telling yourself whatever makes you sleep better at night...
+
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $grift to it + 10)
@@ -781,7 +772,7 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $option7 is &#39;true&#39;)[[Yawn ⭐|Jacksonboiiii:D (C2)]](if: $option7 is &#39;false&#39;)[(text-color: grey)[Yawn ⭐]]
 (if: $option8 is &#39;true&#39;)[[Kino. ⭐⭐⭐⭐⭐|Zachary (C2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[Kino. ⭐⭐⭐⭐⭐]]
 (if: $option9 is &#39;true&#39;)[[This is NOT a Mystery Film ⭐|TheClassicFilmGuy (C2)]](if: $option9 is &#39;false&#39;)[(text-color: grey)[This is NOT a Mystery Film ⭐]]
-(if: $option10 is &#39;true&#39;)[[AlcoholicBear (C2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option10 is &#39;true&#39;)[[Ryan Johnson is a complete hack! ⭐|AlcoholicBear (C2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[Ryan Johnson is a complete hack! ⭐]]
 (if: $option11 is &#39;true&#39;)[[Lame ⭐|Karen Hartwell (C2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[Lame ⭐]]
 (if: $option12 is &#39;true&#39;)[[A Rotten Onion ⭐|Benjamin Wakefield (C2)]](if: $option12 is &#39;false&#39;)[(text-color: grey)[A Rotten Onion ⭐]]
 (if: $optionC1 is &#39;true&#39;)[(text-color: #bc46ff)[[Almost Great ⭐⭐⭐⭐|Extra CC1]]](if: $optionC1 is &#39;false&#39;)[(text-color: grey)[Almost Great ⭐⭐⭐⭐]](if: $optionF1 is &#39;true&#39;)[(text-color: #ffd546)[[Those critics lied to me ⭐⭐⭐|Extra CF1]]](if: $optionF1 is &#39;false&#39;)[(text-color: grey)[Those critics lied to me ⭐⭐⭐]](if: $optionG1 is &#39;true&#39;)[(text-color: #ff5757)[[This is for Space Wars ⭐|Extra CG1]]](if: $optionG1 is &#39;false&#39;)[(text-color: grey)[This is for Space Wars ⭐]]
@@ -842,7 +833,7 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $option7 is &#39;true&#39;)[[Antonio the GOAT ⭐⭐⭐⭐⭐|Jacksonboiiii:D (F2)]](if: $option7 is &#39;false&#39;)[(text-color: grey)[Antonio the GOAT ⭐⭐⭐⭐⭐]]
 (if: $option8 is &#39;true&#39;)[[King Terrifico Momento ⭐⭐⭐⭐⭐|Zachary (F2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[King Terrifico Momento ⭐⭐⭐⭐⭐]]
 (if: $option9 is &#39;true&#39;)[[An 100 Year Anniversary Travesty ⭐⭐|TheClassicFilmGuy (F2)]](if: $option9 is &#39;false&#39;)[(text-color: grey)[An 100 Year Anniversary Travesty ⭐⭐]]
-(if: $option10 is &#39;true&#39;)[[AlcoholicBear (F2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option10 is &#39;true&#39;)[[Go Woke. Go Broke ⭐|AlcoholicBear (F2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[Go Woke. Go Broke ⭐]]
 (if: $option11 is &#39;true&#39;)[[Boycott Malt Wisney!!! ⭐|Karen Hartwell (F2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[Boycott Malt Wisney!!! ⭐]]
 (if: $option12 is &#39;true&#39;)[[Malt Wisney Hates You and God ⭐|Benjamin Wakefield (F2)]](if: $option12 is &#39;false&#39;)[(text-color: grey)[Malt Wisney Hates You and God ⭐]]
 (if: $optionC1 is &#39;true&#39;)[(text-color: #bc46ff)[[Another Bad Film ⭐|Extra FC1]]](if: $optionC1 is &#39;false&#39;)[(text-color: grey)[Another Bad Film ⭐]](if: $optionF1 is &#39;true&#39;)[(text-color: #ffd546)[[A Perfect Film ⭐⭐⭐⭐⭐|Extra FF1]]](if: $optionF1 is &#39;false&#39;)[(text-color: grey)[A Perfect Film ⭐⭐⭐⭐⭐]](if: $optionG1 is &#39;true&#39;)[(text-color: #ff5757)[[The Malt Wisney Mind Virus ⭐|Extra FG1]]](if: $optionG1 is &#39;false&#39;)[(text-color: grey)[The Malt Wisney Mind Virus ⭐]]
@@ -906,7 +897,7 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $option7 is &#39;true&#39;)[[Pink is cool ⭐⭐⭐⭐⭐|Jacksonboiiii:D (G2)]](if: $option7 is &#39;false&#39;)[(text-color: grey)[Pink is cool ⭐⭐⭐⭐⭐]]
 (if: $option8 is &#39;true&#39;)[[Bombenheimer was better lmao ⭐⭐|Zachary (G2)]](if: $option8 is &#39;false&#39;)[(text-color: grey)[Bombenheimer was better lmao ⭐⭐]]
 (if: $option9 is &#39;true&#39;)[[This is NOT a review ⭐|TheClassicFilmGuy (G2)]](if: $option9 is &#39;false&#39;)[(text-color: grey)[This is NOT a review ⭐]]
-(if: $option10 is &#39;true&#39;)[[AlcoholicBear (G2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[]]
+(if: $option10 is &#39;true&#39;)[[The Wokest Film of ALL TIME ⭐|AlcoholicBear (G2)]](if: $option10 is &#39;false&#39;)[(text-color: grey)[The Wokest Film of ALL TIME ⭐]]
 (if: $option11 is &#39;true&#39;)[[No, just no :) ⭐|Karen Hartwell (G2)]](if: $option11 is &#39;false&#39;)[(text-color: grey)[No, just no :) ⭐]]
 (if: $option12 is &#39;true&#39;)[[The Wokest Film I&#39;ve Ever Seen ⭐|Benjamin Wakefield (G2)]](if: $option12 is &#39;false&#39;)[(text-color: grey)[The Wokest Film I&#39;ve Ever Seen ⭐]]
 (if: $optionC1 is &#39;true&#39;)[(text-color: #bc46ff)[[Barbaraheimer ⭐⭐⭐⭐⭐|Extra GC1]]](if: $optionC1 is &#39;false&#39;)[(text-color: grey)[Barbaraheimer ⭐⭐⭐⭐⭐]](if: $optionF1 is &#39;true&#39;)[(text-color: #ffd546)[[Tears of Laughter ⭐⭐⭐⭐⭐|Extra GF1]]](if: $optionF1 is &#39;false&#39;)[(text-color: grey)[Tears of Laughter ⭐⭐⭐⭐⭐]](if: $optionG1 is &#39;true&#39;)[(text-color: #ff5757)[[Worthless ⭐|Extra GG1]]](if: $optionG1 is &#39;false&#39;)[(text-color: grey)[Worthless ⭐]]
@@ -916,31 +907,30 @@ If you wish to look at the Film&#39;s information, you can access it here: [[Sum
 (if: $score &gt;= 1)[[Undo Changes|Undo Changes (G2)]]
 
 (if: $promote &gt;= 4)[You&#39;ve done a lot of work today(text-colour: yellow)[
-[[Continue?|Continue to Next Day? (G2)]]]]</tw-passagedata><tw-passagedata pid="39" name="Introduction 2" tags="Normal" position="750,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Great! :D][[Day One]] 
+[[Continue?|Continue to Next Day? (G2)]]]]</tw-passagedata><tw-passagedata pid="39" name="Introduction 2" tags="Normal" position="750,375" size="100,100">Great! :D 
 
-(t8n-delay: 5s) + (t8n: &quot;fade-up&quot;)[As the new moderator of this website, your job is to &lt;i&gt;moderate&lt;/i&gt; over all the different reviews that films get, removing any unsatisfactory content and promoting reviews that represent and uphold the values of our community. That being (in my opinion): In-depth analysis, Critical engagement with text and fostering positive discussion of film!]
+As the new moderator of this website, your job is to &lt;i&gt;moderate&lt;/i&gt; over all the different reviews that films get, removing any unsatisfactory content and promoting reviews that represent and uphold the values of our community. That being (in my opinion): In-depth analysis, Critical engagement with text and fostering positive discussion of film!
 
-(t8n-delay: 15s) + (t8n: &quot;fade-up&quot;)[Now here is the important part, on this site we do (text-colour: yellow)[&quot;Films of the Week&quot;] to discuss new theatrical releases or revive old classic films, encouraging our users to partake in discussions surrounding these films! At the end of the week, we like to curate the best posts our users put forward, turning them into &lt;i&gt;(text-colour: &quot;#00cb1c&quot;)[Featured Reviews]&lt;/i&gt;, setting the standard for film critique on our website.]
+Now here is the important part, on this site we do (text-colour: yellow)[&quot;Films of the Week&quot;] to discuss new theatrical releases or revive old classic films, encouraging our users to partake in discussions surrounding these films! At the end of the week, we like to curate the best posts our users put forward, turning them into &lt;i&gt;(text-colour: &quot;#00cb1c&quot;)[Featured Reviews]&lt;/i&gt;, setting the standard for film critique on our website.
 
-(t8n-delay: 25s) + (t8n: &quot;fade-up&quot;)[These are the responsibilities you will be taking over, not just in the management of this site, but in upholding proper film criticism in this increasingly chaotic digital world.]
+These are the responsibilities you will be taking over, not just in the management of this site, but in upholding proper film criticism in this increasingly chaotic digital world.
 
-(t8n-delay: 30s) + (t8n: &quot;fade-up&quot;)[Though I&#39;m trying to avoid looking at or thinking about work while I&#39;m on holiday, I&#39;ll check back in every now again to see how you and the website are going!]
+Though I&#39;m trying to avoid looking at or thinking about work while I&#39;m on holiday, I&#39;ll check back in every now again to see how you and the website are going!
 
-(t8n-delay: 35s) + (t8n: &quot;fade-up&quot;)[Besides that, you&#39;re on your own, so good luck!]
+Besides that, you&#39;re on your own, so good luck!
 
-(t8n-delay: 38s) + (t8n: &quot;fade-up&quot;)[Without further ado, [[ready to begin your new job?|Day One]]]</tw-passagedata><tw-passagedata pid="40" name="Ending 0" tags="Normal" position="500,375" size="100,100">(t8n-delay: 1s) + (t8n: &quot;fade-up&quot;)[Oh... well thats a shame.
+Without further ado, [[ready to begin your new job?|Day One]]</tw-passagedata><tw-passagedata pid="40" name="Ending 0" tags="Normal" position="500,375" size="100,100">Oh... well thats a shame.
 
 Have a good day, I suppose...
--Lorelei]
-(t8n-delay: 5s) + (t8n: &quot;fade-up&quot;)[&lt;hr&gt;And so you return to your ordinary life, posting on online message boards. Doing nothing much interesting but watch films all day and work at a boring office job. Maybe sometimes life is about ordinary simple things, and theres no need to go exploring beyond your bubble, or push yourself into the unknown.
+-Lorelei
+&lt;hr&gt;And so you return to your ordinary life, posting on online message boards. Doing nothing much interesting but watch films all day and work at a boring office job. Maybe sometimes life is about ordinary simple things, and theres no need to go exploring beyond your bubble, or push yourself into the unknown.
 
-Yep. Perfectly content to just do nothing. Ever.]
-(t8n-delay: 15s) + (t8n: &quot;fade-up&quot;)[&lt;hr&gt;&lt;b&gt;(text-color: yellow)[Bad Ending - &quot;A Typical Boring Life Where Nothing Interesting Ever Happens&quot;]&lt;/b&gt;
+Yep. Perfectly content to just do nothing. Ever.
+&lt;hr&gt;&lt;b&gt;(text-color: yellow)[Bad Ending - &quot;A Typical Boring Life Where Nothing Interesting Ever Happens&quot;]&lt;/b&gt;
 
 You can do better next time
 
-[[Restart?|Start]]
-]</tw-passagedata><tw-passagedata pid="41" name="Dreams" tags="Fan" position="1950,800" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Dreams&lt;/h1&gt;]An Adventure Beyond Your Wildest Dreams
+[[Restart?|Start]]</tw-passagedata><tw-passagedata pid="41" name="Dreams" tags="Fan" position="1950,800" size="100,100">&lt;div class=&quot;story-room&quot;&gt;&lt;div class=&quot;story-text&quot;&gt;(text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Dreams&lt;/h1&gt;]An Adventure Beyond Your Wildest Dreams
 
 (text-style: &#39;bold&#39;)[&lt;h1 style=&quot;font-size:24px;&quot;&gt;Film Premise: &lt;/h1&gt;]Malt Wisney Animation Studio&#39;s &quot;Dream&quot; is an all-new musical-comedy following a 17-year-old-girl named Tara, who believes in a dream so powerful it is answered by a magical being called Moon. Together - alongside their cute animal sidekick, Valteri - they must face the Kingdom of Losas&#39;s devious ruler, the sorcerer Terrifico.
 
@@ -1673,7 +1663,30 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (C2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|CD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="61" name="AlcoholicBear (C2)" tags="Critic" position="1550,1100" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+[[Go Back|CD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="61" name="AlcoholicBear (C2)" tags="Critic" position="1550,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Ryan Johnson is a complete hack! ⭐&lt;/h1&gt;]Review by AlcoholicBear (42)
+
+Who keeps letting this man make movies, after the war crimes he commited on the beloved Space Wars franchise, he shouldn&#39;t be allowed within 100 feet of a camera!
+
+He is a completely incompetent woke director who knows nothing about how to make a movie or construct a story, except for pushing radical ideologies into his films. I mean seriously, a murder mystery where the rich guy is the culprit? &lt;i&gt;Eat-the-Rich&lt;/i&gt; much????
+
+I hope his career crashes and burns at this point, absolute disgrace to the cinematic world. 
+
+(See my full CRITICAL TAKEDOWN of this directorial fraudster on BooTube)
+
+
+&lt;b&gt;5 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;Fred&lt;/b&gt;
+You didn&#39;t even bother review the film! You just used this as an outlet to publically bash a director!
+&lt;hr&gt;&lt;b&gt;AlcoholicBear&lt;/b&gt; (text-colour: #cdcdcd)[@Fred]
+Too bad, he fucking deserves it after what he did with Space Wars
+&lt;hr&gt;&lt;b&gt;Doug&lt;/b&gt; (text-colour: #cdcdcd)[@AlcoholicBear]
+Hatred is not ok man, no matter what you think your justification may be.
+&lt;hr&gt;&lt;b&gt;Faith&lt;/b&gt; (text-colour: #cdcdcd)[@AlcoholicBear]
+Yeah, just because you dislike one film made by a director doesn&#39;t mean you can just attack them online like this!
+&lt;hr&gt;&lt;b&gt;SpaceTrooper&lt;/b&gt; (text-colour: #cdcdcd)[@AlcoholicBear]
+Hey AlcoholicBear, ignore these idiotic commentators. I just watched your video on BooTube and you&#39;re absolutely right, Ryan Johnson RUINED Space Wars forever because of his sequel films! We need to make it clear to studios online that we don&#39;t want to see him making films anymore!
+
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $critic to it - 5)
 (set: $grift to it + 5)
 (set: $score to it + 1)
@@ -1711,7 +1724,23 @@ Just remind me again, how many rockets has Johnson launched lately?
 See more of my content on The Benjamin Wakefield Show, found on platforms such as FriendBook and Listener.
 
 
-&lt;b&gt;10 Comments&lt;/b&gt;
+&lt;b&gt;8 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;✨Laura✨&lt;/b&gt;
+You realise the twist is the lack of depth to the mystery right? It seems like you are the one who actually doesn&#39;t understand how mystery films work. 
+&lt;hr&gt;&lt;b&gt;Jordan&lt;/b&gt; (text-colour: #cdcdcd)[@✨Laura✨]
+Doesn&#39;t change the fact that this movie is stupid and that Ryan Johnson is a hack of a film director/writer. Benjamin&#39;s review is right on point about how the woke mainstream media are ruining film. 
+&lt;hr&gt;&lt;b&gt;✨Laura✨&lt;/b&gt; (text-colour: #cdcdcd)[@Jordan]
+The so-called &lt;i&gt;woke mainstream&lt;/i&gt; wasn&#39;t even the subject of this discussion, I&#39;m guessing you must be one of Benjamin&#39;s fanboys who goes protect him online from any criticism. Don&#39;t you realise he is just a grifter? Someone who panders to hateful ideas online to make money?
+&lt;hr&gt;&lt;b&gt;Jordan&lt;/b&gt; (text-colour: #cdcdcd)[@✨Laura✨]
+Sounds like you&#39;ve already been brainwashed by woke media, what a shame. If you had critical thinking skills you would realise Benjamin is actually talking with common sense, unlike you. 
+&lt;hr&gt;&lt;b&gt;Kristen&lt;/b&gt;
+Jesus, can you all stop fighting? This site is suppose to be for critical discussion, and Benjamin actually wrote a proper review instead of some half-assed argument. Surely we can speak kindly to each other?
+&lt;hr&gt;&lt;b&gt;TheRunawayCritic&lt;/b&gt; (text-colour: #cdcdcd)[@Kristen]
+It&#39;s not the content of Benjamin&#39;s review thats the problem, but the kind of audience&#39;s he invites to any site he interacts with. Before we know it, there may be 100000 Jordan&#39;s all posting these vitriolic reviews online!
+&lt;hr&gt;&lt;b&gt;Karen Hartwell&lt;/b&gt; (text-colour: #cdcdcd)[@TheRunawayCritic]
+Sounds like someone is scared of having their safe woke space called out by people with common sense :D
+&lt;hr&gt;&lt;b&gt;ArcaneEnjoyer&lt;/b&gt;
+Ok, but we can agree that Benjamin is just wrong about how the mystery works in this film right? Or that he irrationally goes after the director as if he has a vendetta against him? 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $critic to it - 5)
@@ -1891,6 +1920,18 @@ And what does that accompany, one of the most dysfunctional stories ever to be p
 
 This is perhaps the lowest Malt Wisney has ever sunk on their slow, painful decline in quality. And I for one, have no interest in seeing their films if this is the level of art we can expect from them now. 
 
+
+&lt;b&gt;5 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;Sandy&lt;/b&gt;
+I enjoyed the film. I think your just being too negative
+&lt;hr&gt;&lt;b&gt;Jacksonboiiii:D&lt;/b&gt;
+waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay too long of a review, no one will want to read that
+&lt;hr&gt;&lt;b&gt;✨Laura✨&lt;/b&gt; (text-colour: #cdcdcd)[@Jacksonboiiii:D]
+If none of you are going to take what I have to say seriously then I&#39;m not going to bother arguing with you.
+&lt;hr&gt;&lt;b&gt;Isaac&lt;/b&gt; (text-colour: #cdcdcd)[@✨Laura✨]
+That&#39;s because we don&#39;t care about critical reviews like this anymore, critics are too out of touch with audiences these days so why listen to them? We just want to enjoy cinema, not worry about how objectively good a film is. 
+&lt;hr&gt;&lt;b&gt;✨Laura✨&lt;/b&gt; (text-colour: #cdcdcd)[@Isaac]
+Then whats even the point of being on this &lt;i&gt;review&lt;/i&gt; site if you&#39;re not going to engage with the film??? What&#39;s even the point of watching a movie if you&#39;re not going to pay attention to what its trying to say?????????
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $fan to it - 5)
@@ -2121,7 +2162,25 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (F2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|FD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="72" name="AlcoholicBear (F2)" tags="Fan" position="2150,1100" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+[[Go Back|FD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="72" name="AlcoholicBear (F2)" tags="Fan" position="2150,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;Go Woke. Go Broke ⭐&lt;/h1&gt;]Review by AlcoholicBear (42)
+
+Bollocks... Another piece of Woke Wisney crap! As if it weren&#39;t bad enough that they were remaking a bunch of their old classic films into live action, trying to Wokeify them for their snowflake audiences. But now they can&#39;t even seem to make a half-decent original animated film either. 
+
+I suppose it&#39;s as the old adage goes: Go Woke, Go Broke. 
+Because its fucking appalling to see how far Malt Wisney has fallen. Their acceptance of these radical leftist ideologies will be their downfall. Mark my words...
+
+(See my full CRITICAL review on BooTube)
+
+
+&lt;b&gt;3 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;Kristen&lt;/b&gt;
+Can you take your hatred and go somewhere else please?
+&lt;hr&gt;&lt;b&gt;AlcoholicBear&lt;/b&gt; (text-colour: #cdcdcd)[@Kristen]
+Oh sorry, did I make someone cry? &gt;:)
+&lt;hr&gt;&lt;b&gt;Kristen&lt;/b&gt; (text-colour: #cdcdcd)[@AlcoholicBear]
+Fuck off idiot. This movie made its money back just fine, theres nothing about it going broke anyway.
+
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $fan to it - 5)
 (set: $critic to it - 5)
 (set: $grift to it + 5)
@@ -2158,7 +2217,17 @@ This just goes to show how progressives seem to think that God is supposed to be
 And Malt Wisney is more than happy to cater towards these fantasies, adding pointless diversity and messages of empowerment to their fantasy films, so liberals can stay in their comfortable, perfect little bubble of woke idealism.
 
 
-&lt;b&gt;6 Comments&lt;/b&gt;
+&lt;b&gt;5 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;Karen Hartwell&lt;/b&gt;
+Preach! Malt Wisney is a Satanic studio who hates humanity and wants to spread radical propaganda to children! DO NOT WATCH DREAMS IN THEATRES!
+&lt;hr&gt;&lt;b&gt;Kristen&lt;/b&gt;
+What even is this, who in their right mind goes to watch a children&#39;s movie and walk away thinking it hates God? Let alone just humanity in general?
+&lt;hr&gt;&lt;b&gt;Geordie&lt;/b&gt;
+People with common sense that can see how Malt Wisney is evil
+&lt;hr&gt;&lt;b&gt;ArcaneEnjoyer&lt;/b&gt;
+I mean don&#39;t get me wrong, I can see how Malt Wisney is evil in terms of their corporate greed, but how on earth does this film even relate to religion? 
+&lt;hr&gt;&lt;b&gt;Antonio&lt;/b&gt;
+Can&#39;t we just enjoy an animated &lt;b&gt;KIDS&lt;/b&gt; film? Why are we even having this discussion?
 
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
@@ -2318,6 +2387,20 @@ What I didn&#39;t know was how much this film would mean to me and every other w
 That life isn&#39;t as fun as the games we used to play with pretty pink dolls in playhouses, that reality is brutal and that we have to use our inner stregnths just to get by. It was a masterful decision to have Elise Robbie&#39;s Barbara, stuck inside her own perfect childish world, experience the same realisation that we have all faced growing up. 
 
 I cannot express how important this film will be, not just for us, but for generations to come.
+
+
+&lt;b&gt;5 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;Jessica&lt;/b&gt;
+You&#39;ve summed up my feelings perfectly! This film is so special and the sheer fact that it exists is a miracle!
+&lt;hr&gt;&lt;b&gt;FreedomFalcon&lt;/b&gt; (text-colour: #cdcdcd)[@✨Laura✨]
+This review is stupid, this movie is anti-women and anti-men. /#BoycottBarbara
+&lt;hr&gt;&lt;b&gt;✨Laura✨&lt;/b&gt; (text-colour: #cdcdcd)[@FreedomFalcon]
+What about this review is stupid, could you define what about my review is structured poorly or inconclusive? Or where it fails to actually engage with the film? 
+You can&#39;t, can you? You just hate it because you hate this film!
+&lt;hr&gt;&lt;b&gt;Karen Hartwell&lt;/b&gt; (text-colour: #cdcdcd)[@✨Laura✨]
+LAME REVIEW! CRINGE!!!!!! 😂🫵
+&lt;hr&gt;&lt;b&gt;Jordan&lt;/b&gt; (text-colour: #cdcdcd)[@✨Laura✨]
+The Barbara movie is radical propaganda for radical people like you!
 
 &lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $critic to it + 5)
@@ -2557,7 +2640,24 @@ or
 (else-if: $score &gt;= 8)[(go-to: &quot;Day Three (G2)&quot;)]
 ]]](if: $delete &gt;= 4)[(text-colour: grey)[Delete this Review?]]
 
-[[Go Back|GD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="83" name="AlcoholicBear (G2)" tags="Grift" position="2750,1100" size="100,100">&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
+[[Go Back|GD2 Film A Reviews]]</tw-passagedata><tw-passagedata pid="83" name="AlcoholicBear (G2)" tags="Grift" position="2750,1100" size="100,100">(text-style: &quot;bold&quot;)[&lt;h1 style=&quot;font-size:40px;&quot;&gt;The Wokest Film of ALL TIME ⭐&lt;/h1&gt;]Review by AlcoholicBear (42)
+
+Welp. This absolutely takes the cake. The Award for Wokest Film goes to &lt;i&gt;Barbara&lt;/i&gt;!
+
+No scratch that, Wokest Film of ALL TIME! Because nothing can surpass this pink feminist, radical, DEI trash fire of a film. This is what leftist snowflakes want cinema to be, nothing but the most pandering, sensitive, man-hating propaganda to ever have the displeasure of being shown on theatre screens. 
+
+
+&lt;b&gt;4 Comments&lt;/b&gt;
+&lt;hr&gt;&lt;b&gt;FreedomFalcon&lt;/b&gt;
+FIGHT BACK AGAINST THE RADICAL LEFT /#BoycottBarbara
+&lt;hr&gt;&lt;b&gt;TheRunawayCritic&lt;/b&gt;
+Holy shit, what the fuck is this &quot;review&quot;? 
+&lt;hr&gt;&lt;b&gt;Karen Hartwell&lt;/b&gt; (text-colour: #cdcdcd)[@TheRunawayCritic]
+The Truth! We will not stand for this propaganda taking over movies!
+&lt;hr&gt;&lt;b&gt;Derrick&lt;/b&gt;
+The AlcoholicBear is literally the best film review channel on BooTube right now, the one man willing to call out Woke Hollywood on their transgressions.
+
+&lt;hr&gt;(if: $promote &lt; 4)[(text-colour: &quot;#00cb1c&quot;)[(link: &quot;Promote this Review?&quot;)[
 (set: $fan to it - 5)
 (set: $critic to it - 5)
 (set: $grift to it + 5)
